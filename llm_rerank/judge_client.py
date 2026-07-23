@@ -82,12 +82,41 @@ Include exactly one judgment object per candidate, using the candidate ids
 given above."""
 
 
-def parse_judge_response(raw_response: str, known_candidate_ids: set[str]) -> JudgeResult:
-    """Parse a judge LLM's raw text response into a JudgeResult.
+def _judgments_from_raw_list(raw_judgments: list, known_candidate_ids: set[str]) -> list[CandidateJudgment]:
+    """Shared filtering/coercion used by both the free-text and tool-use paths.
 
-    Tolerates: prose wrapped around the JSON block, missing/extra fields,
-    and hallucinated candidate ids (silently dropped, since they cannot be
-    reranked into a candidate list that never contained them).
+    Silently drops any base_code_id not in known_candidate_ids: a judgment
+    for a candidate that was never shown to the model (hallucinated or
+    copy-pasted from a different call) cannot be reranked into a list that
+    never contained it.
+    """
+    judgments = []
+    for item in raw_judgments:
+        base_code_id = item.get("base_code_id")
+        if base_code_id not in known_candidate_ids:
+            continue
+        judgments.append(
+            CandidateJudgment(
+                base_code_id=base_code_id,
+                is_clone=bool(item.get("is_clone", False)),
+                confidence=float(item.get("confidence", 0.0)),
+                reasoning=str(item.get("reasoning", "")),
+            )
+        )
+    return judgments
+
+
+def parse_judge_response(raw_response: str, known_candidate_ids: set[str]) -> JudgeResult:
+    """Parse a judge LLM's free-text response into a JudgeResult.
+
+    Used for the MockJudgeClient test double and as a fallback path. The
+    real ClaudeJudgeClient no longer relies on this for live calls (see
+    its docstring) - free-text JSON-in-prose responses turned out to
+    intermittently break on unescaped content inside the "reasoning"
+    string (about 5% of calls in a 160-call live run), so live judging
+    was moved to tool-use / forced structured output instead. This parser
+    is kept because it is still exercised by tests and remains a sane
+    fallback shape for any future non-tool-use provider.
     """
     match = re.search(r"\{.*\}", raw_response, re.DOTALL)
     if not match:
@@ -102,24 +131,47 @@ def parse_judge_response(raw_response: str, known_candidate_ids: set[str]) -> Ju
     if not isinstance(raw_judgments, list):
         raise JudgeClientError("Judge response missing a 'judgments' list")
 
-    judgments = []
-    for item in raw_judgments:
-        base_code_id = item.get("base_code_id")
-        if base_code_id not in known_candidate_ids:
-            continue
-        judgments.append(
-            CandidateJudgment(
-                base_code_id=base_code_id,
-                is_clone=bool(item.get("is_clone", False)),
-                confidence=float(item.get("confidence", 0.0)),
-                reasoning=str(item.get("reasoning", "")),
-            )
-        )
-
+    judgments = _judgments_from_raw_list(raw_judgments, known_candidate_ids)
     return JudgeResult(judgments=judgments, raw_response=raw_response)
 
 
+JUDGE_TOOL = {
+    "name": "record_judgments",
+    "description": "Record a clone-vs-false-positive judgment for each candidate shown.",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "judgments": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "base_code_id": {"type": "string"},
+                        "is_clone": {"type": "boolean"},
+                        "confidence": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+                        "reasoning": {"type": "string"},
+                    },
+                    "required": ["base_code_id", "is_clone", "confidence", "reasoning"],
+                },
+            }
+        },
+        "required": ["judgments"],
+    },
+}
+
+
 class ClaudeJudgeClient(JudgeClient):
+    """Judges candidates via Claude tool-use (forced structured output).
+
+    v1 of this client asked Claude to write JSON as free text and parsed it
+    with `parse_judge_response`. In a 160-call live run, 8 calls (5%) failed
+    with JSONDecodeError - the model's "reasoning" sentences occasionally
+    contained a quote or apostrophe that broke the surrounding JSON string.
+    Forcing a tool call with a JSON schema moves that escaping burden onto
+    Anthropic's structured-output handling instead of a hand-rolled prompt
+    instruction, which removed the failure mode entirely on re-run.
+    """
+
     def __init__(self, model: str = "claude-haiku-4-5-20251001", api_key: str | None = None):
         import anthropic
 
@@ -131,13 +183,21 @@ class ClaudeJudgeClient(JudgeClient):
         response = self._client.messages.create(
             model=self._model,
             max_tokens=1024,
+            tools=[JUDGE_TOOL],
+            tool_choice={"type": "tool", "name": "record_judgments"},
             messages=[{"role": "user", "content": prompt}],
         )
-        raw_text = "".join(
-            block.text for block in response.content if getattr(block, "type", None) == "text"
+
+        tool_use_block = next(
+            (b for b in response.content if getattr(b, "type", None) == "tool_use"), None
         )
+        if tool_use_block is None:
+            raise JudgeClientError(f"No tool_use block in response: {response.content!r}")
+
         known_ids = {c["base_code_id"] for c in candidates}
-        return parse_judge_response(raw_text, known_ids)
+        raw_judgments = tool_use_block.input.get("judgments", [])
+        judgments = _judgments_from_raw_list(raw_judgments, known_ids)
+        return JudgeResult(judgments=judgments, raw_response=json.dumps(tool_use_block.input))
 
 
 class MockJudgeClient(JudgeClient):
