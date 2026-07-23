@@ -40,8 +40,6 @@ class _DryRunJudgeClient(JudgeClient):
 
 
 def run(scores_csv: str, n_per_type: int, dry_run: bool, sleep_between_calls: float, out_dir: str) -> None:
-    load_dotenv()
-
     scores_df = build_clone_groups(scores_csv)
     code_lookup = load_code_lookup(str(ORIGINAL_CODE_CSV))
     clone_code_lookup = load_clone_lookup(str(TEST_CODE_CSV))
@@ -100,6 +98,8 @@ def run(scores_csv: str, n_per_type: int, dry_run: bool, sleep_between_calls: fl
 
 
 def main(argv=None):
+    load_dotenv()
+
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--scores-csv", required=True, help="Existing global-clone-search scores CSV to rerank")
     parser.add_argument("--n-per-type", type=int, default=40, help="Clones to sample per clone_type")
