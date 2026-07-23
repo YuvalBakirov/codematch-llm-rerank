@@ -11,7 +11,23 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+import pandas as pd
+
 from llm_rerank.rerank import RerankOutcome
+
+
+def clone_type_lookup(scores_df: pd.DataFrame) -> dict[str, str]:
+    """clone_code_id -> clone_type, built from a global-clone-search scores df.
+
+    `scores_df` has one row per (clone, candidate) pair - typically 5 rows
+    per clone - so it must be de-duplicated on clone_code_id first. Building
+    the lookup via `.set_index("clone_code_id")["clone_type"].get(id)`
+    without that de-dup returns a Series (not a scalar) for every id, which
+    fails downstream with `TypeError: unhashable type: 'Series'` the moment
+    it's used as a groupby key - caught while wiring up the demo app.
+    """
+    deduped = scores_df.drop_duplicates(subset=["clone_code_id"])
+    return dict(deduped[["clone_code_id", "clone_type"]].values)
 
 
 @dataclass
