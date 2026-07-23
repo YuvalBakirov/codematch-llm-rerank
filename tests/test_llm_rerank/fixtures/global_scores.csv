@@ -1,0 +1,3 @@
+test_id,clone_code_id,desired_base_code_id,clone_language,clone_task,clone_domain,clone_subdomain,clone_type,clone_sub_type,similarity_score,base_code_id,base_language,base_task,base_domain,base_subdomain
+clone_a_1_1,clone_a,orig_sum,python,sum list,Math,Basics,T1,Identical Clone,0.91,orig_loop,python,print loop,Basics,Loops
+clone_a_1_2,clone_a,orig_sum,python,sum list,Math,Basics,T1,Identical Clone,0.87,orig_sum,python,sum list,Math,Basics

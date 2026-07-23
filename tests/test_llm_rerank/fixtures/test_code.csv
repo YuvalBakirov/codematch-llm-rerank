@@ -1,0 +1,2 @@
+clone_code_id,base_code_id,task,domain,subdomain,clone_language,clone_type,clone_sub_type,code
+clone_a,orig_sum,sum list,Math,Basics,python,T1,Identical Clone,"def total(nums):\n    return sum(nums)"

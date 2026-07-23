@@ -1,9 +1,11 @@
+anthropic>=0.40.0
 datasets==3.0.1
 numpy==1.24.1
 openai==1.58.1
 pandas==1.4.4
 #psycopg2==2.9.10
 psycopg2-binary==2.9.10
+pytest>=8.0
 python-dotenv==1.0.1
 qdrant_client==1.12.1
 tiktoken==0.7.0
