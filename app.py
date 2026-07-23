@@ -15,7 +15,14 @@ import pandas as pd
 import streamlit as st
 from dotenv import load_dotenv
 
-from llm_rerank.data import build_clone_groups, candidates_for_clone, load_clone_lookup, load_code_lookup
+from llm_rerank.data import (
+    build_clone_display_names,
+    build_clone_groups,
+    build_original_display_names,
+    candidates_for_clone,
+    load_clone_lookup,
+    load_code_lookup,
+)
 from llm_rerank.evaluate import clone_type_lookup as build_clone_type_lookup
 from llm_rerank.judge_client import ClaudeJudgeClient
 from llm_rerank.rerank import rerank_one
@@ -37,16 +44,50 @@ def load_everything():
     code_lookup = load_code_lookup(str(ORIGINAL_CODE_CSV))
     clone_lookup = load_clone_lookup(str(TEST_CODE_CSV))
     outcomes_df = pd.read_csv(OUTCOMES_CSV)
-    return scores_df, code_lookup, clone_lookup, outcomes_df
+    original_names = build_original_display_names(str(ORIGINAL_CODE_CSV))
+    clone_names = build_clone_display_names(str(TEST_CODE_CSV))
+    return scores_df, code_lookup, clone_lookup, outcomes_df, original_names, clone_names
 
 
-scores_df, code_lookup, clone_lookup, outcomes_df = load_everything()
+scores_df, code_lookup, clone_lookup, outcomes_df, original_names, clone_names = load_everything()
+
+
+def show_original(base_code_id: str) -> str:
+    return original_names.get(base_code_id, base_code_id)
+
+
+def show_clone(clone_code_id: str) -> str:
+    return clone_names.get(clone_code_id, clone_code_id)
+
 
 st.title("CodeMatch: does an LLM judge improve embedding-based clone search?")
 st.caption(
     "Embedding search (Qwen2.5-Coder-0.5B-pe) already retrieves a top-5 for each query. "
     "This asks Claude to judge each candidate as genuine-clone vs. false-positive and reranks accordingly."
 )
+
+with st.expander("New here? How this whole thing works (read this first)", expanded=True):
+    st.markdown(
+        """
+**The problem.** A code-clone search tool takes a snippet of code and tries to find other code
+that's really "the same thing" - the same algorithm, possibly renamed, reformatted, or rewritten
+in another language. It does this with **embedding similarity**: code is converted into a vector,
+and the 5 closest vectors in a database are returned as candidates. The catch: "closest vector"
+sometimes means *superficially* similar (same imports, same boilerplate) rather than *actually*
+the same logic - this tool measures and tries to fix exactly that gap.
+
+**The 4 difficulty levels (clone types), easiest to hardest:**
+- **T1** - near-identical copy (renamed whitespace/comments/formatting only)
+- **T2** - renamed variables, functions, or data types, same structure
+- **T3** - restructured (statements added/removed/reordered), same logic
+- **T4** - same logic, but rewritten from scratch or in a different language - hardest to catch by embedding similarity alone
+
+**What this page shows, in order:**
+1. Aggregate accuracy (Hit@1 / Hit@5) - embedding search alone vs. embedding search + an LLM judge on top, split by difficulty level
+2. One specific example you pick, so you can see exactly what changed
+3. A live button that calls the real Claude API right now, on whichever example you're looking at
+        """
+    )
 
 # --- Aggregate result -------------------------------------------------------
 st.header("1. Aggregate result (160-clone stratified sample)")
@@ -100,7 +141,12 @@ elif bucket == "rerank still got it wrong":
 else:
     options = all_ids
 
-selected = st.selectbox("Clone", options)
+selected = st.selectbox("Clone", options, format_func=show_clone)
+st.caption(
+    "Label format: **task name - what varies in this clone [clone type] (internal dataset id)**. "
+    "The internal id (e.g. `8m72_2_1`) is only kept for cross-referencing the raw CSV files - "
+    "the readable part is what actually matters."
+)
 
 row = outcomes_df[outcomes_df["clone_code_id"] == selected].iloc[0]
 original_order = row["original_order"].split("|")
@@ -113,20 +159,30 @@ c1, c2 = st.columns(2)
 with c1:
     st.subheader("Embedding search order (top-5)")
     for i, bid in enumerate(original_order, 1):
-        marker = " <- true match" if bid == row["desired_base_code_id"] else ""
-        st.text(f"{i}. {bid}{marker}")
+        marker = " ⬅ true match" if bid == row["desired_base_code_id"] else ""
+        st.text(f"{i}. {show_original(bid)}{marker}")
 with c2:
     st.subheader("After LLM rerank")
     for i, bid in enumerate(reranked_order, 1):
-        marker = " <- true match" if bid == row["desired_base_code_id"] else ""
-        st.text(f"{i}. {bid}{marker}")
+        marker = " ⬅ true match" if bid == row["desired_base_code_id"] else ""
+        st.text(f"{i}. {show_original(bid)}{marker}")
 
 with st.expander("Show top embedding candidate's code"):
     st.code(code_lookup.get(original_order[0], "<not found>"), language="python")
 
 # --- Live call ---------------------------------------------------------------
 st.header("3. Run it live, right now")
-st.caption("Calls the real Claude API on the selected clone's candidates - not cached.")
+st.caption(
+    "Calls the real Claude API on the clone you selected above - not cached, not read from a saved "
+    "file. This is the exact same rerank_one() function used 160 times to produce the aggregate "
+    "result in section 1, just triggered once, on demand, for one example."
+)
+
+st.markdown(f"**Query:** {show_clone(selected)}")
+st.markdown("**Embedding search's original top-5 (before any LLM judgment):**")
+for i, bid in enumerate(original_order, 1):
+    marker = " ⬅ true match" if bid == row["desired_base_code_id"] else ""
+    st.text(f"{i}. {show_original(bid)}{marker}")
 
 if st.button("Judge this clone with Claude now"):
     group = scores_df[scores_df["clone_code_id"] == selected]
@@ -140,8 +196,17 @@ if st.button("Judge this clone with Claude now"):
     if outcome.judge_error:
         st.error(f"Judge error: {outcome.judge_error}")
     else:
-        st.success("Judged live. Reasoning per candidate:")
+        st.success("Judged live just now. Claude's verdict per candidate, in its new order:")
         for bid in outcome.reranked_order:
             reasoning = outcome.reasonings.get(bid, "(kept from original order - no judgment returned)")
             is_true = bid == row["desired_base_code_id"]
-            st.markdown(f"**{bid}**{' ✅ true match' if is_true else ''} — {reasoning}")
+            st.markdown(f"**{show_original(bid)}**{' ✅ true match' if is_true else ''} — {reasoning}")
+
+        st.info(
+            "**What you're looking at:** each line above is Claude's live, independent judgment on "
+            "one of the 5 embedding-search candidates - not a re-run of the embedding search itself. "
+            "The list is now ordered by that judgment (real clones first, highest confidence first), "
+            "which may or may not match the 'Embedding search's original top-5' order shown just above. "
+            "If the true match moved up (especially into 1st place) compared to the original order, "
+            "that's the rerank fixing a case where cosine similarity alone picked the wrong candidate."
+        )
