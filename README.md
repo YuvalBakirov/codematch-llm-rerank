@@ -26,7 +26,7 @@ By focusing on these elements, the benchmark helps determine the best model to i
 3. **Training/Fine-Tuning the Chosen LLM**: Although part of the workflow, this step was executed using prompt engineering rather than custom fine-tuning, leveraging the selected LLM's capabilities without additional training.
 
 Out of these three steps, **only the first two are implemented in this repository**:
-- Step 1: Dataset Creation - additional information can be found in the `data` [folder](https://github.com/codematch-llm/benchmark/tree/main/data) in this repository.
+- Step 1: Dataset Creation - additional information can be found in the `data` folder in this repository.
 - Step 2: Benchmark Development - we will delve into this here.
 
 
@@ -175,8 +175,8 @@ The project is designed with modularity in mind, separating core functionalities
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/codematch-llm/benchmark.git
-   cd benchmark
+   git clone <this-repo-url>
+   cd codematch-benchmark
    ```
 
 2. **Install Dependencies**:
