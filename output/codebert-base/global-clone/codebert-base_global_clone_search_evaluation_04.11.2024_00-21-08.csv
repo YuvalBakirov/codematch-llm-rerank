@@ -1,0 +1,96 @@
+Metric,Type,Subtype,Value
+Number of Tests,Overall,,
+Number of Tests,Overall,,650.0
+Number of Tests,T1,,200.0
+Number of Tests,T2,,150.0
+Number of Tests,T3,,200.0
+Number of Tests,T4,,100.0
+Number of Tests,T1 - Identical Clone,,50.0
+Number of Tests,T1 - Different Whitespaces,,50.0
+Number of Tests,T1 - Different Comments,,50.0
+Number of Tests,T1 - Different Formatting,,50.0
+Number of Tests,T2 - Different Variable Names,,50.0
+Number of Tests,T2 - Different Data Types,,50.0
+Number of Tests,T2 - Different Function Names,,50.0
+Number of Tests,T3 - Added Statements,,50.0
+Number of Tests,T3 - Removed Statements,,50.0
+Number of Tests,T3 - Reordered Statements,,50.0
+Number of Tests,T3 - Control Flow Modifications,,50.0
+Number of Tests,T4 - Same Language,,50.0
+Number of Tests,T4 - Different Language,,50.0
+Number of Top 5 Hits,Overall,,
+Number of Top 5 Hits,Overall,,560.0
+Number of Top 5 Hits,T1,,173.0
+Number of Top 5 Hits,T2,,144.0
+Number of Top 5 Hits,T3,,176.0
+Number of Top 5 Hits,T4,,67.0
+Number of Top 5 Hits,T1 - Identical Clone,,50.0
+Number of Top 5 Hits,T1 - Different Whitespaces,,32.0
+Number of Top 5 Hits,T1 - Different Comments,,47.0
+Number of Top 5 Hits,T1 - Different Formatting,,44.0
+Number of Top 5 Hits,T2 - Different Variable Names,,48.0
+Number of Top 5 Hits,T2 - Different Data Types,,47.0
+Number of Top 5 Hits,T2 - Different Function Names,,49.0
+Number of Top 5 Hits,T3 - Added Statements,,47.0
+Number of Top 5 Hits,T3 - Removed Statements,,43.0
+Number of Top 5 Hits,T3 - Reordered Statements,,45.0
+Number of Top 5 Hits,T3 - Control Flow Modifications,,41.0
+Number of Top 5 Hits,T4 - Same Language,,38.0
+Number of Top 5 Hits,T4 - Different Language,,29.0
+Top 5 Hit Rate,Overall,,
+Top 5 Hit Rate,Overall,,0.8615384615384616
+Top 5 Hit Rate,T1,,0.865
+Top 5 Hit Rate,T2,,0.96
+Top 5 Hit Rate,T3,,0.88
+Top 5 Hit Rate,T4,,0.67
+Top 5 Hit Rate,T1 - Identical Clone,,1.0
+Top 5 Hit Rate,T1 - Different Whitespaces,,0.64
+Top 5 Hit Rate,T1 - Different Comments,,0.94
+Top 5 Hit Rate,T1 - Different Formatting,,0.88
+Top 5 Hit Rate,T2 - Different Variable Names,,0.96
+Top 5 Hit Rate,T2 - Different Data Types,,0.94
+Top 5 Hit Rate,T2 - Different Function Names,,0.98
+Top 5 Hit Rate,T3 - Added Statements,,0.94
+Top 5 Hit Rate,T3 - Removed Statements,,0.86
+Top 5 Hit Rate,T3 - Reordered Statements,,0.9
+Top 5 Hit Rate,T3 - Control Flow Modifications,,0.82
+Top 5 Hit Rate,T4 - Same Language,,0.76
+Top 5 Hit Rate,T4 - Different Language,,0.58
+Number of 1st in Top 5,Overall,,
+Number of 1st in Top 5,Overall,,496.0
+Number of 1st in Top 5,T1,,162.0
+Number of 1st in Top 5,T2,,141.0
+Number of 1st in Top 5,T3,,164.0
+Number of 1st in Top 5,T4,,29.0
+Number of 1st in Top 5,T1 - Identical Clone,,50.0
+Number of 1st in Top 5,T1 - Different Whitespaces,,26.0
+Number of 1st in Top 5,T1 - Different Comments,,46.0
+Number of 1st in Top 5,T1 - Different Formatting,,40.0
+Number of 1st in Top 5,T2 - Different Variable Names,,48.0
+Number of 1st in Top 5,T2 - Different Data Types,,45.0
+Number of 1st in Top 5,T2 - Different Function Names,,48.0
+Number of 1st in Top 5,T3 - Added Statements,,43.0
+Number of 1st in Top 5,T3 - Removed Statements,,41.0
+Number of 1st in Top 5,T3 - Reordered Statements,,43.0
+Number of 1st in Top 5,T3 - Control Flow Modifications,,37.0
+Number of 1st in Top 5,T4 - Same Language,,27.0
+Number of 1st in Top 5,T4 - Different Language,,2.0
+First Hit Rate,Overall,,
+First Hit Rate,Overall,,0.7630769230769231
+First Hit Rate,T1,,0.81
+First Hit Rate,T2,,0.94
+First Hit Rate,T3,,0.82
+First Hit Rate,T4,,0.29
+First Hit Rate,T1 - Identical Clone,,1.0
+First Hit Rate,T1 - Different Whitespaces,,0.52
+First Hit Rate,T1 - Different Comments,,0.92
+First Hit Rate,T1 - Different Formatting,,0.8
+First Hit Rate,T2 - Different Variable Names,,0.96
+First Hit Rate,T2 - Different Data Types,,0.9
+First Hit Rate,T2 - Different Function Names,,0.96
+First Hit Rate,T3 - Added Statements,,0.86
+First Hit Rate,T3 - Removed Statements,,0.82
+First Hit Rate,T3 - Reordered Statements,,0.86
+First Hit Rate,T3 - Control Flow Modifications,,0.74
+First Hit Rate,T4 - Same Language,,0.54
+First Hit Rate,T4 - Different Language,,0.04

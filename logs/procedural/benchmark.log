@@ -1,0 +1,51 @@
+{"level": "INFO", "message": "==================================================", "timestamp": "2024-12-22T16:15:55.326203+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 17}
+{"level": "INFO", "message": "New Run Started | Run ID: beb91516-19c2-4734-9438-b777749da52d", "timestamp": "2024-12-22T16:15:55.328251+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 18}
+{"level": "INFO", "message": "==================================================", "timestamp": "2024-12-22T16:15:55.328251+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 19}
+{"level": "INFO", "message": "Benchmarking process started", "timestamp": "2024-12-22T16:15:55.328251+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 21}
+{"level": "INFO", "message": "Number of CPUs: 16", "timestamp": "2024-12-22T16:15:55.328251+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 26}
+{"level": "INFO", "message": "Using model: microsoft/codebert-base", "timestamp": "2024-12-22T16:15:55.328251+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 29}
+{"level": "INFO", "message": "Successfully loaded model and tokenizer: microsoft/codebert-base", "timestamp": "2024-12-22T16:15:56.723773+00:00", "logger": "benchmark", "module": "utils", "function": "load_huggingface_model", "line": 102}
+{"level": "INFO", "message": "Tokenizer name: microsoft/codebert-base", "timestamp": "2024-12-22T16:15:56.723773+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 32}
+{"level": "INFO", "message": "Tokenizer class: RobertaTokenizerFast", "timestamp": "2024-12-22T16:15:56.723773+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 33}
+{"level": "INFO", "message": "Embedding size for model 'microsoft/codebert-base': 768", "timestamp": "2024-12-22T16:15:56.772813+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 37}
+{"level": "INFO", "message": "Maximum token input size: 514", "timestamp": "2024-12-22T16:15:56.772813+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 38}
+{"level": "INFO", "message": "Qdrant server started successfully.", "timestamp": "2024-12-22T16:15:56.780269+00:00", "logger": "benchmark", "module": "utils", "function": "start_qdrant_server", "line": 19}
+{"level": "INFO", "message": "Qdrant client initialized successfully.", "timestamp": "2024-12-22T16:15:56.796677+00:00", "logger": "benchmark", "module": "database", "function": "initialize_client", "line": 15}
+{"level": "INFO", "message": "Initializing the vector database.", "timestamp": "2024-12-22T16:15:56.796677+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 45}
+{"level": "ERROR", "message": "This is a test log inside handle_vectordb_creation erorrrrrr.", "timestamp": "2024-12-22T16:15:56.797679+00:00", "logger": "benchmark.vectordb", "module": "database", "function": "handle_vectordb_creation", "line": 77}
+{"level": "INFO", "message": "Running tests:", "timestamp": "2024-12-22T16:18:33.348352+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 55}
+{"level": "INFO", "message": "1. Direct Clone Comparison Test", "timestamp": "2024-12-22T16:18:33.348352+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 57}
+{"level": "INFO", "message": "2. Global Clone Search", "timestamp": "2024-12-22T16:58:36.618553+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 60}
+{"level": "INFO", "message": "==================================================", "timestamp": "2024-12-22T17:37:28.228222+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 64}
+{"level": "INFO", "message": "Run ID: beb91516-19c2-4734-9438-b777749da52d | Total time taken: 81.55 minutes", "timestamp": "2024-12-22T17:37:28.228222+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 65}
+{"level": "INFO", "message": "==================================================", "timestamp": "2024-12-22T17:37:28.228222+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 66}
+{"level": "INFO", "message": "==================================================", "timestamp": "2024-12-24T12:25:10.854029+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 17}
+{"level": "INFO", "message": "New Run Started | Run ID: ba0c5a2b-e39a-4ab2-89e6-a9a057591f34", "timestamp": "2024-12-24T12:25:10.854029+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 18}
+{"level": "INFO", "message": "==================================================", "timestamp": "2024-12-24T12:25:10.854029+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 19}
+{"level": "INFO", "message": "Benchmarking process started", "timestamp": "2024-12-24T12:25:10.854029+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 21}
+{"level": "INFO", "message": "Number of CPUs: 16", "timestamp": "2024-12-24T12:25:10.854029+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 26}
+{"level": "INFO", "message": "Using model: microsoft/codebert-base", "timestamp": "2024-12-24T12:25:10.854029+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 29}
+{"level": "INFO", "message": "Successfully loaded model and tokenizer: microsoft/codebert-base", "timestamp": "2024-12-24T12:25:16.152160+00:00", "logger": "benchmark", "module": "utils", "function": "load_huggingface_model", "line": 65}
+{"level": "INFO", "message": "Tokenizer name: microsoft/codebert-base", "timestamp": "2024-12-24T12:25:16.152160+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 32}
+{"level": "INFO", "message": "Tokenizer class: RobertaTokenizerFast", "timestamp": "2024-12-24T12:25:16.152160+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 33}
+{"level": "INFO", "message": "Embedding size for model 'microsoft/codebert-base': 768", "timestamp": "2024-12-24T12:25:16.280182+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 37}
+{"level": "INFO", "message": "Maximum token input size: 514", "timestamp": "2024-12-24T12:25:16.280182+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 38}
+{"level": "INFO", "message": "Qdrant server started successfully.", "timestamp": "2024-12-24T12:25:16.302589+00:00", "logger": "benchmark", "module": "utils", "function": "start_qdrant_server", "line": 16}
+{"level": "INFO", "message": "Qdrant client initialized successfully.", "timestamp": "2024-12-24T12:25:16.310656+00:00", "logger": "benchmark", "module": "database", "function": "initialize_client", "line": 16}
+{"level": "INFO", "message": "Initializing the vector database.", "timestamp": "2024-12-24T12:25:16.310656+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 45}
+{"level": "INFO", "message": "==================================================", "timestamp": "2024-12-24T12:25:26.238642+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 17}
+{"level": "INFO", "message": "New Run Started | Run ID: cac1969f-10ac-4271-be7b-448ff5ec3c0c", "timestamp": "2024-12-24T12:25:26.238642+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 18}
+{"level": "INFO", "message": "==================================================", "timestamp": "2024-12-24T12:25:26.238642+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 19}
+{"level": "INFO", "message": "Benchmarking process started", "timestamp": "2024-12-24T12:25:26.238642+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 21}
+{"level": "INFO", "message": "Number of CPUs: 16", "timestamp": "2024-12-24T12:25:26.238642+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 26}
+{"level": "INFO", "message": "Using model: microsoft/codebert-base", "timestamp": "2024-12-24T12:25:26.238642+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 29}
+{"level": "INFO", "message": "Successfully loaded model and tokenizer: microsoft/codebert-base", "timestamp": "2024-12-24T12:25:29.262081+00:00", "logger": "benchmark", "module": "utils", "function": "load_huggingface_model", "line": 65}
+{"level": "INFO", "message": "Tokenizer name: microsoft/codebert-base", "timestamp": "2024-12-24T12:25:29.262081+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 32}
+{"level": "INFO", "message": "Tokenizer class: RobertaTokenizerFast", "timestamp": "2024-12-24T12:25:29.262081+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 33}
+{"level": "INFO", "message": "Embedding size for model 'microsoft/codebert-base': 768", "timestamp": "2024-12-24T12:25:29.318194+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 37}
+{"level": "INFO", "message": "Maximum token input size: 514", "timestamp": "2024-12-24T12:25:29.318194+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 38}
+{"level": "INFO", "message": "Qdrant server started successfully.", "timestamp": "2024-12-24T12:25:29.329570+00:00", "logger": "benchmark", "module": "utils", "function": "start_qdrant_server", "line": 16}
+{"level": "INFO", "message": "Qdrant client initialized successfully.", "timestamp": "2024-12-24T12:25:29.343843+00:00", "logger": "benchmark", "module": "database", "function": "initialize_client", "line": 16}
+{"level": "INFO", "message": "Initializing the vector database.", "timestamp": "2024-12-24T12:25:29.345027+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 45}
+{"level": "INFO", "message": "Running tests:", "timestamp": "2024-12-24T12:25:32.078595+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 55}
+{"level": "INFO", "message": "1. Direct Clone Comparison Test", "timestamp": "2024-12-24T12:25:32.078595+00:00", "logger": "benchmark", "module": "main", "function": "main", "line": 57}

@@ -1,0 +1,2 @@
+Group,Number of Instances,Total Passed,Total Failed,Average similarity_score,Median similarity_score,Accuracy,Precision,Recall,F1-Score,True Positives (TP),True Negatives (TN),False Positives (FP),False Negatives (FN)
+Overall,199,199,0,0.953304480653266,0.9620752,1.0,1.0,1.0,1.0,199,0,0,0

@@ -1,0 +1,1140 @@
+task,domain,subdomain
+100 doors,Puzzles and Games,Logic and Mathematical Puzzles
+100 prisoners,Puzzles and Games,Logic and Mathematical Puzzles
+15 puzzle game,Puzzles and Games,Game Development
+2048,Puzzles and Games,Game Development
+21 game,Puzzles and Games,Game Development
+24 game,Puzzles and Games,Logic and Mathematical Puzzles
+24 game/Solve,Puzzles and Games,Puzzle Solving Algorithms
+4-rings or 4-squares puzzle,Puzzles and Games,Logic and Mathematical Puzzles
+9 billion names of God the integer,Puzzles and Games,Logic and Mathematical Puzzles
+A+B,Puzzles and Games,Logic and Mathematical Puzzles
+ABC problem,Puzzles and Games,Logic and Mathematical Puzzles
+AKS test for primes,Mathematics,Number Theory
+ASCII art diagram converter,Puzzles and Games,Puzzle Solving Algorithms
+AVL tree,Algorithms and Data Structures,Data Structures
+"Abbreviations, automatic",Text Processing,String Manipulation
+"Abbreviations, easy",Text Processing,String Manipulation
+"Abbreviations, simple",Text Processing,String Manipulation
+Abelian sandpile model,Puzzles and Games,Simulation and Modeling
+Abelian sandpile model/Identity,Puzzles and Games,Logic and Mathematical Puzzles
+Abstract type,Programming Concepts,Advanced Concepts
+Abundant odd numbers,Mathematics,Number Theory
+"Abundant, deficient and perfect number classifications",Mathematics,Number Theory
+Accumulator factory,Programming Concepts,Advanced Concepts
+Ackermann function,Algorithms and Data Structures,Algorithms
+Active Directory/Connect,Networking and Web Development,Networking
+Active Directory/Search for a user,Networking and Web Development,Networking
+Active object,Concurrency and Parallelism,Multithreading and Thread Management
+Add a variable to a class instance at runtime,Programming Concepts,Advanced Concepts
+Additive primes,Mathematics,Number Theory
+Address of a variable,Programming Concepts,Fundamentals
+Algebraic data types,Algorithms and Data Structures,Algorithms
+Align columns,Text Processing,String Manipulation
+Aliquot sequence classifications,Mathematics,Number Theory
+Almkvist-Giullera formula for pi,Mathematics,Numerical Methods
+Almost prime,Mathematics,Number Theory
+Amb,Puzzles and Games,Puzzle Solving Algorithms
+Amicable pairs,Mathematics,Number Theory
+Anagrams,Puzzles and Games,Logic and Mathematical Puzzles
+Anagrams/Deranged anagrams,Puzzles and Games,Logic and Mathematical Puzzles
+Angle difference between two bearings,Mathematics,Geometry and Trigonometry
+"Angles (geometric), normalization and conversion",Mathematics,Geometry and Trigonometry
+Animate a pendulum,Graphics and Visualization,Graphics Programming
+Animation,Graphics and Visualization,Graphics Programming
+Anonymous recursion,Programming Concepts,Advanced Concepts
+Anti-primes,Mathematics,Number Theory
+Append a record to the end of a text file,Systems Programming and File I/O,File Operations
+Apply a callback to an array,Programming Concepts,Fundamentals
+Apply a digital filter (direct form II transposed),Algorithms and Data Structures,Algorithms
+Approximate equality,Mathematics,Numerical Methods
+Arbitrary-precision integers (included),Mathematics,Numerical Methods
+Archimedean spiral,Mathematics,Geometry and Trigonometry
+Arena storage pool,Systems Programming and File I/O,File Operations
+Arithmetic evaluation,Mathematics,Algebra and Arithmetic
+Arithmetic numbers,Mathematics,Number Theory
+Arithmetic-geometric mean,Mathematics,Numerical Methods
+Arithmetic-geometric mean/Calculate Pi,Mathematics,Numerical Methods
+Arithmetic/Complex,Mathematics,Algebra and Arithmetic
+Arithmetic/Integer,Mathematics,Algebra and Arithmetic
+Arithmetic/Rational,Mathematics,Algebra and Arithmetic
+Array concatenation,Programming Concepts,Fundamentals
+Array length,Text Processing,String Manipulation
+Arrays,Algorithms and Data Structures,Data Structures
+Ascending primes,Mathematics,Number Theory
+Assertions,Programming Concepts,Fundamentals
+Associative array/Creation,Algorithms and Data Structures,Data Structures
+Associative array/Iteration,Algorithms and Data Structures,Data Structures
+Associative array/Merging,Programming Concepts,Fundamentals
+Atomic updates,Concurrency and Parallelism,Multithreading and Thread Management
+Attractive numbers,Mathematics,Number Theory
+Average loop length,Mathematics,Probability and Statistics
+Averages/Arithmetic mean,Mathematics,Probability and Statistics
+Averages/Mean angle,Mathematics,Geometry and Trigonometry
+Averages/Mean time of day,Mathematics,Probability and Statistics
+Averages/Median,Mathematics,Probability and Statistics
+Averages/Mode,Mathematics,Probability and Statistics
+Averages/Pythagorean means,Mathematics,Probability and Statistics
+Averages/Root mean square,Mathematics,Probability and Statistics
+Averages/Simple moving average,Mathematics,Probability and Statistics
+Babbage problem,Mathematics,Number Theory
+Balanced brackets,Puzzles and Games,Logic and Mathematical Puzzles
+Balanced ternary,Mathematics,Number Theory
+Barnsley fern,Mathematics,Fractals
+Base64 decode data,Text Processing,Encoding and Decoding
+Bell numbers,Mathematics,Combinatorics
+Benford's law,Mathematics,Probability and Statistics
+Bernoulli numbers,Mathematics,Number Theory
+Best shuffle,Puzzles and Games,Puzzle Solving Algorithms
+Bin given limits,Algorithms and Data Structures,Algorithms
+Binary digits,Algorithms and Data Structures,Algorithms
+Binary search,Algorithms and Data Structures,Algorithms
+Binary strings,Text Processing,String Manipulation
+Bioinformatics/Sequence mutation,Bioinformatics,Sequence Analysis and Mutation
+Bioinformatics/base count,Bioinformatics,Sequence Analysis
+Biorhythms,Mathematics,Mathematical Sequences and Series
+Bitcoin/address validation,Security and Cryptography,Cryptographic Techniques
+Bitcoin/public point to address,Security and Cryptography,Cryptographic Techniques
+Bitmap,Graphics and Visualization,Graphics Programming
+Bitmap/Bresenham's line algorithm,Graphics and Visualization,Graphics Programming
+Bitmap/Bézier curves/Cubic,Graphics and Visualization,Graphics Programming
+Bitmap/Bézier curves/Quadratic,Graphics and Visualization,Graphics Programming
+Bitmap/Flood fill,Graphics and Visualization,Graphics Programming
+Bitmap/Histogram,Graphics and Visualization,Graphics Programming
+Bitmap/Midpoint circle algorithm,Graphics and Visualization,Graphics Programming
+Bitmap/PPM conversion through a pipe,Systems Programming and File I/O,File Operations
+Bitmap/Read a PPM file,Graphics and Visualization,Graphics Programming
+Bitmap/Read an image through a pipe,Systems Programming and File I/O,File Operations
+Bitmap/Write a PPM file,Graphics and Visualization,Graphics Programming
+Bitwise IO,Systems Programming and File I/O,File Operations
+Bitwise operations,Programming Concepts,Fundamentals
+Boolean values,Programming Concepts,Fundamentals
+Box the compass,Puzzles and Games,Logic and Mathematical Puzzles
+Brace expansion,Programming Concepts,Fundamentals
+Brazilian numbers,Mathematics,Number Theory
+Break OO privacy,Programming Concepts,Advanced Concepts
+Brilliant numbers,Mathematics,Number Theory
+Brownian tree,Graphics and Visualization,Graphics Programming
+Bulls and cows,Puzzles and Games,Game Development
+Bulls and cows/Player,Puzzles and Games,Puzzle Solving Algorithms
+Burrows–Wheeler transform,Algorithms and Data Structures,Algorithms
+CRC-32,Security and Cryptography,Cryptographic Techniques
+CSV data manipulation,Databases and Data Management,Data Serialization and Formats
+CSV to HTML translation,Text Processing,Parsing and Tokenization
+CUSIP,Mathematics,Number Theory
+Caesar cipher,Security and Cryptography,Cryptographic Techniques
+Calculating the value of e,Mathematics,Numerical Methods
+Calendar,Miscellaneous Topics,Time and Date Manipulation
+Calkin-Wilf sequence,Mathematics,Mathematical Sequences and Series
+Call a foreign-language function,Programming Concepts,Fundamentals
+Call a function,Programming Concepts,Fundamentals
+Call a function in a shared library,Systems Programming and File I/O,File Operations
+Call an object method,Programming Concepts,Fundamentals
+Canny edge detector,Graphics and Visualization,Graphics Programming
+Canonicalize CIDR,Networking and Web Development,Networking
+Cantor set,Mathematics,Combinatorics
+Carmichael 3 strong pseudoprimes,Mathematics,Number Theory
+Cartesian product of two or more lists,Algorithms and Data Structures,Algorithms
+Case-sensitivity of identifiers,Programming Concepts,Fundamentals
+Casting out nines,Mathematics,Number Theory
+Catalan numbers,Mathematics,Combinatorics
+Catalan numbers/Pascal's triangle,Mathematics,Combinatorics
+Catamorphism,Algorithms and Data Structures,Algorithms
+Catmull–Clark subdivision surface,Graphics and Visualization,Graphics Programming
+Chaocipher,Security and Cryptography,Cryptographic Techniques
+Chaos game,Puzzles and Games,Simulation and Modeling
+Character codes,Text Processing,Unicode and Character Sets
+Chat server,Networking and Web Development,Networking
+Check Machin-like formulas,Mathematics,Algebra and Arithmetic
+Check input device is a terminal,Systems Programming and File I/O,File Operations
+Check output device is a terminal,Operating Systems and Shell Programming,Operating System Concepts
+Check that file exists,Systems Programming and File I/O,File Operations
+Checkpoint synchronization,Concurrency and Parallelism,Synchronization Mechanisms
+Chernick's Carmichael numbers,Mathematics,Number Theory
+Cheryl's birthday,Puzzles and Games,Logic and Mathematical Puzzles
+Chinese remainder theorem,Mathematics,Number Theory
+Chinese zodiac,Mathematics,Numerical Methods
+Cholesky decomposition,Mathematics,Numerical Methods
+Chowla numbers,Mathematics,Number Theory
+Church numerals,Mathematics,Mathematical Sequences and Series
+Circles of given radius through two points,Mathematics,Geometry and Trigonometry
+Circular primes,Mathematics,Number Theory
+Cistercian numerals,Mathematics,Number Theory
+Classes,Programming Concepts,Fundamentals
+Closest-pair problem,Algorithms and Data Structures,Algorithms
+Closures/Value capture,Programming Concepts,Fundamentals
+Collections,Algorithms and Data Structures,Data Structures
+Color of a screen pixel,Graphics and Visualization,Graphics Programming
+Color quantization,Graphics and Visualization,Graphics Programming
+Color wheel,Graphics and Visualization,Graphics Programming
+Colour bars/Display,Graphics and Visualization,Graphics Programming
+Colour pinstripe/Display,Graphics and Visualization,Graphics Programming
+Colour pinstripe/Printer,Graphics and Visualization,Graphics Programming
+Combinations,Mathematics,Combinatorics
+Combinations and permutations,Mathematics,Combinatorics
+Combinations with repetitions,Mathematics,Combinatorics
+Comma quibbling,Puzzles and Games,Puzzle Solving Algorithms
+Command-line arguments,Operating Systems and Shell Programming,Shell and Command-Line
+Commatizing numbers,Text Processing,String Manipulation
+Comments,Programming Concepts,Fundamentals
+Compare a list of strings,Text Processing,String Manipulation
+Compare length of two strings,Text Processing,String Manipulation
+Compare sorting algorithms' performance,Algorithms and Data Structures,Algorithms
+Compiler/AST interpreter,Programming Concepts,Advanced Concepts
+Compiler/code generator,Programming Concepts,Advanced Concepts
+Compiler/lexical analyzer,Programming Concepts,Advanced Concepts
+Compiler/syntax analyzer,Programming Concepts,Advanced Concepts
+Compiler/virtual machine interpreter,Systems Programming and File I/O,System Programming
+Compound data type,Algorithms and Data Structures,Data Structures
+Concurrent computing,Concurrency and Parallelism,Multithreading and Thread Management
+Conditional structures,Programming Concepts,Fundamentals
+Conjugate transpose,Mathematics,Linear Algebra
+Consecutive primes with ascending or descending differences,Mathematics,Number Theory
+Constrained random points on a circle,Mathematics,Probability and Statistics
+Continued fraction,Mathematics,Mathematical Sequences and Series
+Continued fraction/Arithmetic/Construct from rational number,Mathematics,Number Theory
+Convert decimal number to rational,Mathematics,Number Theory
+Convert seconds to compound duration,Mathematics,Algebra and Arithmetic
+Convex hull,Mathematics,Geometry and Trigonometry
+Conway's Game of Life,Puzzles and Games,Simulation and Modeling
+Copy a string,Text Processing,String Manipulation
+Copy stdin to stdout,Systems Programming and File I/O,File Operations
+Count in factors,Mathematics,Number Theory
+Count in octal,Mathematics,Numerical Methods
+Count occurrences of a substring,Text Processing,String Manipulation
+Count the coins,Algorithms and Data Structures,Algorithms
+Cramer's rule,Mathematics,Algebra and Arithmetic
+Create a file,Systems Programming and File I/O,File Operations
+Create a file on magnetic tape,Systems Programming and File I/O,File Operations
+Create a two-dimensional array at runtime,Algorithms and Data Structures,Data Structures
+Create an HTML table,Networking and Web Development,Web Development
+Cuban primes,Mathematics,Number Theory
+Cullen and Woodall numbers,Mathematics,Number Theory
+Cumulative standard deviation,Mathematics,Probability and Statistics
+Currency,Mathematics,Algebra and Arithmetic
+Currying,Programming Concepts,Advanced Concepts
+Cut a rectangle,Mathematics,Combinatorics
+Cyclotomic polynomial,Mathematics,Algebra and Arithmetic
+DNS query,Networking and Web Development,Networking
+Damm algorithm,Security and Cryptography,Cryptographic Techniques
+Date format,Miscellaneous Topics,Time and Date Manipulation
+Date manipulation,Miscellaneous Topics,Time and Date Manipulation
+Day of the week,Mathematics,Calendar and Date Calculations
+Deal cards for FreeCell,Puzzles and Games,Game Development
+Death Star,Graphics and Visualization,Graphics Programming
+Deconvolution/1D,Mathematics,Numerical Methods
+Deconvolution/2D+,Mathematics,Numerical Methods
+Deepcopy,Algorithms and Data Structures,Data Structures
+Define a primitive data type,Programming Concepts,Fundamentals
+Delegates,Programming Concepts,Advanced Concepts
+Delete a file,Systems Programming and File I/O,File Operations
+Deming's Funnel,Mathematics,Probability and Statistics
+Department numbers,Puzzles and Games,Logic and Mathematical Puzzles
+Descending primes,Mathematics,Number Theory
+Detect division by zero,Programming Concepts,Fundamentals
+Determinant and permanent,Mathematics,Algebra and Arithmetic
+Determine if a string has all the same characters,Puzzles and Games,Logic and Mathematical Puzzles
+Determine if a string has all unique characters,Puzzles and Games,Logic and Mathematical Puzzles
+Determine if a string is collapsible,Text Processing,String Manipulation
+Determine if a string is numeric,Text Processing,String Manipulation
+Determine if a string is squeezable,Text Processing,String Manipulation
+Determine if only one instance is running,Operating Systems and Shell Programming,Operating System Concepts
+Determine if two triangles overlap,Puzzles and Games,Logic and Mathematical Puzzles
+Determine sentence type,Text Processing,String Manipulation
+Dice game probabilities,Mathematics,Probability and Statistics
+Digital root,Mathematics,Number Theory
+Digital root/Multiplicative digital root,Mathematics,Number Theory
+Dijkstra's algorithm,Algorithms and Data Structures,Algorithms
+Dinesman's multiple-dwelling problem,Puzzles and Games,Logic and Mathematical Puzzles
+Dining philosophers,Concurrency and Parallelism,Multithreading and Thread Management
+Disarium numbers,Mathematics,Number Theory
+Discordian date,Mathematics,Calendar Systems
+Display a linear combination,Mathematics,Algebra and Arithmetic
+Display an outline as a nested table,Puzzles and Games,Puzzle Solving Algorithms
+Distributed programming,Networking and Web Development,Networking
+Diversity prediction theorem,Mathematics,Probability and Statistics
+Documentation,Software Engineering,Documentation Practices
+Dot product,Mathematics,Algebra and Arithmetic
+Doubly-linked list/Definition,Algorithms and Data Structures,Data Structures
+Doubly-linked list/Element definition,Algorithms and Data Structures,Data Structures
+Doubly-linked list/Element insertion,Algorithms and Data Structures,Data Structures
+Doubly-linked list/Traversal,Algorithms and Data Structures,Data Structures
+Dragon curve,Puzzles and Games,Simulation and Modeling
+Draw a clock,Graphics and Visualization,Graphics Programming
+Draw a cuboid,Graphics and Visualization,Graphics Programming
+Draw a pixel,Graphics and Visualization,Graphics Programming
+Draw a rotating cube,Graphics and Visualization,Graphics Programming
+Draw a sphere,Graphics and Visualization,Graphics Programming
+Dutch national flag problem,Algorithms and Data Structures,Algorithms
+Dynamic variable names,Programming Concepts,Fundamentals
+EKG sequence convergence,Mathematics,Number Theory
+Earliest difference between prime gaps,Mathematics,Number Theory
+Eban numbers,Mathematics,Combinatorics
+Echo server,Networking and Web Development,Networking
+Eertree,Algorithms and Data Structures,Data Structures
+Egyptian division,Mathematics,Algebra and Arithmetic
+Egyptian fractions,Mathematics,Number Theory
+Element-wise operations,Algorithms and Data Structures,Algorithms
+Elementary cellular automaton,Puzzles and Games,Simulation and Modeling
+Elementary cellular automaton/Infinite length,Artificial Intelligence and Machine Learning,Basic AI Concepts
+Elementary cellular automaton/Random Number Generator,Puzzles and Games,Simulation and Modeling
+Elliptic Curve Digital Signature Algorithm,Security and Cryptography,Cryptographic Techniques
+Elliptic curve arithmetic,Security and Cryptography,Cryptographic Techniques
+Emirp primes,Mathematics,Number Theory
+Empty directory,Systems Programming and File I/O,File Operations
+Empty program,Programming Concepts,Fundamentals
+Empty string,Text Processing,String Manipulation
+Enforced immutability,Programming Concepts,Fundamentals
+Entropy,Mathematics,Probability and Statistics
+Entropy/Narcissist,Mathematics,Probability and Statistics
+Enumerations,Programming Concepts,Fundamentals
+Environment variables,Systems Programming and File I/O,File Operations
+Equilibrium index,Algorithms and Data Structures,Algorithms
+Esthetic numbers,Mathematics,Combinatorics
+Ethiopian multiplication,Mathematics,Algebra and Arithmetic
+Euler method,Mathematics,Numerical Methods
+Euler's identity,Mathematics,Algebra and Arithmetic
+Euler's sum of powers conjecture,Mathematics,Number Theory
+Evaluate binomial coefficients,Mathematics,Combinatorics
+Even or odd,Mathematics,Algebra and Arithmetic
+Evolutionary algorithm,Artificial Intelligence and Machine Learning,Heuristics and Optimization
+Exceptions,Programming Concepts,Advanced Concepts
+Exceptions/Catch an exception thrown in a nested call,Programming Concepts,Fundamentals
+Executable library,Programming Concepts,Fundamentals
+Execute Brain****,Programming Concepts,Fundamentals
+Execute Computer/Zero,Programming Concepts,Fundamentals
+Execute HQ9+,Puzzles and Games,Puzzle Solving Algorithms
+Execute SNUSP,Puzzles and Games,Puzzle Solving Algorithms
+Execute a Markov algorithm,Algorithms and Data Structures,Algorithms
+Execute a system command,Systems Programming and File I/O,File Operations
+Exponentiation operator,Mathematics,Algebra and Arithmetic
+Exponentiation order,Mathematics,Algebra and Arithmetic
+Exponentiation with infix operators in (or operating on) the base,Mathematics,Algebra and Arithmetic
+Extend your language,Programming Concepts,Advanced Concepts
+Extensible prime generator,Mathematics,Number Theory
+Extreme floating point values,Mathematics,Numerical Methods
+FASTA format,Text Processing,Parsing and Tokenization
+FTP,Networking and Web Development,Networking
+Faces from a mesh,Algorithms and Data Structures,Algorithms
+Factorial,Mathematics,Algebra and Arithmetic
+Factorial base numbers indexing permutations of a collection,Puzzles and Games,Puzzle Solving Algorithms
+Factorions,Mathematics,Combinatorics
+Factors of a Mersenne number,Mathematics,Number Theory
+Factors of an integer,Mathematics,Number Theory
+Fairshare between two and more,Mathematics,Combinatorics
+Farey sequence,Mathematics,Number Theory
+Fast Fourier transform,Mathematics,Numerical Methods
+Faulhaber's formula,Mathematics,Algebra and Arithmetic
+Faulhaber's triangle,Mathematics,Combinatorics
+Feigenbaum constant calculation,Mathematics,Numerical Methods
+Fermat numbers,Mathematics,Number Theory
+Fibonacci n-step number sequences,Mathematics,Mathematical Sequences and Series
+Fibonacci sequence,Mathematics,Mathematical Sequences and Series
+Fibonacci word,Mathematics,Combinatorics
+Fibonacci word/fractal,Puzzles and Games,Simulation and Modeling
+File extension is in extensions list,Systems Programming and File I/O,File Operations
+File input/output,Systems Programming and File I/O,File Operations
+File modification time,Systems Programming and File I/O,File Operations
+File size,Systems Programming and File I/O,File Operations
+File size distribution,Systems Programming and File I/O,File Operations
+Filter,Algorithms and Data Structures,Algorithms
+Find Chess960 starting position identifier,Puzzles and Games,Puzzle Solving Algorithms
+Find common directory path,Operating Systems and Shell Programming,File Operations
+Find duplicate files,Systems Programming and File I/O,File Operations
+Find if a point is within a triangle,Mathematics,Geometry and Trigonometry
+Find largest left truncatable prime in a given base,Mathematics,Number Theory
+Find limit of recursion,Programming Concepts,Fundamentals
+Find palindromic numbers in both binary and ternary bases,Mathematics,Number Theory
+Find the intersection of a line with a plane,Mathematics,Geometry and Trigonometry
+Find the intersection of two lines,Mathematics,Geometry and Trigonometry
+Find the last Sunday of each month,Mathematics,Probability and Statistics
+Find the missing permutation,Puzzles and Games,Logic and Mathematical Puzzles
+First class environments,Programming Concepts,Advanced Concepts
+First perfect square in base n with n unique digits,Mathematics,Number Theory
+First power of 2 that has leading decimal digits of 12,Mathematics,Number Theory
+First-class functions,Programming Concepts,Fundamentals
+First-class functions/Use numbers analogously,Programming Concepts,Fundamentals
+Five weekends,Mathematics,Combinatorics
+Fivenum,Mathematics,Probability and Statistics
+Fixed length records,Systems Programming and File I/O,File Operations
+FizzBuzz,Puzzles and Games,Logic and Mathematical Puzzles
+Flatten a list,Algorithms and Data Structures,Algorithms
+Flipping bits game,Puzzles and Games,Game Development
+Flow-control structures,Programming Concepts,Fundamentals
+Floyd's triangle,Puzzles and Games,Logic and Mathematical Puzzles
+Floyd-Warshall algorithm,Algorithms and Data Structures,Algorithms
+Forest fire,Puzzles and Games,Simulation and Modeling
+Fork,Operating Systems and Shell Programming,Operating System Concepts
+Formal power series,Mathematics,Mathematical Sequences and Series
+Formatted numeric output,Text Processing,String Manipulation
+Fortunate numbers,Mathematics,Number Theory
+Forward difference,Mathematics,Numerical Methods
+Four bit adder,Algorithms and Data Structures,Algorithms
+Four is magic,Puzzles and Games,Logic and Mathematical Puzzles
+Four is the number of letters in the ...,Mathematics,Combinatorics
+Fractal tree,Graphics and Visualization,Graphics Programming
+Fraction reduction,Mathematics,Number Theory
+Fractran,Puzzles and Games,Puzzle Solving Algorithms
+Function composition,Programming Concepts,Fundamentals
+Function definition,Programming Concepts,Fundamentals
+Function frequency,Text Processing,Parsing and Tokenization
+Functional coverage tree,Puzzles and Games,Puzzle Solving Algorithms
+Fusc sequence,Mathematics,Mathematical Sequences and Series
+GUI component interaction,Programming Concepts,Fundamentals
+GUI enabling/disabling of controls,Programming Concepts,Fundamentals
+GUI/Maximum window dimensions,Operating Systems and Shell Programming,Operating System Concepts
+Galton box animation,Graphics and Visualization,Graphics Programming
+Gamma function,Mathematics,Numerical Methods
+Gapful numbers,Mathematics,Number Theory
+Gauss-Jordan matrix inversion,Mathematics,Algebra and Arithmetic
+Gaussian elimination,Mathematics,Numerical Methods
+General FizzBuzz,Puzzles and Games,Puzzle Solving Algorithms
+Generate Chess960 starting position,Puzzles and Games,Game Development
+Generate lower case ASCII alphabet,Text Processing,String Manipulation
+Generate random chess position,Puzzles and Games,Puzzle Solving Algorithms
+Generator/Exponential,Programming Concepts,Fundamentals
+Generic swap,Programming Concepts,Fundamentals
+Get system command output,Operating Systems and Shell Programming,Shell and Command-Line
+Globally replace text in several files,Text Processing,String Manipulation
+Go Fish,Puzzles and Games,Game Development
+Goldbach's comet,Mathematics,Number Theory
+Graph colouring,Algorithms and Data Structures,Algorithms
+Gray code,Algorithms and Data Structures,Algorithms
+Grayscale image,Graphics and Visualization,Graphics Programming
+Greatest common divisor,Mathematics,Number Theory
+Greatest element of a list,Algorithms and Data Structures,Algorithms
+Greatest subsequential sum,Algorithms and Data Structures,Algorithms
+Greyscale bars/Display,Graphics and Visualization,Graphics Programming
+Guess the number,Puzzles and Games,Puzzle Solving Algorithms
+Guess the number/With feedback,Puzzles and Games,Game Development
+Guess the number/With feedback (player),Puzzles and Games,Puzzle Solving Algorithms
+HTTP,Networking and Web Development,Networking
+HTTPS,Networking and Web Development,Networking
+HTTPS/Authenticated,Networking and Web Development,Networking
+HTTPS/Client-authenticated,Networking and Web Development,Networking
+Hailstone sequence,Mathematics,Combinatorics
+Halt and catch fire,Puzzles and Games,Logic and Mathematical Puzzles
+Hamming numbers,Mathematics,Number Theory
+Handle a signal,Operating Systems and Shell Programming,Operating System Concepts
+Happy numbers,Mathematics,Number Theory
+Harmonic series,Mathematics,Mathematical Sequences and Series
+Harshad or Niven series,Mathematics,Number Theory
+Hash from two arrays,Programming Concepts,Fundamentals
+Hash join,Databases and Data Management,Database Interaction
+Haversine formula,Mathematics,Geometry and Trigonometry
+Hello world/Graphical,Graphics and Visualization,Graphics Programming
+Hello world/Line printer,Systems Programming and File I/O,File Operations
+Hello world/Newbie,Programming Concepts,Fundamentals
+Hello world/Newline omission,Programming Concepts,Fundamentals
+Hello world/Standard error,Programming Concepts,Fundamentals
+Hello world/Text,Programming Concepts,Fundamentals
+Hello world/Web server,Networking and Web Development,Web Development
+Here document,Programming Concepts,Fundamentals
+Heronian triangles,Mathematics,Geometry and Trigonometry
+Hickerson series of almost integers,Mathematics,Numerical Methods
+Higher-order functions,Programming Concepts,Fundamentals
+Hilbert curve,Graphics and Visualization,Graphics Programming
+History variables,Programming Concepts,Advanced Concepts
+Hofstadter Figure-Figure sequences,Mathematics,Combinatorics
+Hofstadter Q sequence,Mathematics,Mathematical Sequences and Series
+"Hofstadter-Conway $10,000 sequence",Mathematics,Combinatorics
+Holidays related to Easter,Mathematics,Mathematical Sequences and Series
+Honeycombs,Puzzles and Games,Game Development
+Horizontal sundial calculations,Mathematics,Geometry and Trigonometry
+Horner's rule for polynomial evaluation,Mathematics,Algebra and Arithmetic
+Host introspection,Systems Programming and File I/O,System Programming
+Hostname,Networking and Web Development,Networking
+Hough transform,Graphics and Visualization,Graphics Programming
+Huffman coding,Algorithms and Data Structures,Algorithms
+Humble numbers,Mathematics,Number Theory
+Hunt the Wumpus,Puzzles and Games,Game Development
+I before E except after C,Puzzles and Games,Logic and Mathematical Puzzles
+IBAN,Security and Cryptography,Cryptographic Techniques
+ISBN13 check digit,Mathematics,Number Theory
+Identity matrix,Mathematics,Algebra and Arithmetic
+Idiomatically determine all the characters that can be used for symbols,Programming Concepts,Fundamentals
+Idiomatically determine all the lowercase and uppercase letters,Text Processing,String Manipulation
+Image convolution,Graphics and Visualization,Graphics Programming
+Image noise,Graphics and Visualization,Graphics Programming
+Imaginary base numbers,Mathematics,Number Theory
+Include a file,Systems Programming and File I/O,File Operations
+Increasing gaps between consecutive Niven numbers,Mathematics,Number Theory
+Increment a numerical string,Mathematics,Algebra and Arithmetic
+Index finite lists of positive integers,Mathematics,Combinatorics
+Infinity,Mathematics,Numerical Methods
+Inheritance/Multiple,Programming Concepts,Fundamentals
+Inheritance/Single,Programming Concepts,Fundamentals
+Input loop,Programming Concepts,Fundamentals
+Integer comparison,Programming Concepts,Fundamentals
+Integer overflow,Mathematics,Algebra and Arithmetic
+Integer sequence,Mathematics,Mathematical Sequences and Series
+Interactive programming (repl),Programming Concepts,Fundamentals
+Intersecting number wheels,Puzzles and Games,Puzzle Solving Algorithms
+Introspection,Programming Concepts,Fundamentals
+Inverted index,Databases and Data Management,Database Interaction
+Inverted syntax,Programming Concepts,Fundamentals
+Isqrt (integer square root) of X,Mathematics,Algebra and Arithmetic
+Iterated digits squaring,Mathematics,Combinatorics
+JSON,Databases and Data Management,Data Serialization and Formats
+Jacobi symbol,Mathematics,Number Theory
+Jacobsthal numbers,Mathematics,Mathematical Sequences and Series
+Jaro similarity,Mathematics,Probability and Statistics
+Jaro-Winkler distance,Mathematics,Probability and Statistics
+Jensen's Device,Programming Concepts,Advanced Concepts
+Jewels and stones,Text Processing,String Manipulation
+JortSort,Algorithms and Data Structures,Algorithms
+Josephus problem,Mathematics,Combinatorics
+Joystick position,Graphics and Visualization,Graphics Programming
+Juggler sequence,Mathematics,Mathematical Sequences and Series
+Julia set,Graphics and Visualization,Graphics Programming
+Jump anywhere,Programming Concepts,Advanced Concepts
+K-d tree,Algorithms and Data Structures,Algorithms
+K-means++ clustering,Artificial Intelligence and Machine Learning,Basic AI Concepts
+Kaprekar numbers,Mathematics,Number Theory
+Kernighans large earthquake problem,Text Processing,Parsing and Tokenization
+Keyboard input/Flush the keyboard buffer,Systems Programming and File I/O,File Operations
+Keyboard input/Keypress check,Programming Concepts,Fundamentals
+Keyboard input/Obtain a Y or N response,Programming Concepts,Fundamentals
+Keyboard macros,Systems Programming and File I/O,System Programming
+Knapsack problem/0-1,Algorithms and Data Structures,Algorithms
+Knapsack problem/Bounded,Algorithms and Data Structures,Algorithms
+Knapsack problem/Continuous,Algorithms and Data Structures,Algorithms
+Knapsack problem/Unbounded,Algorithms and Data Structures,Algorithms
+Knight's tour,Puzzles and Games,Logic and Mathematical Puzzles
+Knuth shuffle,Algorithms and Data Structures,Algorithms
+Knuth's algorithm S,Algorithms and Data Structures,Algorithms
+Knuth's power tree,Algorithms and Data Structures,Algorithms
+Koch curve,Mathematics,Geometry and Trigonometry
+Kolakoski sequence,Mathematics,Combinatorics
+Kosaraju,Algorithms and Data Structures,Algorithms
+Kronecker product,Mathematics,Algebra and Arithmetic
+Kronecker product based fractals,Mathematics,Mathematical Sequences and Series
+LU decomposition,Mathematics,Numerical Methods
+LZW compression,Algorithms and Data Structures,Algorithms
+Lah numbers,Mathematics,Combinatorics
+Langton's ant,Puzzles and Games,Simulation and Modeling
+Largest int from concatenated ints,Algorithms and Data Structures,Algorithms
+Largest number divisible by its digits,Mathematics,Number Theory
+Largest proper divisor of n,Mathematics,Number Theory
+Last Friday of each month,Mathematics,Combinatorics
+Last letter-first letter,Puzzles and Games,Puzzle Solving Algorithms
+Latin Squares in reduced form,Mathematics,Combinatorics
+Law of cosines - triples,Mathematics,Geometry and Trigonometry
+Leap year,Mathematics,Algebra and Arithmetic
+Least common multiple,Mathematics,Algebra and Arithmetic
+Left factorials,Mathematics,Combinatorics
+Legendre prime counting function,Mathematics,Number Theory
+Leonardo numbers,Mathematics,Mathematical Sequences and Series
+Letter frequency,Text Processing,String Manipulation
+Levenshtein distance,Text Processing,String Manipulation
+Levenshtein distance/Alignment,Text Processing,String Manipulation
+Linear congruential generator,Mathematics,Probability and Statistics
+List comprehensions,Programming Concepts,Fundamentals
+List rooted trees,Puzzles and Games,Logic and Mathematical Puzzles
+Literals/Floating point,Programming Concepts,Fundamentals
+Literals/Integer,Programming Concepts,Fundamentals
+Literals/String,Text Processing,String Manipulation
+Logical operations,Programming Concepts,Fundamentals
+"Long literals, with continuations",Programming Concepts,Fundamentals
+Long multiplication,Mathematics,Algebra and Arithmetic
+Long primes,Mathematics,Number Theory
+Long year,Mathematics,Combinatorics
+Longest common subsequence,Algorithms and Data Structures,Algorithms
+Longest common substring,Algorithms and Data Structures,Algorithms
+Longest increasing subsequence,Algorithms and Data Structures,Algorithms
+Longest string challenge,Puzzles and Games,Logic and Mathematical Puzzles
+Look-and-say sequence,Mathematics,Mathematical Sequences and Series
+Loop over multiple arrays simultaneously,Algorithms and Data Structures,Algorithms
+Loops/Break,Programming Concepts,Fundamentals
+Loops/Continue,Programming Concepts,Fundamentals
+Loops/Do-while,Programming Concepts,Fundamentals
+Loops/Downward for,Programming Concepts,Fundamentals
+Loops/For,Programming Concepts,Fundamentals
+Loops/For with a specified step,Programming Concepts,Fundamentals
+Loops/Foreach,Programming Concepts,Fundamentals
+Loops/Increment loop index within loop body,Algorithms and Data Structures,Algorithms
+Loops/Infinite,Programming Concepts,Fundamentals
+Loops/N plus one half,Programming Concepts,Fundamentals
+Loops/Nested,Algorithms and Data Structures,Algorithms
+Loops/While,Programming Concepts,Fundamentals
+Loops/With multiple ranges,Programming Concepts,Fundamentals
+Loops/Wrong ranges,Programming Concepts,Fundamentals
+Lucas-Lehmer test,Mathematics,Number Theory
+Lucky and even lucky numbers,Puzzles and Games,Logic and Mathematical Puzzles
+Ludic numbers,Mathematics,Combinatorics
+Luhn test of credit card numbers,Mathematics,Number Theory
+Lychrel numbers,Mathematics,Number Theory
+MAC Vendor Lookup,Networking and Web Development,Networking
+MD4,Security and Cryptography,Cryptographic Techniques
+MD5,Security and Cryptography,Cryptographic Techniques
+MD5/Implementation,Security and Cryptography,Cryptographic Techniques
+Machine code,Operating Systems and Shell Programming,Operating System Concepts
+Mad Libs,Puzzles and Games,Puzzle Solving Algorithms
+Magic 8-ball,Puzzles and Games,Game Development
+Magic constant,Mathematics,Combinatorics
+Magic squares of doubly even order,Mathematics,Combinatorics
+Magic squares of odd order,Mathematics,Combinatorics
+Magic squares of singly even order,Mathematics,Combinatorics
+Main step of GOST 28147-89,Security and Cryptography,Cryptographic Techniques
+Make directory path,Systems Programming and File I/O,File Operations
+Man or boy test,Puzzles and Games,Logic and Mathematical Puzzles
+Mandelbrot set,Graphics and Visualization,Graphics Programming
+Map range,Mathematics,Algebra and Arithmetic
+Mastermind,Puzzles and Games,Game Development
+Matrix chain multiplication,Algorithms and Data Structures,Algorithms
+Matrix digital rain,Graphics and Visualization,Graphics Programming
+Matrix multiplication,Mathematics,Algebra and Arithmetic
+Matrix transposition,Algorithms and Data Structures,Algorithms
+Matrix-exponentiation operator,Algorithms and Data Structures,Algorithms
+Maximum triangle path sum,Puzzles and Games,Logic and Mathematical Puzzles
+Mayan calendar,Mathematics,Numerical Methods
+Mayan numerals,Mathematics,Numerical Methods
+Maze generation,Puzzles and Games,Puzzle Solving Algorithms
+Maze solving,Puzzles and Games,Puzzle Solving Algorithms
+McNuggets problem,Mathematics,Combinatorics
+Median filter,Graphics and Visualization,Graphics Programming
+Memory allocation,Systems Programming and File I/O,File Operations
+Memory layout of a data structure,Systems Programming and File I/O,System Programming
+Menu,Programming Concepts,Fundamentals
+Merge and aggregate datasets,Databases and Data Management,Data Serialization and Formats
+Mertens function,Mathematics,Number Theory
+Metallic ratios,Mathematics,Numerical Methods
+Metaprogramming,Programming Concepts,Advanced Concepts
+Metered concurrency,Concurrency and Parallelism,Synchronization Mechanisms
+Metronome,Puzzles and Games,Simulation and Modeling
+Mian-Chowla sequence,Mathematics,Combinatorics
+Middle three digits,Mathematics,Combinatorics
+Miller–Rabin primality test,Security and Cryptography,Cryptographic Techniques
+Mind boggling card trick,Puzzles and Games,Puzzle Solving Algorithms
+Minesweeper game,Puzzles and Games,Game Development
+Minimal steps down to 1,Algorithms and Data Structures,Algorithms
+Minimum multiple of m where digital sum equals m,Mathematics,Number Theory
+Minimum positive multiple in base 10 using only 0 and 1,Mathematics,Number Theory
+Minkowski question-mark function,Mathematics,Number Theory
+Modified random distribution,Algorithms and Data Structures,Algorithms
+Modular arithmetic,Mathematics,Algebra and Arithmetic
+Modular exponentiation,Algorithms and Data Structures,Algorithms
+Modular inverse,Mathematics,Number Theory
+Monads/List monad,Programming Concepts,Advanced Concepts
+Monads/Maybe monad,Programming Concepts,Advanced Concepts
+Monads/Writer monad,Programming Concepts,Advanced Concepts
+Monte Carlo methods,Mathematics,Probability and Statistics
+Monty Hall problem,Puzzles and Games,Logic and Mathematical Puzzles
+Morse code,Text Processing,Text Encoding and Decoding
+Mouse position,Programming Concepts,Fundamentals
+Move-to-front algorithm,Algorithms and Data Structures,Algorithms
+Multi-dimensional array,Algorithms and Data Structures,Data Structures
+Multifactorial,Mathematics,Combinatorics
+Multiple distinct objects,Programming Concepts,Fundamentals
+Multiple regression,Mathematics,Probability and Statistics
+Multiplication tables,Mathematics,Algebra and Arithmetic
+Multiplicative order,Mathematics,Number Theory
+Multisplit,Text Processing,Parsing and Tokenization
+Munchausen numbers,Mathematics,Number Theory
+Munching squares,Graphics and Visualization,Graphics Programming
+Musical scale,Puzzles and Games,Simulation and Modeling
+Mutual recursion,Algorithms and Data Structures,Algorithms
+Möbius function,Mathematics,Number Theory
+N'th,Mathematics,Combinatorics
+N-queens problem,Puzzles and Games,Logic and Mathematical Puzzles
+N-smooth numbers,Mathematics,Number Theory
+Named parameters,Programming Concepts,Fundamentals
+Naming conventions,Programming Concepts,Fundamentals
+Narcissist,Algorithms and Data Structures,Algorithms
+Narcissistic decimal number,Mathematics,Number Theory
+Natural sorting,Algorithms and Data Structures,Algorithms
+Nautical bell,Miscellaneous Topics,Utilities and Miscellaneous
+Negative base numbers,Mathematics,Number Theory
+Nested function,Programming Concepts,Fundamentals
+Nested templated data,Programming Concepts,Fundamentals
+Next highest int from digits,Algorithms and Data Structures,Algorithms
+Nim game,Puzzles and Games,Game Development
+Non-continuous subsequences,Algorithms and Data Structures,Algorithms
+Non-decimal radices/Convert,Mathematics,Number Theory
+Non-decimal radices/Input,Mathematics,Number Theory
+Non-decimal radices/Output,Mathematics,Number Theory
+Non-transitive dice,Mathematics,Combinatorics
+Nonoblock,Puzzles and Games,Logic and Mathematical Puzzles
+Nonogram solver,Puzzles and Games,Puzzle Solving Algorithms
+Nth root,Mathematics,Numerical Methods
+Null object,Programming Concepts,Fundamentals
+Number names,Mathematics,Number Theory
+Number reversal game,Puzzles and Games,Logic and Mathematical Puzzles
+Numbers with equal rises and falls,Mathematics,Combinatorics
+Numeric error propagation,Mathematics,Probability and Statistics
+Numerical and alphabetical suffixes,Mathematics,Algebra and Arithmetic
+Numerical integration,Mathematics,Numerical Methods
+Numerical integration/Gauss-Legendre Quadrature,Mathematics,Numerical Methods
+OLE automation,Systems Programming and File I/O,System Programming
+Object serialization,Databases and Data Management,Data Serialization and Formats
+Odd word problem,Puzzles and Games,Puzzle Solving Algorithms
+Old Russian measure of length,Mathematics,Algebra and Arithmetic
+Old lady swallowed a fly,Puzzles and Games,Puzzle Solving Algorithms
+One of n lines in a file,Algorithms and Data Structures,Algorithms
+One-dimensional cellular automata,Puzzles and Games,Simulation and Modeling
+One-time pad,Security and Cryptography,Cryptographic Techniques
+OpenGL,Graphics and Visualization,Graphics Programming
+OpenWebNet password,Security and Cryptography,Cryptographic Techniques
+Operator precedence,Programming Concepts,Fundamentals
+Optional parameters,Programming Concepts,Fundamentals
+Order by pair comparisons,Algorithms and Data Structures,Algorithms
+Order disjoint list items,Algorithms and Data Structures,Algorithms
+Order two numerical lists,Algorithms and Data Structures,Algorithms
+Ordered partitions,Mathematics,Combinatorics
+Ordered words,Text Processing,String Manipulation
+P-value correction,Mathematics,Probability and Statistics
+Padovan n-step number sequences,Mathematics,Mathematical Sequences and Series
+Padovan sequence,Mathematics,Mathematical Sequences and Series
+Palindrome dates,Puzzles and Games,Logic and Mathematical Puzzles
+Palindrome detection,Text Processing,String Manipulation
+Palindromic gapful numbers,Mathematics,Number Theory
+Pancake numbers,Puzzles and Games,Logic and Mathematical Puzzles
+Pangram checker,Puzzles and Games,Logic and Mathematical Puzzles
+Paraffins,Mathematics,Combinatorics
+Parallel brute force,Security and Cryptography,Cryptographic Techniques
+Parallel calculations,Concurrency and Parallelism,Parallel Computing
+Parameterized SQL statement,Databases and Data Management,Database Interaction
+Parse an IP Address,Text Processing,Parsing and Tokenization
+Parsing/RPN calculator algorithm,Algorithms and Data Structures,Algorithms
+Parsing/RPN to infix conversion,Algorithms and Data Structures,Algorithms
+Parsing/Shunting-yard algorithm,Algorithms and Data Structures,Algorithms
+Partial function application,Programming Concepts,Advanced Concepts
+Partition an integer x into n primes,Mathematics,Number Theory
+Partition function P,Mathematics,Combinatorics
+Pascal matrix generation,Mathematics,Combinatorics
+Pascal's triangle,Mathematics,Combinatorics
+Pascal's triangle/Puzzle,Puzzles and Games,Logic and Mathematical Puzzles
+Password generator,Security and Cryptography,Cryptographic Techniques
+Pathological floating point problems,Mathematics,Numerical Methods
+Peaceful chess queen armies,Puzzles and Games,Logic and Mathematical Puzzles
+Peano curve,Graphics and Visualization,Graphics Programming
+Pell's equation,Mathematics,Number Theory
+Penney's game,Puzzles and Games,Game Development
+Pentagram,Graphics and Visualization,Graphics Programming
+Pentomino tiling,Puzzles and Games,Puzzle Solving Algorithms
+Percentage difference between images,Graphics and Visualization,Graphics Programming
+Percolation/Bond percolation,Mathematics,Probability and Statistics
+Percolation/Mean cluster density,Mathematics,Probability and Statistics
+Percolation/Mean run density,Mathematics,Probability and Statistics
+Percolation/Site percolation,Mathematics,Probability and Statistics
+Perfect numbers,Mathematics,Number Theory
+Perfect shuffle,Puzzles and Games,Puzzle Solving Algorithms
+Perfect totient numbers,Mathematics,Number Theory
+Periodic table,Mathematics,Combinatorics
+Perlin noise,Graphics and Visualization,Graphics Programming
+Permutation test,Mathematics,Probability and Statistics
+Permutations,Mathematics,Combinatorics
+Permutations by swapping,Algorithms and Data Structures,Algorithms
+Permutations/Derangements,Algorithms and Data Structures,Algorithms
+Permutations/Rank of a permutation,Mathematics,Combinatorics
+Pernicious numbers,Mathematics,Number Theory
+Phrase reversals,Text Processing,String Manipulation
+Pi,Mathematics,Numerical Methods
+Pick random element,Programming Concepts,Fundamentals
+Pierpont primes,Mathematics,Number Theory
+Pig the dice game,Puzzles and Games,Game Development
+Pig the dice game/Player,Puzzles and Games,Game Development
+Pinstripe/Display,Graphics and Visualization,Graphics Programming
+Pisano period,Mathematics,Number Theory
+Plasma effect,Graphics and Visualization,Graphics Programming
+Play recorded sounds,Graphics and Visualization,Game Development
+Playfair cipher,Security and Cryptography,Cryptographic Techniques
+Playing cards,Puzzles and Games,Game Development
+Plot coordinate pairs,Graphics and Visualization,Data Visualization
+Pointers and references,Programming Concepts,Fundamentals
+Poker hand analyser,Puzzles and Games,Logic and Mathematical Puzzles
+Polymorphic copy,Programming Concepts,Advanced Concepts
+Polymorphism,Programming Concepts,Advanced Concepts
+Polynomial long division,Mathematics,Algebra and Arithmetic
+Polynomial regression,Mathematics,Algebra and Arithmetic
+Polyspiral,Graphics and Visualization,Graphics Programming
+Population count,Mathematics,Number Theory
+Power set,Mathematics,Combinatorics
+Pragmatic directives,Programming Concepts,Advanced Concepts
+Price fraction,Mathematics,Algebra and Arithmetic
+Primality by Wilson's theorem,Mathematics,Number Theory
+Primality by trial division,Mathematics,Number Theory
+Prime conspiracy,Mathematics,Number Theory
+Prime decomposition,Mathematics,Number Theory
+Primes - allocate descendants to their ancestors,Mathematics,Number Theory
+Primorial numbers,Mathematics,Number Theory
+Priority queue,Algorithms and Data Structures,Algorithms
+Probabilistic choice,Mathematics,Probability and Statistics
+Problem of Apollonius,Mathematics,Geometry and Trigonometry
+Program name,Operating Systems and Shell Programming,Shell and Command-Line
+Program termination,Programming Concepts,Fundamentals
+Proper divisors,Mathematics,Number Theory
+Pseudo-random numbers/Combined recursive generator MRG32k3a,Mathematics,Probability and Statistics
+Pseudo-random numbers/Middle-square method,Mathematics,Probability and Statistics
+Pseudo-random numbers/PCG32,Algorithms and Data Structures,Algorithms
+Pseudo-random numbers/Splitmix64,Mathematics,Probability and Statistics
+Pseudo-random numbers/Xorshift star,Algorithms and Data Structures,Algorithms
+Pythagoras tree,Graphics and Visualization,Graphics Programming
+Pythagorean quadruples,Mathematics,Number Theory
+Pythagorean triples,Mathematics,Number Theory
+QR decomposition,Mathematics,Numerical Methods
+Quaternion type,Mathematics,Algebra and Arithmetic
+Queue/Definition,Algorithms and Data Structures,Data Structures
+Queue/Usage,Algorithms and Data Structures,Data Structures
+Quickselect algorithm,Algorithms and Data Structures,Algorithms
+Quine,Puzzles and Games,Logic and Mathematical Puzzles
+RIPEMD-160,Security and Cryptography,Cryptographic Techniques
+RPG attributes generator,Puzzles and Games,Game Development
+RSA code,Security and Cryptography,Cryptographic Techniques
+Ramanujan's constant,Mathematics,Number Theory
+Ramer-Douglas-Peucker line simplification,Graphics and Visualization,Graphics Programming
+Random Latin squares,Puzzles and Games,Logic and Mathematical Puzzles
+Random number generator (device),Algorithms and Data Structures,Algorithms
+Random number generator (included),Algorithms and Data Structures,Algorithms
+Random numbers,Mathematics,Probability and Statistics
+Random sentence from book,Puzzles and Games,Puzzle Solving Algorithms
+Range consolidation,Mathematics,Combinatorics
+Range expansion,Mathematics,Combinatorics
+Range extraction,Algorithms and Data Structures,Algorithms
+Ranking methods,Algorithms and Data Structures,Algorithms
+Rare numbers,Mathematics,Number Theory
+Rate counter,Miscellaneous Topics,Time and Date Manipulation
+Ray-casting algorithm,Algorithms and Data Structures,Algorithms
+Read a configuration file,Databases and Data Management,Data Serialization and Formats
+Read a file character by character/UTF8,Systems Programming and File I/O,File Operations
+Read a file line by line,Systems Programming and File I/O,File Operations
+Read a specific line from a file,Systems Programming and File I/O,File Operations
+Read entire file,Systems Programming and File I/O,File Operations
+Real constants and functions,Mathematics,Algebra and Arithmetic
+Recaman's sequence,Mathematics,Mathematical Sequences and Series
+Record sound,Systems Programming and File I/O,File Operations
+Reduced row echelon form,Mathematics,Linear Algebra
+Reflection/Get source,Programming Concepts,Fundamentals
+Reflection/List methods,Programming Concepts,Fundamentals
+Reflection/List properties,Programming Concepts,Fundamentals
+Regular expressions,Text Processing,Regular Expressions
+Remove duplicate elements,Algorithms and Data Structures,Algorithms
+Remove lines from a file,Systems Programming and File I/O,File Operations
+Rename a file,Systems Programming and File I/O,File Operations
+Rendezvous,Concurrency and Parallelism,Multithreading and Thread Management
+Rep-string,Puzzles and Games,Logic and Mathematical Puzzles
+Repeat,Programming Concepts,Fundamentals
+Repeat a string,Text Processing,String Manipulation
+Repunit primes,Mathematics,Number Theory
+Resistor mesh,Mathematics,Numerical Methods
+Respond to an unknown method call,Programming Concepts,Fundamentals
+Retrieve and search chat history,Networking and Web Development,Web Development
+Return multiple values,Programming Concepts,Fundamentals
+Reverse a string,Text Processing,String Manipulation
+Reverse words in a string,Text Processing,String Manipulation
+Rock-paper-scissors,Puzzles and Games,Game Development
+Roman numerals/Decode,Mathematics,Algebra and Arithmetic
+Roman numerals/Encode,Mathematics,Number Theory
+Roots of a function,Mathematics,Numerical Methods
+Roots of a quadratic function,Mathematics,Numerical Methods
+Roots of unity,Mathematics,Complex Numbers
+Rosetta Code/Count examples,Networking and Web Development,Web Development
+Rosetta Code/Find bare lang tags,Text Processing,Parsing and Tokenization
+Rosetta Code/Find unimplemented tasks,Networking and Web Development,Web Development
+Rosetta Code/Fix code tags,Text Processing,Parsing and Tokenization
+Rosetta Code/Rank languages by number of users,Networking and Web Development,Web Development
+Rosetta Code/Rank languages by popularity,Networking and Web Development,Web Development
+Rot-13,Security and Cryptography,Cryptographic Techniques
+Run-length encoding,Algorithms and Data Structures,Algorithms
+Runge-Kutta method,Mathematics,Numerical Methods
+Runtime evaluation,Programming Concepts,Advanced Concepts
+Runtime evaluation/In an environment,Programming Concepts,Advanced Concepts
+S-expressions,Text Processing,Parsing and Tokenization
+SEDOLs,Algorithms and Data Structures,Algorithms
+SHA-1,Security and Cryptography,Cryptographic Techniques
+SHA-256,Security and Cryptography,Cryptographic Techniques
+SHA-256 Merkle tree,Security and Cryptography,Cryptographic Techniques
+SOAP,Networking and Web Development,Web Development
+SQL-based authentication,Databases and Data Management,Database Interaction
+Safe addition,Mathematics,Numerical Methods
+Safe primes and unsafe primes,Mathematics,Number Theory
+"Sailors, coconuts and a monkey problem",Puzzles and Games,Logic and Mathematical Puzzles
+Same fringe,Algorithms and Data Structures,Algorithms
+Scope modifiers,Programming Concepts,Fundamentals
+Scope/Function names and labels,Programming Concepts,Fundamentals
+Search a list,Algorithms and Data Structures,Algorithms
+Search a list of records,Databases and Data Management,Data Serialization and Formats
+Search in paragraph's text,Text Processing,Pattern Matching
+Secure temporary file,Systems Programming and File I/O,File Operations
+Selectively replace multiple instances of a character within a string,Text Processing,String Manipulation
+Self numbers,Mathematics,Number Theory
+Self-describing numbers,Mathematics,Combinatorics
+Semiprime,Mathematics,Number Theory
+Semordnilap,Text Processing,String Manipulation
+Send an unknown method call,Programming Concepts,Advanced Concepts
+Send email,Networking and Web Development,Networking
+Sequence of non-squares,Mathematics,Number Theory
+Sequence of primes by trial division,Mathematics,Number Theory
+Sequence of primorial primes,Mathematics,Number Theory
+Sequence: nth number with exactly n divisors,Mathematics,Number Theory
+Sequence: smallest number greater than previous term with exactly n divisors,Mathematics,Number Theory
+Sequence: smallest number with exactly n divisors,Mathematics,Number Theory
+Set,Algorithms and Data Structures,Data Structures
+Set consolidation,Algorithms and Data Structures,Algorithms
+Set of real numbers,Mathematics,Set Theory
+Set puzzle,Puzzles and Games,Logic and Mathematical Puzzles
+Set right-adjacent bits,Algorithms and Data Structures,Algorithms
+Seven-sided dice from five-sided dice,Algorithms and Data Structures,Algorithms
+Sexy primes,Mathematics,Number Theory
+Shell one-liner,Operating Systems and Shell Programming,Shell and Command-Line
+Shoelace formula for polygonal area,Mathematics,Geometry and Trigonometry
+Short-circuit evaluation,Programming Concepts,Fundamentals
+Shortest common supersequence,Algorithms and Data Structures,Algorithms
+Show ASCII table,Text Processing,String Manipulation
+Show the epoch,Miscellaneous Topics,Time and Date Manipulation
+Sierpinski arrowhead curve,Graphics and Visualization,Graphics Programming
+Sierpinski carpet,Graphics and Visualization,Graphics Programming
+Sierpinski pentagon,Graphics and Visualization,Graphics Programming
+Sierpinski square curve,Graphics and Visualization,Graphics Programming
+Sierpinski triangle,Puzzles and Games,Logic and Mathematical Puzzles
+Sierpinski triangle/Graphical,Graphics and Visualization,Graphics Programming
+Sieve of Eratosthenes,Algorithms and Data Structures,Algorithms
+Simple database,Databases and Data Management,Database Interaction
+Simple turtle graphics,Graphics and Visualization,Graphics Programming
+Simple windowed application,Programming Concepts,Fundamentals
+Simulate input/Keyboard,Systems Programming and File I/O,File Operations
+Simulate input/Mouse,Systems Programming and File I/O,System Programming
+Singleton,Programming Concepts,Advanced Concepts
+Singly-linked list/Element definition,Algorithms and Data Structures,Data Structures
+Singly-linked list/Element insertion,Algorithms and Data Structures,Data Structures
+Singly-linked list/Traversal,Algorithms and Data Structures,Data Structures
+Sleep,Operating Systems and Shell Programming,Operating System Concepts
+Sleeping Beauty problem,Mathematics,Probability and Statistics
+Smarandache prime-digital sequence,Mathematics,Number Theory
+Smith numbers,Mathematics,Number Theory
+Snake,Puzzles and Games,Game Development
+Sockets,Networking and Web Development,Networking
+Sokoban,Puzzles and Games,Puzzle Solving Algorithms
+Solve a Hidato puzzle,Puzzles and Games,Puzzle Solving Algorithms
+Solve a Holy Knight's tour,Puzzles and Games,Logic and Mathematical Puzzles
+Solve a Hopido puzzle,Puzzles and Games,Puzzle Solving Algorithms
+Solve a Numbrix puzzle,Puzzles and Games,Puzzle Solving Algorithms
+Solve the no connection puzzle,Puzzles and Games,Logic and Mathematical Puzzles
+Sort a list of object identifiers,Algorithms and Data Structures,Algorithms
+Sort an array of composite structures,Algorithms and Data Structures,Algorithms
+Sort an integer array,Algorithms and Data Structures,Algorithms
+Sort an outline at every level,Text Processing,Parsing and Tokenization
+Sort disjoint sublist,Algorithms and Data Structures,Algorithms
+Sort numbers lexicographically,Algorithms and Data Structures,Algorithms
+Sort stability,Algorithms and Data Structures,Algorithms
+Sort three variables,Algorithms and Data Structures,Algorithms
+Sort using a custom comparator,Algorithms and Data Structures,Algorithms
+Sorting Algorithms/Circle Sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Bead sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Bogosort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Bubble sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Cocktail sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Cocktail sort with shifting bounds,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Comb sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Counting sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Gnome sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Heapsort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Insertion sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Merge sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Pancake sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Patience sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Permutation sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Quicksort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Radix sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Selection sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Shell sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Sleep sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Stooge sort,Algorithms and Data Structures,Algorithms
+Sorting algorithms/Strand sort,Algorithms and Data Structures,Algorithms
+Soundex,Text Processing,String Manipulation
+Sparkline in unicode,Text Processing,Unicode and Character Sets
+Special characters,Text Processing,String Manipulation
+Special variables,Programming Concepts,Fundamentals
+Speech synthesis,Programming Concepts,Fundamentals
+Spelling of ordinal numbers,Mathematics,Number Theory
+Spinning rod animation/Text,Puzzles and Games,Game Development
+Spiral matrix,Puzzles and Games,Logic and Mathematical Puzzles
+Split a character string based on change of character,Text Processing,String Manipulation
+Square but not cube,Mathematics,Number Theory
+Square-free integers,Mathematics,Number Theory
+Stable marriage problem,Algorithms and Data Structures,Algorithms
+Stack,Algorithms and Data Structures,Data Structures
+Stack traces,Systems Programming and File I/O,File Operations
+Stair-climbing puzzle,Puzzles and Games,Logic and Mathematical Puzzles
+State name puzzle,Puzzles and Games,Logic and Mathematical Puzzles
+Statistics/Basic,Mathematics,Probability and Statistics
+Statistics/Normal distribution,Mathematics,Probability and Statistics
+Stem-and-leaf plot,Mathematics,Data Visualization
+Stern-Brocot sequence,Mathematics,Mathematical Sequences and Series
+Stirling numbers of the first kind,Mathematics,Combinatorics
+Stirling numbers of the second kind,Mathematics,Combinatorics
+Straddling checkerboard,Security and Cryptography,Cryptographic Techniques
+Strassen's algorithm,Algorithms and Data Structures,Algorithms
+Stream merge,Algorithms and Data Structures,Algorithms
+String append,Programming Concepts,Fundamentals
+String case,Text Processing,String Manipulation
+String comparison,Text Processing,String Manipulation
+String concatenation,Text Processing,String Manipulation
+String interpolation (included),Text Processing,String Manipulation
+String length,Text Processing,String Manipulation
+String matching,Text Processing,String Manipulation
+String prepend,Text Processing,String Manipulation
+Strip a set of characters from a string,Text Processing,String Manipulation
+Strip block comments,Text Processing,String Manipulation
+Strip comments from a string,Text Processing,String Manipulation
+Strip control codes and extended characters from a string,Text Processing,String Manipulation
+Strip whitespace from a string/Top and tail,Text Processing,String Manipulation
+Strong and weak primes,Mathematics,Number Theory
+Subleq,Programming Concepts,Fundamentals
+Substitution cipher,Security and Cryptography,Cryptographic Techniques
+Substring,Text Processing,String Manipulation
+Substring/Top and tail,Text Processing,String Manipulation
+Subtractive generator,Algorithms and Data Structures,Algorithms
+Successive prime differences,Mathematics,Number Theory
+Sudoku,Puzzles and Games,Logic and Mathematical Puzzles
+Suffixation of decimal numbers,Text Processing,String Manipulation
+Sum and product of an array,Mathematics,Algebra and Arithmetic
+Sum and product puzzle,Puzzles and Games,Logic and Mathematical Puzzles
+Sum digits of an integer,Mathematics,Algebra and Arithmetic
+Sum multiples of 3 and 5,Mathematics,Algebra and Arithmetic
+Sum of a series,Mathematics,Mathematical Sequences and Series
+Sum of elements below main diagonal of matrix,Mathematics,Algebra and Arithmetic
+Sum of squares,Mathematics,Algebra and Arithmetic
+Sum to 100,Puzzles and Games,Logic and Mathematical Puzzles
+Summarize and say sequence,Mathematics,Mathematical Sequences and Series
+Summarize primes,Mathematics,Number Theory
+Super-d numbers,Mathematics,Combinatorics
+Superellipse,Mathematics,Geometry and Trigonometry
+Superpermutation minimisation,Puzzles and Games,Logic and Mathematical Puzzles
+Sutherland-Hodgman polygon clipping,Graphics and Visualization,Graphics Programming
+Sylvester's sequence,Mathematics,Mathematical Sequences and Series
+Symmetric difference,Mathematics,Set Theory
+Synchronous concurrency,Concurrency and Parallelism,Multithreading and Thread Management
+System time,Operating Systems and Shell Programming,Operating System Concepts
+Take notes on the command line,Operating Systems and Shell Programming,Shell and Command-Line
+Tarjan,Algorithms and Data Structures,Algorithms
+Tau function,Mathematics,Number Theory
+Tau number,Mathematics,Number Theory
+Taxicab numbers,Mathematics,Number Theory
+Teacup rim text,Puzzles and Games,Logic and Mathematical Puzzles
+Temperature conversion,Mathematics,Algebra and Arithmetic
+Terminal control/Clear the screen,Operating Systems and Shell Programming,Shell and Command-Line
+Terminal control/Coloured text,Text Processing,String Manipulation
+Terminal control/Cursor movement,Operating Systems and Shell Programming,Shell and Command-Line
+Terminal control/Cursor positioning,Operating Systems and Shell Programming,Operating System Concepts
+Terminal control/Dimensions,Operating Systems and Shell Programming,Operating System Concepts
+Terminal control/Display an extended character,Operating Systems and Shell Programming,Operating System Concepts
+Terminal control/Hiding the cursor,Systems Programming and File I/O,File Operations
+Terminal control/Inverse video,Systems Programming and File I/O,File Operations
+Terminal control/Positional read,Operating Systems and Shell Programming,Operating System Concepts
+Terminal control/Preserve screen,Operating Systems and Shell Programming,Operating System Concepts
+Terminal control/Ringing the terminal bell,Operating Systems and Shell Programming,Operating System Concepts
+Terminal control/Unicode output,Operating Systems and Shell Programming,Operating System Concepts
+Ternary logic,Mathematics,Logic and Mathematical Puzzles
+Test a function,Software Engineering,Testing and Debugging
+Test integerness,Mathematics,Algebra and Arithmetic
+Text processing/1,Text Processing,Parsing and Tokenization
+Text processing/2,Text Processing,Parsing and Tokenization
+Text processing/Max licenses in use,Text Processing,Parsing and Tokenization
+Textonyms,Puzzles and Games,Logic and Mathematical Puzzles
+The ISAAC Cipher,Security and Cryptography,Cryptographic Techniques
+The Name Game,Puzzles and Games,Puzzle Solving Algorithms
+The Twelve Days of Christmas,Puzzles and Games,Puzzle Solving Algorithms
+The sieve of Sundaram,Algorithms and Data Structures,Algorithms
+Thiele's interpolation formula,Mathematics,Numerical Methods
+Thue-Morse,Mathematics,Mathematical Sequences and Series
+Tic-tac-toe,Puzzles and Games,Game Development
+Time a function,Miscellaneous Topics,Time and Date Manipulation
+Tokenize a string,Text Processing,Tokenization
+Tokenize a string with escaping,Text Processing,String Manipulation
+Tonelli-Shanks algorithm,Mathematics,Number Theory
+Top rank per group,Databases and Data Management,Data Serialization and Formats
+Topic variable,Programming Concepts,Fundamentals
+Topological sort,Algorithms and Data Structures,Algorithms
+Topswops,Puzzles and Games,Logic and Mathematical Puzzles
+Total circles area,Mathematics,Geometry and Trigonometry
+Totient function,Mathematics,Number Theory
+Towers of Hanoi,Puzzles and Games,Logic and Mathematical Puzzles
+Trabb Pardo–Knuth algorithm,Algorithms and Data Structures,Algorithms
+Tree datastructures,Algorithms and Data Structures,Data Structures
+Tree from nesting levels,Algorithms and Data Structures,Algorithms
+Tree traversal,Algorithms and Data Structures,Algorithms
+Trigonometric functions,Mathematics,Geometry and Trigonometry
+Truncatable primes,Mathematics,Number Theory
+Truncate a file,Systems Programming and File I/O,File Operations
+Truth table,Mathematics,Logic and Boolean Algebra
+Twelve statements,Puzzles and Games,Logic and Mathematical Puzzles
+Twin primes,Mathematics,Number Theory
+Two bullet roulette,Mathematics,Probability and Statistics
+UPC,Puzzles and Games,Puzzle Solving Algorithms
+URL decoding,Text Processing,URL Encoding and Decoding
+URL encoding,Text Processing,Encoding and Decoding
+URL parser,Text Processing,Parsing and Tokenization
+UTF-8 encode and decode,Text Processing,Text Encoding and Decoding
+Ulam spiral (for primes),Mathematics,Number Theory
+Unbias a random generator,Algorithms and Data Structures,Algorithms
+Undefined values,Programming Concepts,Fundamentals
+Unicode strings,Text Processing,Unicode and Character Sets
+Unicode variable names,Text Processing,Unicode and Character Sets
+Universal Turing machine,Algorithms and Data Structures,Algorithms
+Unix/ls,Operating Systems and Shell Programming,Shell and Command-Line
+Unprimeable numbers,Mathematics,Number Theory
+Update a configuration file,Systems Programming and File I/O,File Operations
+Use another language to call a function,Programming Concepts,Fundamentals
+User input/Graphical,Programming Concepts,Fundamentals
+User input/Text,Programming Concepts,Fundamentals
+Validate International Securities Identification Number,Security and Cryptography,Cryptographic Techniques
+Vampire number,Mathematics,Number Theory
+Van Eck sequence,Mathematics,Mathematical Sequences and Series
+Van der Corput sequence,Mathematics,Numerical Methods
+Variable declaration reset,Programming Concepts,Fundamentals
+Variable size/Get,Programming Concepts,Fundamentals
+Variable size/Set,Programming Concepts,Fundamentals
+Variable-length quantity,Algorithms and Data Structures,Algorithms
+Variables,Programming Concepts,Fundamentals
+Variadic function,Programming Concepts,Fundamentals
+Vector,Mathematics,Geometry and Trigonometry
+Vector products,Mathematics,Algebra and Arithmetic
+Verhoeff algorithm,Mathematics,Algebra and Arithmetic
+Verify distribution uniformity/Chi-squared test,Mathematics,Probability and Statistics
+Verify distribution uniformity/Naive,Mathematics,Probability and Statistics
+Video display modes,Operating Systems and Shell Programming,Operating System Concepts
+Vigenère cipher,Security and Cryptography,Cryptographic Techniques
+Vigenère cipher/Cryptanalysis,Security and Cryptography,Cryptographic Techniques
+Visualize a tree,Graphics and Visualization,Data Visualization
+Vogel's approximation method,Algorithms and Data Structures,Algorithms
+Voronoi diagram,Graphics and Visualization,Graphics Programming
+Walk a directory/Non-recursively,Systems Programming and File I/O,File Operations
+Walk a directory/Recursively,Systems Programming and File I/O,File Operations
+War card game,Puzzles and Games,Game Development
+Water collected between towers,Puzzles and Games,Logic and Mathematical Puzzles
+Web scraping,Networking and Web Development,Web Development
+Weird numbers,Mathematics,Number Theory
+Wieferich primes,Mathematics,Number Theory
+Window creation,Graphics and Visualization,Graphics Programming
+Window creation/X11,Systems Programming and File I/O,System Programming
+Window management,Systems Programming and File I/O,System Programming
+Wireworld,Puzzles and Games,Simulation and Modeling
+Word frequency,Text Processing,String Manipulation
+Word ladder,Puzzles and Games,Puzzle Solving Algorithms
+Word search,Puzzles and Games,Puzzle Solving Algorithms
+Word wheel,Puzzles and Games,Puzzle Solving Algorithms
+Word wrap,Text Processing,String Manipulation
+Wordiff,Puzzles and Games,Game Development
+World Cup group stage,Puzzles and Games,Simulation and Modeling
+Write entire file,Systems Programming and File I/O,File Operations
+Write float arrays to a text file,Databases and Data Management,Data Serialization and Formats
+Write language name in 3D ASCII,Graphics and Visualization,Graphics Programming
+Write to Windows event log,Systems Programming and File I/O,File Operations
+XML/DOM serialization,Text Processing,XML and Character Encoding
+XML/Input,Text Processing,Parsing and Tokenization
+XML/Output,Text Processing,XML Processing
+XML/XPath,Text Processing,Parsing and Tokenization
+Xiaolin Wu's line algorithm,Graphics and Visualization,Graphics Programming
+Y combinator,Programming Concepts,Advanced Concepts
+Yahoo! search interface,Networking and Web Development,Web Development
+Yellowstone sequence,Mathematics,Combinatorics
+Yin and yang,Puzzles and Games,Simulation and Modeling
+Zebra puzzle,Puzzles and Games,Logic and Mathematical Puzzles
+Zeckendorf arithmetic,Mathematics,Combinatorics
+Zeckendorf number representation,Mathematics,Combinatorics
+Zero to the zero power,Mathematics,Algebra and Arithmetic
+Zhang-Suen thinning algorithm,Algorithms and Data Structures,Algorithms
+Zig-zag matrix,Mathematics,Combinatorics
+Zumkeller numbers,Mathematics,Number Theory
+de Bruijn sequences,Mathematics,Combinatorics

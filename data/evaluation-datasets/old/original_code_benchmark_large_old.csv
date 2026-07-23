@@ -1,0 +1,2009 @@
+base_code_id,language,task,domain,subdomain,code
+z4tt,python,100 doors,Game Development,Puzzles,"doors = [False] * 100
+for i in range(100):
+   for j in range(i, 100, i+1):
+       doors[j] = not doors[j]
+   print(% (i+1), 'open' if doors[i] else 'close')"
+vu129,python,100 prisoners,Game Development,Puzzles,"import random
+
+def play_random(n):
+    
+    pardoned = 0
+    in_drawer = list(range(100))
+    sampler = list(range(100))
+    for _round in range(n):
+        random.shuffle(in_drawer)
+        found = False
+        for prisoner in range(100):
+            found = False
+            for reveal in random.sample(sampler, 50):
+                card = in_drawer[reveal]
+                if card == prisoner:
+                    found = True
+                    break
+            if not found:
+                break
+        if found:
+            pardoned += 1
+    return pardoned / n * 100   
+
+def play_optimal(n):
+    
+    pardoned = 0
+    in_drawer = list(range(100))
+    for _round in range(n):
+        random.shuffle(in_drawer)
+        for prisoner in range(100):
+            reveal = prisoner
+            found = False
+            for go in range(50):
+                card = in_drawer[reveal]
+                if card == prisoner:
+                    found = True
+                    break
+                reveal = card
+            if not found:
+                break
+        if found:
+            pardoned += 1
+    return pardoned / n * 100   
+
+if __name__ == '__main__':
+    n = 100_000
+    print(, n)
+    print(f)
+    print(f)"
+clr9q,python,15 puzzle game,Game Development,Puzzles,"''' Structural Game for 15 - Puzzle with different difficulty levels'''
+from random import randint
+
+
+class Puzzle:
+    def __init__(self):
+        self.items = {}
+        self.position = None
+
+    def main_frame(self):
+        d = self.items
+        print('+-----+-----+-----+-----+')
+        print('|%s|%s|%s|%s|'% (d[1], d[2], d[3], d[4]))
+        print('+-----+-----+-----+-----+')
+        print('|%s|%s|%s|%s|'% (d[5], d[6], d[7], d[8]))
+        print('+-----+-----+-----+-----+')
+        print('|%s|%s|%s|%s|'% (d[9], d[10], d[11], d[12]))
+        print('+-----+-----+-----+-----+')
+        print('|%s|%s|%s|%s|'% (d[13], d[14], d[15], d[16]))
+        print('+-----+-----+-----+-----+')
+
+    def format(self, ch):
+        ch = ch.strip()
+        if len(ch) == 1:
+            return '  ' + ch + '  '
+        elif len(ch) == 2:
+            return '  ' + ch + ' '
+        elif len(ch) == 0:
+            return '     '
+
+    def change(self, to):
+        fro = self.position
+        for a, b in self.items.items():
+            if b == self.format(str(to)):
+                to = a
+                break
+        self.items[fro], self.items[to] = self.items[to], self.items[fro]
+        self.position = to
+
+    def build_board(self, difficulty):
+        for i in range(1, 17):
+            self.items[i] = self.format(str(i))
+        tmp = 0
+        for a, b in self.items.items():
+            if b == '  16 ':
+                self.items[a] = '     '
+                tmp = a
+                break
+        self.position = tmp
+        if difficulty == 0:
+            diff = 10
+        elif difficulty == 1:
+            diff = 50
+        else:
+            diff = 100
+        for _ in range(diff):
+            lst = self.valid_moves()
+            lst1 = []
+            for j in lst:
+                lst1.append(int(j.strip()))
+            self.change(lst1[randint(0, len(lst1)-1)])
+
+    def valid_moves(self):
+        pos = self.position
+        if pos in [6, 7, 10, 11]:
+            return self.items[pos - 4], self.items[pos - 1],\
+                   self.items[pos + 1], self.items[pos + 4]
+        elif pos in [5, 9]:
+            return self.items[pos - 4], self.items[pos + 4],\
+                   self.items[pos + 1]
+        elif pos in [8, 12]:
+            return self.items[pos - 4], self.items[pos + 4],\
+                   self.items[pos - 1]
+        elif pos in [2, 3]:
+            return self.items[pos - 1], self.items[pos + 1], self.items[pos + 4]
+        elif pos in [14, 15]:
+            return self.items[pos - 1], self.items[pos + 1],\
+                  self.items[pos - 4]
+        elif pos == 1:
+            return self.items[pos + 1], self.items[pos + 4]
+        elif pos == 4:
+            return self.items[pos - 1], self.items[pos + 4]
+        elif pos == 13:
+            return self.items[pos + 1], self.items[pos - 4]
+        elif pos == 16:
+            return self.items[pos - 1], self.items[pos - 4]
+
+    def game_over(self):
+        flag = False
+        for a, b in self.items.items():
+            if b == '     ':
+                pass
+            else:
+                if a == int(b.strip()):
+                    flag = True
+                else:
+                    flag = False
+        return flag
+
+
+g = Puzzle()
+g.build_board(int(input('Enter the difficulty: 0 1 2\n2 '
+                        '=> highest 0=> lowest\n')))
+g.main_frame()
+print('Enter 0 to exit')
+while True:
+    print('Hello user:\nTo change the position just enter the no. near it')
+    lst = g.valid_moves()
+    lst1 = []
+    for i in lst:
+        lst1.append(int(i.strip()))
+        print(i.strip(), '\t', end='')
+    print()
+    x = int(input())
+    if x == 0:
+        break
+    elif x not in lst1:
+        print('Wrong move')
+    else:
+        g.change(x)
+    g.main_frame()
+    if g.game_over():
+        print('You WON')
+        break"
+inmof,python,2048,Game Development,Puzzles,"import curses
+from random import randrange, choice 
+from collections import defaultdict
+
+letter_codes = [ord(ch) for ch in 'WASDRQwasdrq']
+actions = ['Up', 'Left', 'Down', 'Right', 'Restart', 'Exit']
+actions_dict = dict(zip(letter_codes, actions * 2))
+
+def get_user_action(keyboard):    
+	char = 
+	while char not in actions_dict:    
+		char = keyboard.getch()
+	return actions_dict[char]
+
+def transpose(field):
+	return [list(row) for row in zip(*field)]
+
+def invert(field):
+	return [row[::-1] for row in field]
+
+class GameField(object):
+	def __init__(self, height=4, width=4, win=2048):
+		self.height = height
+		self.width = width
+		self.win_value = win
+		self.score = 0
+		self.highscore = 0
+		self.reset()
+
+	def reset(self):
+		if self.score > self.highscore:
+			self.highscore = self.score
+		self.score = 0
+		self.field = [[0 for i in range(self.width)] for j in range(self.height)]
+		self.spawn()
+		self.spawn()
+
+	def move(self, direction):
+		def move_row_left(row):
+			def tighten(row): 
+				new_row = [i for i in row if i != 0]
+				new_row += [0 for i in range(len(row) - len(new_row))]
+				return new_row
+
+			def merge(row):
+				pair = False
+				new_row = []
+				for i in range(len(row)):
+					if pair:
+						new_row.append(2 * row[i])
+						self.score += 2 * row[i]
+						pair = False
+					else:
+						if i + 1 < len(row) and row[i] == row[i + 1]:
+							pair = True
+							new_row.append(0)
+						else:
+							new_row.append(row[i])
+				assert len(new_row) == len(row)
+				return new_row
+			return tighten(merge(tighten(row)))
+
+		moves = {}
+		moves['Left']  = lambda field:								\
+				[move_row_left(row) for row in field]
+		moves['Right'] = lambda field:								\
+				invert(moves['Left'](invert(field)))
+		moves['Up']    = lambda field:								\
+				transpose(moves['Left'](transpose(field)))
+		moves['Down']  = lambda field:								\
+				transpose(moves['Right'](transpose(field)))
+
+		if direction in moves:
+			if self.move_is_possible(direction):
+				self.field = moves[direction](self.field)
+				self.spawn()
+				return True
+			else:
+				return False
+
+	def is_win(self):
+		return any(any(i >= self.win_value for i in row) for row in self.field)
+
+	def is_gameover(self):
+		return not any(self.move_is_possible(move) for move in actions)
+
+	def draw(self, screen):
+		help_string1 = '(W)Up (S)Down (A)Left (D)Right'
+		help_string2 = '     (R)Restart (Q)Exit'
+		gameover_string = '           GAME OVER'
+		win_string = '          YOU WIN!'
+		def cast(string):
+			screen.addstr(string + '\n')
+
+		def draw_hor_separator():
+			top = '' + ('' * self.width + '')[1:]
+			mid = '' + ('' * self.width + '')[1:]
+			bot = '' + ('' * self.width + '')[1:]
+			separator = defaultdict(lambda: mid)
+			separator[0], separator[self.height] = top, bot
+			if not hasattr(draw_hor_separator, ):
+				draw_hor_separator.counter = 0
+			cast(separator[draw_hor_separator.counter])
+			draw_hor_separator.counter += 1
+
+		def draw_row(row):
+			cast(''.join('{: ^5} '.format(num) if num > 0 else '|      ' for num in row) + '')
+
+		screen.clear()
+		cast('SCORE: ' + str(self.score))
+		if 0 != self.highscore:
+			cast('HIGHSCORE: ' + str(self.highscore))
+		for row in self.field:
+			draw_hor_separator()
+			draw_row(row)
+		draw_hor_separator()
+		if self.is_win():
+			cast(win_string)
+		else:
+			if self.is_gameover():
+				cast(gameover_string)
+			else:
+				cast(help_string1)
+		cast(help_string2)
+
+	def spawn(self):
+		new_element = 4 if randrange(100) > 89 else 2
+		(i,j) = choice([(i,j) for i in range(self.width) for j in range(self.height) if self.field[i][j] == 0])
+		self.field[i][j] = new_element
+
+	def move_is_possible(self, direction):
+		def row_is_left_movable(row): 
+			def change(i): 
+				if row[i] == 0 and row[i + 1] != 0: 
+					return True
+				if row[i] != 0 and row[i + 1] == row[i]: 
+					return True
+				return False
+			return any(change(i) for i in range(len(row) - 1))
+
+		check = {}
+		check['Left']  = lambda field:								\
+				any(row_is_left_movable(row) for row in field)
+
+		check['Right'] = lambda field:								\
+				 check['Left'](invert(field))
+
+		check['Up']    = lambda field:								\
+				check['Left'](transpose(field))
+
+		check['Down']  = lambda field:								\
+				check['Right'](transpose(field))
+
+		if direction in check:
+			return check[direction](self.field)
+		else:
+			return False
+
+def main(stdscr):
+	curses.use_default_colors()
+	game_field = GameField(win=32)
+	state_actions = {} 
+	def init():
+		game_field.reset()
+		return 'Game'
+
+	state_actions['Init'] = init
+
+	def not_game(state):
+		game_field.draw(stdscr)
+		action = get_user_action(stdscr)
+		responses = defaultdict(lambda: state)
+		responses['Restart'], responses['Exit'] = 'Init', 'Exit'
+		return responses[action]
+
+	state_actions['Win'] = lambda: not_game('Win')
+	state_actions['Gameover'] = lambda: not_game('Gameover')
+
+	def game():
+		game_field.draw(stdscr)
+		action = get_user_action(stdscr)
+		if action == 'Restart':
+			return 'Init'
+		if action == 'Exit':
+			return 'Exit'
+		if game_field.move(action): 
+			if game_field.is_win():
+				return 'Win'
+			if game_field.is_gameover():
+				return 'Gameover'
+		return 'Game'
+
+	state_actions['Game'] = game
+
+	state = 'Init'
+	while state != 'Exit':
+		state = state_actions[state]()
+
+curses.wrapper(main)"
+s0lq9,python,21 game,Game Development,Card Games,"from random import randint
+def start():
+	game_count=0
+	print(.format(game_count))
+	roundno=1
+	while game_count<21:
+		print(.format(roundno))
+		t = select_count(game_count)
+		game_count = game_count+t
+		print(.format(game_count))
+		if game_count>=21:
+			print()
+			return 0
+		t = request_count()
+		if not t:
+			print('OK,quitting the game')
+			return -1
+		game_count = game_count+t
+		print(.format(game_count))
+		if game_count>=21:
+			print()
+			return 1
+		roundno+=1
+
+def select_count(game_count):
+	'''selects a random number if the game_count is less than 18. otherwise chooses the winning number'''
+	if game_count<18:
+		t= randint(1,3)
+	else:
+		t = 21-game_count
+	print(.format(t))
+	return t
+
+def request_count():
+	'''request user input between 1,2 and 3. It will continue till either quit(q) or one of those numbers is requested.'''
+	t=
+	while True:
+		try:
+			t = raw_input('Your choice 1 to 3:')
+			if int(t) in [1,2,3]:
+				return int(t)
+			else:
+				print()
+		except:
+			if t==:
+				return None
+			else:
+				print()
+
+c=0
+m=0
+r=True
+while r:
+	o = start()
+	if o==-1:
+		break
+	else:
+		c+=1 if o==0 else 0
+		m+=1 if o==1 else 0
+	print(.format(c,m))
+	t = raw_input()
+	r = (t==)"
+u5evd,python,24 game,Game Development,Puzzles,"'''
+ The 24 Game
+
+ Given any four digits in the range 1 to 9, which may have repetitions,
+ Using just the +, -, *, and / operators; and the possible use of
+ brackets, (), show how to make an answer of 24.
+
+ An answer of  will quit the game.
+ An answer of  will generate a new set of four digits.
+ Otherwise you are repeatedly asked for an expression until it evaluates to 24
+
+ Note: you cannot form multiple digit numbers from the supplied digits,
+ so an answer of 12+12 when given 1, 2, 2, and 1 would not be allowed.
+
+'''
+
+from __future__ import division, print_function
+import random, ast, re
+import sys
+
+if sys.version_info[0] < 3: input = raw_input
+
+def choose4():
+    'four random digits >0 as characters'
+    return [str(random.randint(1,9)) for i in range(4)]
+
+def welcome(digits):
+    print (__doc__)
+    print ( + ' '.join(digits))
+
+def check(answer, digits):
+    allowed = set('() +-*/\t'+''.join(digits))
+    ok = all(ch in allowed for ch in answer) and \
+         all(digits.count(dig) == answer.count(dig) for dig in set(digits)) \
+         and not re.search('\d\d', answer)
+    if ok:
+        try:
+            ast.parse(answer)
+        except:
+            ok = False
+    return ok
+
+def main():    
+    digits = choose4()
+    welcome(digits)
+    trial = 0
+    answer = ''
+    chk = ans = False
+    while not (chk and ans == 24):
+        trial +=1
+        answer = input(% trial)
+        chk = check(answer, digits)
+        if answer.lower() == 'q':
+            break
+        if answer == '!':
+            digits = choose4()
+            print (, ' '.join(digits))
+            continue
+        if not chk:
+            print (% answer)
+        else:
+            ans = eval(answer)
+            print (, ans)
+            if ans == 24:
+                print ()
+    print ()   
+
+if __name__ == '__main__': main()"
+r70gq,python,24 game/Solve,Game Development,Puzzles,"'''
+ The 24 Game Player
+
+ Given any four digits in the range 1 to 9, which may have repetitions,
+ Using just the +, -, *, and / operators; and the possible use of
+ brackets, (), show how to make an answer of 24.
+
+ An answer of   will quit the game.
+ An answer of   will generate a new set of four digits.
+ An answer of  will ask you for a new set of four digits.
+ An answer of   will compute an expression for the current digits.
+
+ Otherwise you are repeatedly asked for an expression until it evaluates to 24
+
+ Note: you cannot form multiple digit numbers from the supplied digits,
+ so an answer of 12+12 when given 1, 2, 2, and 1 would not be allowed.
+
+'''
+
+from   __future__ import division, print_function
+from   itertools  import permutations, combinations, product, \
+                         chain
+from   pprint     import pprint as pp
+from   fractions  import Fraction as F
+import random, ast, re
+import sys
+
+if sys.version_info[0] < 3:
+    input = raw_input
+    from itertools import izip_longest as zip_longest
+else:
+    from itertools import zip_longest
+
+
+def choose4():
+    'four random digits >0 as characters'
+    return [str(random.randint(1,9)) for i in range(4)]
+
+def ask4():
+    'get four random digits >0 from the player'
+    digits = ''
+    while len(digits) != 4 or not all(d in '123456789' for d in digits):
+        digits = input('Enter the digits to solve for: ')
+        digits = ''.join(digits.strip().split())
+    return list(digits)
+
+def welcome(digits):
+    print (__doc__)
+    print ( + ' '.join(digits))
+
+def check(answer, digits):
+    allowed = set('() +-*/\t'+''.join(digits))
+    ok = all(ch in allowed for ch in answer) and \
+         all(digits.count(dig) == answer.count(dig) for dig in set(digits)) \
+         and not re.search('\d\d', answer)
+    if ok:
+        try:
+            ast.parse(answer)
+        except:
+            ok = False
+    return ok
+
+def solve(digits):
+    
+    digilen = len(digits)
+    
+    exprlen = 2 * digilen - 1
+    
+    digiperm = sorted(set(permutations(digits)))
+    
+    opcomb   = list(product('+-*/', repeat=digilen-1))
+    
+    brackets = ( [()] + [(x,y)
+                         for x in range(0, exprlen, 2)
+                         for y in range(x+4, exprlen+2, 2)
+                         if (x,y) != (0,exprlen+1)]
+                 + [(0, 3+1, 4+2, 7+3)] ) 
+    for d in digiperm:
+        for ops in opcomb:
+            if '/' in ops:
+                d2 = [('F(%s)'% i) for i in d] 
+            else:
+                d2 = d
+            ex = list(chain.from_iterable(zip_longest(d2, ops, fillvalue='')))
+            for b in brackets:
+                exp = ex[::]
+                for insertpoint, bracket in zip(b, '()'*(len(b)
+                    exp.insert(insertpoint, bracket)
+                txt = ''.join(exp)
+                try:
+                    num = eval(txt)
+                except ZeroDivisionError:
+                    continue
+                if num == 24:
+                    if '/' in ops:
+                        exp = [ (term if not term.startswith('F(') else term[2])
+                               for term in exp ]
+                    ans = ' '.join(exp).rstrip()
+                    print (,ans)
+                    return ans
+    print (, ' '.join(digits))            
+    return '!'
+
+def main():    
+    digits = choose4()
+    welcome(digits)
+    trial = 0
+    answer = ''
+    chk = ans = False
+    while not (chk and ans == 24):
+        trial +=1
+        answer = input(% trial)
+        chk = check(answer, digits)
+        if answer == '?':
+            solve(digits)
+            answer = '!'
+        if answer.lower() == 'q':
+            break
+        if answer == '!':
+            digits = choose4()
+            trial = 0
+            print (, ' '.join(digits))
+            continue
+        if answer == '!!':
+            digits = ask4()
+            trial = 0
+            print (, ' '.join(digits))
+            continue
+        if not chk:
+            print (% answer)
+        else:
+            if '/' in answer:
+                
+                answer = ''.join( (('F(%s)'% char) if char in '123456789' else char)
+                                  for char in answer )
+            ans = eval(answer)
+            print (, ans)
+            if ans == 24:
+                print ()
+    print ()   
+
+main()"
+1a6pc,python,4-rings or 4-squares puzzle,Game Development,Puzzles,"import itertools
+
+def all_equal(a,b,c,d,e,f,g):
+    return a+b == b+c+d == d+e+f == f+g
+
+def foursquares(lo,hi,unique,show):
+    solutions = 0
+    if unique:
+        uorn = 
+        citer = itertools.combinations(range(lo,hi+1),7)
+    else:
+        uorn = 
+        citer =  itertools.combinations_with_replacement(range(lo,hi+1),7)
+
+    for c in citer:
+            for p in set(itertools.permutations(c)):
+                if all_equal(*p):
+                    solutions += 1
+                    if show:
+                        print str(p)[1:-1]
+
+    print str(solutions)++uorn++str(lo)++str(hi)
+    print"
+36bzc,python,9 billion names of God the integer,Mathematics,Number Theory,"cache = [[1]]
+def cumu(n):
+    for l in range(len(cache), n+1):
+        r = [0]
+        for x in range(1, l+1):
+            r.append(r[-1] + cache[l-x][min(x, l-x)])
+        cache.append(r)
+    return cache[n]
+
+def row(n):
+    r = cumu(n)
+    return [r[i+1] - r[i] for i in range(n)]
+
+print 
+for x in range(1, 11): print %x, row(x)
+
+
+print 
+for x in [23, 123, 1234, 12345]: print x, cumu(x)[-1]"
+jhq7p,python,A+B,Mathematics,Arithmetic,"try: raw_input
+except: raw_input = input
+
+print(sum(map(int, raw_input().split())))"
+z37tt,python,ABC problem,Mathematics,Number Theory,"'''
+Note that this code is broken, e.g., it won't work when 
+blocks = [(, ), (,)] and the word is , where the answer
+should be True, but the code returns False.
+'''
+blocks = [(, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, ),
+          (, )]
+
+
+def can_make_word(word, block_collection=blocks):
+    
+    if not word:
+        return False
+
+    blocks_remaining = block_collection[:]
+    for char in word.upper():
+        for block in blocks_remaining:
+            if char in block:
+                blocks_remaining.remove(block)
+                break
+        else:
+            return False
+    return True
+
+
+if __name__ == :
+    import doctest
+    doctest.testmod()
+    print(.join(% (w, can_make_word(w)) for w in
+                    [, , , , , 
+                     , , ]))"
+8i80o,python,AKS test for primes,Mathematics,Number Theory,"def expand_x_1(n): 
+
+    c =1
+    for i in range(n
+        c = c*(n-i)
+        yield c
+
+def aks(p):
+    if p==2:
+        return True
+
+    for i in expand_x_1(p):
+        if i% p:
+
+            return False
+    return True"
+5cux,python,ASCII art diagram converter,Programming Concepts,Text Processing,"def validate(diagram):
+
+    
+
+    rawlines = diagram.splitlines()
+    lines = []
+    for line in rawlines:
+        if line != '':
+            lines.append(line)
+
+    
+
+    if len(lines) == 0:
+        print('diagram has no non-empty lines!')
+        return None
+
+    width = len(lines[0])
+    cols = (width - 1) 
+
+    if cols not in [8, 16, 32, 64]: 
+        print('number of columns should be 8, 16, 32 or 64')
+        return None
+
+    if len(lines)%2 == 0:
+        print('number of non-empty lines should be odd')
+        return None
+
+    if lines[0] != (('+--' * cols)+'+'):
+            print('incorrect header line')
+            return None
+
+    for i in range(len(lines)):
+        line=lines[i]
+        if i == 0:
+            continue
+        elif i%2 == 0:
+            if line != lines[0]:
+                print('incorrect separator line')
+                return None
+        elif len(line) != width:
+            print('inconsistent line widths')
+            return None
+        elif line[0] != '|' or line[width-1] != '|':
+            print()    
+            return None
+
+    return lines
+
+
+
+def decode(lines):
+    print()
+    print()
+
+    startbit = 0
+
+    results = []
+
+    for line in lines:
+        infield=False
+        for c in line:
+            if not infield and c == '|':
+                infield = True
+                spaces = 0
+                name = ''
+            elif infield:
+                if c == ' ':
+                    spaces += 1
+                elif c != '|':
+                    name += c
+                else:
+                    bits = (spaces + len(name) + 1) 
+                    endbit = startbit + bits - 1
+                    print('{0:7}    {1:2d}     {2:2d}   {3:2d}'.format(name, bits, startbit, endbit))
+                    reslist = [name, bits, startbit, endbit]
+                    results.append(reslist)
+                    spaces = 0
+                    name = ''
+                    startbit += bits
+
+    return results
+
+def unpack(results, hex):
+    print()
+    print(hex)
+    print()
+    bin = f'{int(hex, 16):0>{4*len(hex)}b}'
+    print(bin)
+    print()
+    print()
+    print()
+    for r in results:
+        name = r[0]
+        size = r[1]
+        startbit = r[2]
+        endbit = r[3]
+        bitpattern = bin[startbit:endbit+1]
+        print('{0:7}    {1:2d}  {2:16}'.format(name, size, bitpattern))
+
+
+diagram = 
+
+lines = validate(diagram)
+
+if lines == None:
+    print()
+else:
+    print()
+    print()
+    print()
+    for line in lines:
+        print(line)
+
+    print()
+    print()
+    print()
+
+    results = decode(lines)    
+
+    
+
+    hex =  
+
+    unpack(results, hex)"
+kb6hf,python,"Abbreviations, automatic",Programming Concepts,Text Processing,"def shortest_abbreviation_length(line, list_size):
+    words = line.split()
+    word_count = len(words)
+    
+    if word_count != list_size:
+        raise ValueError(f'Not enough entries, expected {list_size} found {word_count}')
+
+    
+    abbreviation_length = 1
+    abbreviations = set()
+    while(True):
+        abbreviations = {word[:abbreviation_length] for word in words}
+        if len(abbreviations) == list_size:
+            return abbreviation_length
+        abbreviation_length += 1
+        abbreviations.clear()
+
+def automatic_abbreviations(filename, words_per_line):
+    with open(filename) as file:
+        for line in file:
+            line = line.rstrip()
+            if len(line) > 0:
+                length = shortest_abbreviation_length(line, words_per_line)
+                print(f'{length:2} {line}')
+            else:
+                print()
+
+automatic_abbreviations('daysOfWeek.txt', 7)"
+2vilz,python,"Abbreviations, easy",Programming Concepts,Text Processing,"command_table_text = \
+
+
+user_words = 
+
+def find_abbreviations_length(command_table_text):
+    
+    command_table = dict()
+    for word in command_table_text.split():
+        abbr_len = sum(1 for c in word if c.isupper())
+        if abbr_len == 0:
+            abbr_len = len(word)
+        command_table[word] = abbr_len
+    return command_table
+
+def find_abbreviations(command_table):
+    
+    abbreviations = dict()
+    for command, min_abbr_len in command_table.items():
+        for l in range(min_abbr_len, len(command)+1):
+            abbr = command[:l].lower()
+            abbreviations[abbr] = command.upper()
+    return abbreviations
+
+def parse_user_string(user_string, abbreviations):
+    user_words = [word.lower() for word in user_string.split()]
+    commands = [abbreviations.get(user_word, ) for user_word in user_words]
+    return .join(commands)
+
+command_table = find_abbreviations_length(command_table_text)
+abbreviations_table = find_abbreviations(command_table)
+
+full_words = parse_user_string(user_words, abbreviations_table)
+
+print(, user_words)
+print(, full_words)"
+oik81,python,"Abbreviations, simple",Programming Concepts,Text Processing,"command_table_text = 
+
+user_words = 
+
+
+def find_abbreviations_length(command_table_text):
+    
+    command_table = dict()
+    input_iter = iter(command_table_text.split())
+
+    word = None
+    try:
+        while True:
+            if word is None:
+                word = next(input_iter)
+            abbr_len = next(input_iter, len(word))
+            try:
+                command_table[word] = int(abbr_len)
+                word = None
+            except ValueError:
+                command_table[word] = len(word)
+                word = abbr_len
+    except StopIteration:
+        pass
+    return command_table
+
+
+def find_abbreviations(command_table):
+    
+    abbreviations = dict()
+    for command, min_abbr_len in command_table.items():
+        for l in range(min_abbr_len, len(command)+1):
+            abbr = command[:l].lower()
+            abbreviations[abbr] = command.upper()
+    return abbreviations
+
+
+def parse_user_string(user_string, abbreviations):
+    user_words = [word.lower() for word in user_string.split()]
+    commands = [abbreviations.get(user_word, ) for user_word in user_words]
+    return .join(commands)
+
+
+command_table = find_abbreviations_length(command_table_text)
+abbreviations_table = find_abbreviations(command_table)
+
+full_words = parse_user_string(user_words, abbreviations_table)
+
+print(, user_words)
+print(, full_words)"
+08hsq,python,Abelian sandpile model,Mathematics,Automata,"import numpy as np
+import matplotlib.pyplot as plt
+
+
+def iterate(grid):
+    changed = False
+    for ii, arr in enumerate(grid):
+        for jj, val in enumerate(arr):
+            if val > 3:
+                grid[ii, jj] -= 4
+                if ii > 0:
+                    grid[ii - 1, jj] += 1
+                if ii < len(grid)-1:
+                    grid[ii + 1, jj] += 1
+                if jj > 0:
+                    grid[ii, jj - 1] += 1
+                if jj < len(grid)-1:
+                    grid[ii, jj + 1] += 1
+                changed = True
+    return grid, changed
+
+
+def simulate(grid):
+    while True:
+        grid, changed = iterate(grid)
+        if not changed:
+            return grid
+
+
+if __name__ == '__main__':
+    start_grid = np.zeros((10, 10))
+    start_grid[4:5, 4:5] = 64
+    final_grid = simulate(start_grid.copy())
+    plt.figure()
+    plt.gray()
+    plt.imshow(start_grid)
+    plt.figure()
+    plt.gray()
+    plt.imshow(final_grid)"
+7jzrm,python,Abelian sandpile model/Identity,Mathematics,Automata,"from itertools import product
+from collections import defaultdict
+
+
+class Sandpile():
+    def __init__(self, gridtext):
+        array = [int(x) for x in gridtext.strip().split()]
+        self.grid = defaultdict(int,
+                                {(i 
+                                 for i, x in enumerate(array)})
+
+    _border = set((r, c) 
+                  for r, c in product(range(-1, 4), repeat=2) 
+                  if not 0 <= r <= 2 or not 0 <= c <= 2
+                  )
+    _cell_coords = list(product(range(3), repeat=2))
+
+    def topple(self):
+        g = self.grid
+        for r, c in self._cell_coords:
+            if g[(r, c)] >= 4:
+                g[(r - 1, c)] += 1
+                g[(r + 1, c)] += 1
+                g[(r, c - 1)] += 1
+                g[(r, c + 1)] += 1
+                g[(r, c)] -= 4
+                return True
+        return False
+
+    def stabilise(self):
+        while self.topple():
+            pass
+        
+        g = self.grid
+        for row_col in self._border.intersection(g.keys()):
+            del g[row_col]
+        return self
+
+    __pos__ = stabilise     
+
+    def __eq__(self, other):
+        g = self.grid
+        return all(g[row_col] == other.grid[row_col]
+                   for row_col in self._cell_coords)
+
+    def __add__(self, other):
+        g = self.grid
+        ans = Sandpile()
+        for row_col in self._cell_coords:
+            ans.grid[row_col] = g[row_col] + other.grid[row_col]
+        return ans.stabilise()
+
+    def __str__(self):
+        g, txt = self.grid, []
+        for row in range(3):
+            txt.append(' '.join(str(g[(row, col)]) 
+                                for col in range(3)))
+        return '\n'.join(txt)
+
+    def __repr__(self):
+        return f'{self.__class__.__name__}()'
+
+
+unstable = Sandpile()
+s1 = Sandpile()
+s2 = Sandpile()
+s3 = Sandpile()
+s3_id = Sandpile()"
+r7zgq,python,Abstract type,Programming Concepts,Data Structures,"class BaseQueue(object):
+    
+    def __init__(self):
+        self.contents = list()
+        raise NotImplementedError
+    def Enqueue(self, item):
+        raise NotImplementedError
+    def Dequeue(self):
+        raise NotImplementedError
+    def Print_Contents(self):
+        for i in self.contents:
+            print i,"
+grn4h,python,Abundant odd numbers,Mathematics,Number Theory,"oddNumber  = 1
+aCount  = 0
+dSum  = 0
+
+from math import sqrt
+
+def divisorSum(n):
+    sum = 1
+    i = int(sqrt(n)+1)
+
+    for d in range (2, i):
+        if n% d == 0:
+            sum += d
+            otherD = n 
+            if otherD != d:
+                sum += otherD
+    return sum
+
+print ()
+while aCount  < 25:
+    dSum  = divisorSum(oddNumber )
+    if dSum  > oddNumber:
+        aCount  += 1
+        print(. format(oddNumber ,dSum ))
+    oddNumber  += 2
+
+while aCount  < 1000:
+    dSum  = divisorSum(oddNumber )
+    if dSum  > oddNumber:
+        aCount  += 1
+    oddNumber  += 2
+print ()
+print (,(oddNumber - 2),,dSum)
+
+oddNumber  = 1000000001
+found  = False
+while not found:
+    dSum  = divisorSum(oddNumber )
+    if dSum  > oddNumber:
+        found  = True
+        print ()
+        print (,oddNumber,,dSum)
+    oddNumber  += 2"
+dfwn1,python,"Abundant, deficient and perfect number classifications",Mathematics,Number Theory,">>> from proper_divisors import proper_divs
+>>> from collections import Counter
+>>> 
+>>> rangemax = 20000
+>>> 
+>>> def pdsum(n):
+...     return sum(proper_divs(n))
+... 
+>>> def classify(n, p):
+...     return 'perfect' if n == p else 'abundant' if p > n else 'deficient'
+... 
+>>> classes = Counter(classify(n, pdsum(n)) for n in range(1, 1 + rangemax))
+>>> classes.most_common()
+[('deficient', 15043), ('abundant', 4953), ('perfect', 4)]
+>>>"
+p1gbm,python,Accumulator factory,Programming Concepts,Functional Programming,">>> def accumulator(sum):
+  def f(n):
+    f.sum += n
+    return f.sum
+  f.sum = sum
+  return f
+
+>>> x = accumulator(1)
+>>> x(5)
+6
+>>> x(2.3)
+8.3000000000000007
+>>> x = accumulator(1)
+>>> x(5)
+6
+>>> x(2.3)
+8.3000000000000007
+>>> x2 = accumulator(3)
+>>> x2(5)
+8
+>>> x2(3.3)
+11.300000000000001
+>>> x(0)
+8.3000000000000007
+>>> x2(0)
+11.300000000000001"
+6y03w,python,Ackermann function,Mathematics,Algorithms,"def ack1(M, N):
+   return (N + 1) if M == 0 else (
+      ack1(M-1, 1) if N == 0 else ack1(M-1, ack1(M, N-1)))"
+mclyh,python,Active Directory/Connect,Networking,Directory Services,"import ldap
+
+l = ldap.initialize()
+try:
+    l.protocol_version = ldap.VERSION3
+    l.set_option(ldap.OPT_REFERRALS, 0)
+
+    bind = l.simple_bind_s(, )
+finally:
+    l.unbind()"
+q0oxi,python,Active Directory/Search for a user,Networking,Directory Services,"import ldap
+
+l = ldap.initialize()
+try:
+    l.protocol_version = ldap.VERSION3
+    l.set_option(ldap.OPT_REFERRALS, 0)
+
+    bind = l.simple_bind_s(, )
+
+    base = 
+    criteria = 
+    attributes = ['displayName', 'company']
+    result = l.search_s(base, ldap.SCOPE_SUBTREE, criteria, attributes)
+
+    results = [entry for dn, entry in result if isinstance(entry, dict)]
+    print results
+finally:
+    l.unbind()"
+l26cv,python,Active object,Programming Concepts,Concurrency,"from time import time, sleep
+from threading import Thread
+
+class Integrator(Thread):
+    'continuously integrate a function `K`, at each `interval` seconds'
+    def __init__(self, K=lambda t:0, interval=1e-4):
+        Thread.__init__(self)
+        self.interval  = interval
+        self.K   = K
+        self.S   = 0.0
+        self.__run = True
+        self.start()
+
+    def run(self):
+        
+        interval = self.interval
+        start = time()
+        t0, k0 = 0, self.K(0)
+        while self.__run:
+            sleep(interval)
+            t1 = time() - start
+            k1 = self.K(t1)
+            self.S += (k1 + k0)*(t1 - t0)/2.0
+            t0, k0 = t1, k1
+
+    def join(self):
+        self.__run = False
+        Thread.join(self)
+
+if __name__ == :
+    from math import sin, pi
+
+    ai = Integrator(lambda t: sin(pi*t))
+    sleep(2)
+    print(ai.S)
+    ai.K = lambda t: 0
+    sleep(0.5)
+    print(ai.S)"
+4gv5k,python,Add a variable to a class instance at runtime,Programming Concepts,Object-Oriented Programming,"class empty(object):
+    pass
+e = empty()"
+54vux,python,Additive primes,Mathematics,Number Theory,"def is_prime(n: int) -> bool:
+    if n <= 3:
+        return n > 1
+    if n% 2 == 0 or n% 3 == 0:
+        return False
+    i = 5
+    while i ** 2 <= n:
+        if n% i == 0 or n% (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+def digit_sum(n: int) -> int:
+    sum = 0
+    while n > 0:
+        sum += n% 10
+        n 
+    return sum
+
+def main() -> None:
+    additive_primes = 0
+    for i in range(2, 500):
+        if is_prime(i) and is_prime(digit_sum(i)):
+            additive_primes += 1
+            print(i, end=)
+    print(f)
+
+if __name__ == :
+    main()"
+9c3mf,python,Address of a variable,Programming Concepts,Memory Management,"foo = object()  
+address = id(foo)"
+fz9de,python,Algebraic data types,Programming Concepts,Data Structures,"from __future__ import annotations
+from enum import Enum
+from typing import NamedTuple
+from typing import Optional
+
+
+class Color(Enum):
+    B = 0
+    R = 1
+
+
+class Tree(NamedTuple):
+    color: Color
+    left: Optional[Tree]
+    value: int
+    right: Optional[Tree]
+
+    def insert(self, val: int) -> Tree:
+        return self._insert(val).make_black()
+
+    def _insert(self, val: int) -> Tree:
+        match compare(val, self.value):
+            case _ if self == EMPTY:
+                return Tree(Color.R, EMPTY, val, EMPTY)
+            case -1:
+                assert self.left is not None
+                return Tree(
+                    self.color, self.left._insert(val), self.value, self.right
+                ).balance()
+            case 1:
+                assert self.right is not None
+                return Tree(
+                    self.color, self.left, self.value, self.right._insert(val)
+                ).balance()
+            case _:
+                return self
+
+    def balance(self) -> Tree:
+        match self:
+            case (Color.B, (Color.R, (Color.R, a, x, b), y, c), z, d):
+                return Tree(Color.R, Tree(Color.B, a, x, b), y, Tree(Color.B, c, z, d))
+            case (Color.B, (Color.R, a, x, (Color.R, b, y, c)), z, d):
+                return Tree(Color.R, Tree(Color.B, a, x, b), y, Tree(Color.B, c, z, d))
+            case (Color.B, a, x, (Color.R, (Color.R, b, y, c), z, d)):
+                return Tree(Color.R, Tree(Color.B, a, x, b), y, Tree(Color.B, c, z, d))
+            case (Color.B, a, x, (Color.R, b, y, (Color.R, c, z, d))):
+                return Tree(Color.R, Tree(Color.B, a, x, b), y, Tree(Color.B, c, z, d))
+            case _:
+                return self
+
+    def make_black(self) -> Tree:
+        return self._replace(color=Color.B)
+
+    def __str__(self) -> str:
+        if self == EMPTY:
+            return 
+        return f
+
+    def print(self, indent: int = 0) -> None:
+        if self != EMPTY:
+            assert self.right is not None
+            self.right.print(indent + 1)
+
+        print(f)
+
+        if self != EMPTY:
+            assert self.left is not None
+            self.left.print(indent + 1)
+
+
+EMPTY = Tree(Color.B, None, 0, None)
+
+
+def compare(x: int, y: int) -> int:
+    if x > y:
+        return 1
+    if x < y:
+        return -1
+    return 0
+
+
+def main():
+    tree = EMPTY
+    for i in range(1, 17):
+        tree = tree.insert(i)
+    tree.print()
+
+
+if __name__ == :
+    main()"
+ymi6q,python,Align columns,Programming Concepts,Text Processing,"from itertools import zip_longest
+
+txt = 
+
+parts = [line.rstrip().split() for line in txt.splitlines()]
+widths = [max(len(word) for word in col) 
+          for col in zip_longest(*parts, fillvalue='')]
+
+for justify in .split():
+    j, jtext = justify.split('_')
+    print(f)
+    for line in parts:
+        print(' '.join(f for wdth, wrd in zip(widths, line)))
+    print( * 52)"
+g774h,python,Aliquot sequence classifications,Mathematics,Number Theory,"from proper_divisors import proper_divs
+from functools import lru_cache
+
+
+@lru_cache()
+def pdsum(n): 
+    return sum(proper_divs(n))
+
+
+def aliquot(n, maxlen=16, maxterm=2**47):
+    if n == 0:
+        return 'terminating', [0]
+    s, slen, new = [n], 1, n
+    while slen <= maxlen and new < maxterm:
+        new = pdsum(s[-1])
+        if new in s:
+            if s[0] == new:
+                if slen == 1:
+                    return 'perfect', s
+                elif slen == 2:
+                    return 'amicable', s
+                else:
+                    return 'sociable of length%i'% slen, s
+            elif s[-1] == new:
+                return 'aspiring', s
+            else:
+                return 'cyclic back to%i'% new, s
+        elif new == 0:
+            return 'terminating', s + [0]
+        else:
+            s.append(new)
+            slen += 1
+    else:
+        return 'non-terminating', s
+
+if __name__ == '__main__':
+    for n in range(1, 11): 
+        print('%s:%r'% aliquot(n))
+    print()
+    for n in [11, 12, 28, 496, 220, 1184,  12496, 1264460, 790, 909, 562, 1064, 1488, 15355717786080]: 
+        print('%s:%r'% aliquot(n))"
+b1skr,python,Almkvist-Giullera formula for pi,Mathematics,Numerical Methods,"import mpmath as mp
+
+with mp.workdps(72):
+
+    def integer_term(n):
+        p = 532 * n * n + 126 * n + 9
+        return (p * 2**5 * mp.factorial(6 * n)) / (3 * mp.factorial(n)**6)
+
+    def exponent_term(n):
+        return -(mp.mpf() * n + 3)
+
+    def nthterm(n):
+        return integer_term(n) * mp.mpf()**exponent_term(n)
+
+
+    for n in range(10):
+        print(, n, '  ', int(integer_term(n)))
+
+
+    def almkvist_guillera(floatprecision):
+        summed, nextadd = mp.mpf('0.0'), mp.mpf('0.0')
+        for n in range(100000000):
+            nextadd = summed + nthterm(n)
+            if abs(nextadd - summed) < 10.0**(-floatprecision):
+                break
+
+            summed = nextadd
+
+        return nextadd
+
+
+    print('\n to 70 digits is ', end='')
+    mp.nprint(mp.mpf(1.0 / mp.sqrt(almkvist_guillera(70))), 71)
+    print('mpmath  is       ', end='')
+    mp.nprint(mp.pi, 71)"
+nf6iz,python,Almost prime,Mathematics,Number Theory,"from prime_decomposition import decompose
+from itertools import islice, count
+try: 
+    from functools import reduce
+except: 
+    pass
+
+
+def almostprime(n, k=2):
+    d = decompose(n)
+    try:
+        terms = [next(d) for i in range(k)]
+        return reduce(int.__mul__, terms, 1) == n
+    except:
+        return False
+
+if __name__ == '__main__':
+    for k in range(1,6):
+        print('%i:%r'% (k, list(islice((n for n in count() if almostprime(n, k)), 10))))"
+t3mfw,python,Amb,Programming Concepts,Functional Programming,"import itertools as _itertools
+
+class Amb(object):
+    def __init__(self):
+        self._names2values   = {}       
+        self._func           = None     
+        self._valueiterator  = None     
+        self._funcargnames   = None     
+
+    def __call__(self, arg=None):
+        if hasattr(arg, '__code__'):                
+            
+            
+            
+            globls = arg.__globals__ if hasattr(arg, '__globals__') else arg.func_globals
+            
+            argv = arg.__code__.co_varnames[:arg.__code__.co_argcount]
+            for name in argv:
+                if name not in self._names2values:
+                    assert name in globls, \
+                           % name
+                    self._names2values[name] = globls[name]
+            
+            valuesets = [self._names2values[name] for name in argv]
+            self._valueiterator = _itertools.product(*valuesets)
+            self._func = arg
+            self._funcargnames = argv
+            return self
+        elif arg is not None:
+            
+            
+            
+            arg = frozenset(arg)
+            return arg
+        else:
+            
+            
+            
+            return self._nextinsearch()
+
+    def _nextinsearch(self):
+        arg = self._func
+        globls = arg.__globals__
+        argv = self._funcargnames
+        found = False
+        for values in self._valueiterator:
+            if arg(*values):
+                
+                found = True
+                for n, v in zip(argv, values):
+                    globls[n] = v
+                break
+        if not found: raise StopIteration
+        return values
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        return self()
+    next = __next__ 
+
+if __name__ == '__main__':
+    if True:
+        amb = Amb()
+
+        print()
+        x = amb(range(1,11))
+        y = amb(range(1,11))
+        z = amb(range(1,11))
+
+        for _dummy in amb( lambda x, y, z: x*x + y*y == z*z ):
+            print ('%s%s%s'% (x, y, z))
+
+
+    if True:
+        amb = Amb()
+
+        print()
+        w1 = amb([, , ])
+        w2 = amb([, , ])
+        w3 = amb([, , ])
+        w4 = amb([, ])
+
+        for _dummy in amb( lambda w1, w2, w3, w4: \
+                             w1[-1] == w2[0] and \
+                             w2[-1] == w3[0] and \
+                             w3[-1] == w4[0] ):
+            print ('%s%s%s%s'% (w1, w2, w3, w4))
+
+    if True:
+        amb = Amb()
+
+        print(
+            )
+        x = amb([1, 2, 3])
+        y = amb([4, 5, 6])
+
+        for _dummy in amb( lambda x, y: x * y != 8 ):
+            print ('%s%s'% (x, y))"
+c279q,python,Amicable pairs,Mathematics,Number Theory,"from proper_divisors import proper_divs
+
+def amicable(rangemax=20000):
+    n2divsum = {n: sum(proper_divs(n)) for n in range(1, rangemax + 1)}
+    for num, divsum in n2divsum.items():
+        if num < divsum and divsum <= rangemax and n2divsum[divsum] == num:
+            yield num, divsum
+
+if __name__ == '__main__':
+    for num, divsum in amicable():
+        print('Amicable pair:%i and%i With proper divisors:\n   %r\n   %r'
+             % (num, divsum, sorted(proper_divs(num)), sorted(proper_divs(divsum))))"
+xsqwr,python,Anagrams,Programming Concepts,String Operations,">>> import urllib.request
+>>> from collections import defaultdict
+>>> words = urllib.request.urlopen('http:
+>>> anagram = defaultdict(list) 
+>>> for word in words:
+	anagram[tuple(sorted(word))].append( word )
+
+
+>>> count = max(len(ana) for ana in anagram.values())
+>>> for ana in anagram.values():
+	if len(ana) >= count:
+		print ([x.decode() for x in ana])"
+u4wvd,python,Anagrams/Deranged anagrams,Programming Concepts,String Operations,"import urllib.request
+from collections import defaultdict
+from itertools import combinations
+
+def getwords(url='http:
+    return list(set(urllib.request.urlopen(url).read().decode().split()))
+
+def find_anagrams(words):
+    anagram = defaultdict(list) 
+    for word in words:
+        anagram[tuple(sorted(word))].append( word )
+    return dict((key, words) for key, words in anagram.items()
+                if len(words) > 1)
+
+def is_deranged(words):
+    'returns pairs of words that have no character in the same position'
+    return [ (word1, word2)
+             for word1,word2 in combinations(words, 2)
+             if all(ch1 != ch2 for ch1, ch2 in zip(word1, word2)) ]
+
+def largest_deranged_ana(anagrams):
+    ordered_anagrams = sorted(anagrams.items(),
+                              key=lambda x:(-len(x[0]), x[0]))
+    for _, words in ordered_anagrams:
+        deranged_pairs = is_deranged(words)
+        if deranged_pairs:
+            return deranged_pairs
+    return []
+
+if __name__ == '__main__':
+    words = getwords('http:
+    print(, len(words))
+
+    anagrams = find_anagrams(words)
+    print(, len(anagrams),)
+
+    print()
+    print('  ' + '\n  '.join(', '.join(pairs)
+                             for pairs in largest_deranged_ana(anagrams)))"
+jks7p,python,Angle difference between two bearings,Mathematics,Geometry,"from __future__ import print_function
+
+def getDifference(b1, b2):
+	r = (b2 - b1)% 360.0
+	
+	
+	if r >= 180.0:
+		r -= 360.0
+	return r
+
+if __name__ == :
+	print ()
+	print (getDifference(20.0, 45.0))
+	print (getDifference(-45.0, 45.0))
+	print (getDifference(-85.0, 90.0))
+	print (getDifference(-95.0, 90.0))
+	print (getDifference(-45.0, 125.0))
+	print (getDifference(-45.0, 145.0))
+	print (getDifference(-45.0, 125.0))
+	print (getDifference(-45.0, 145.0))
+	print (getDifference(29.4803, -88.6381))
+	print (getDifference(-78.3251, -159.036))
+
+	print ()
+	print (getDifference(-70099.74233810938, 29840.67437876723))
+	print (getDifference(-165313.6666297357, 33693.9894517456))
+	print (getDifference(1174.8380510598456, -154146.66490124757))
+	print (getDifference(60175.77306795546, 42213.07192354373))"
+hb8jw,python,"Angles (geometric), normalization and conversion",Mathematics,Geometry,"PI = 3.141592653589793
+TWO_PI = 6.283185307179586
+
+def normalize2deg(a):
+  while a < 0: a += 360
+  while a >= 360: a -= 360
+  return a
+def normalize2grad(a):
+  while a < 0: a += 400
+  while a >= 400: a -= 400
+  return a
+def normalize2mil(a):
+  while a < 0: a += 6400
+  while a >= 6400: a -= 6400
+  return a
+def normalize2rad(a):
+  while a < 0: a += TWO_PI
+  while a >= TWO_PI: a -= TWO_PI
+  return a
+
+def deg2grad(a): return a * 10.0 / 9.0
+def deg2mil(a): return a * 160.0 / 9.0
+def deg2rad(a): return a * PI / 180.0
+
+def grad2deg(a): return a * 9.0 / 10.0
+def grad2mil(a): return a * 16.0
+def grad2rad(a): return a * PI / 200.0
+
+def mil2deg(a): return a * 9.0 / 160.0
+def mil2grad(a): return a / 16.0
+def mil2rad(a): return a * PI / 3200.0
+
+def rad2deg(a): return a * 180.0 / PI
+def rad2grad(a): return a * 200.0 / PI
+def rad2mil(a): return a * 3200.0 / PI"
+id9of,python,Animate a pendulum,Game Development,Physics Simulations,"import pygame, sys
+from pygame.locals import *
+from math import sin, cos, radians
+
+pygame.init()
+
+WINDOWSIZE = 250
+TIMETICK = 100
+BOBSIZE = 15
+
+window = pygame.display.set_mode((WINDOWSIZE, WINDOWSIZE))
+pygame.display.set_caption()
+
+screen = pygame.display.get_surface()
+screen.fill((255,255,255))
+
+PIVOT = (WINDOWSIZE/2, WINDOWSIZE/10)
+SWINGLENGTH = PIVOT[1]*4
+
+class BobMass(pygame.sprite.Sprite):
+    def __init__(self):
+        pygame.sprite.Sprite.__init__(self)
+        self.theta = 45
+        self.dtheta = 0
+        self.rect = pygame.Rect(PIVOT[0]-SWINGLENGTH*cos(radians(self.theta)),
+                                PIVOT[1]+SWINGLENGTH*sin(radians(self.theta)),
+                                1,1)
+        self.draw()
+
+    def recomputeAngle(self):
+        scaling = 3000.0/(SWINGLENGTH**2)
+
+        firstDDtheta = -sin(radians(self.theta))*scaling
+        midDtheta = self.dtheta + firstDDtheta
+        midtheta = self.theta + (self.dtheta + midDtheta)/2.0
+
+        midDDtheta = -sin(radians(midtheta))*scaling
+        midDtheta = self.dtheta + (firstDDtheta + midDDtheta)/2
+        midtheta = self.theta + (self.dtheta + midDtheta)/2
+
+        midDDtheta = -sin(radians(midtheta)) * scaling
+        lastDtheta = midDtheta + midDDtheta
+        lasttheta = midtheta + (midDtheta + lastDtheta)/2.0
+
+        lastDDtheta = -sin(radians(lasttheta)) * scaling
+        lastDtheta = midDtheta + (midDDtheta + lastDDtheta)/2.0
+        lasttheta = midtheta + (midDtheta + lastDtheta)/2.0
+
+        self.dtheta = lastDtheta
+        self.theta = lasttheta
+        self.rect = pygame.Rect(PIVOT[0]-
+                                SWINGLENGTH*sin(radians(self.theta)), 
+                                PIVOT[1]+
+                                SWINGLENGTH*cos(radians(self.theta)),1,1)
+
+
+    def draw(self):
+        pygame.draw.circle(screen, (0,0,0), PIVOT, 5, 0)
+        pygame.draw.circle(screen, (0,0,0), self.rect.center, BOBSIZE, 0)
+        pygame.draw.aaline(screen, (0,0,0), PIVOT, self.rect.center)
+        pygame.draw.line(screen, (0,0,0), (0, PIVOT[1]), (WINDOWSIZE, PIVOT[1]))
+
+    def update(self):
+        self.recomputeAngle()
+        screen.fill((255,255,255))
+        self.draw()
+
+bob = BobMass()
+
+TICK = USEREVENT + 2
+pygame.time.set_timer(TICK, TIMETICK)
+
+def input(events):
+    for event in events:
+        if event.type == QUIT:
+            sys.exit(0)
+        elif event.type == TICK:
+            bob.update()
+
+while True:
+    input(pygame.event.get())
+    pygame.display.flip()"
+v5a29,python,Animation,Game Development,Graphics,"import sys
+
+from PyQt5.QtCore import QBasicTimer, Qt
+from PyQt5.QtGui import QFont
+from PyQt5.QtWidgets import QApplication, QLabel
+
+
+class Marquee(QLabel):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.right_to_left_direction = True
+        self.initUI()
+        self.timer = QBasicTimer()
+        self.timer.start(80, self)
+
+    def initUI(self):
+        self.setWindowFlags(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.setText()
+        self.setFont(QFont(None, 50, QFont.Bold))
+        
+        self.setStyleSheet()
+
+    def timerEvent(self, event):
+        i = 1 if self.right_to_left_direction else -1
+        self.setText(self.text()[i:] + self.text()[:i])  
+
+    def mouseReleaseEvent(self, event):  
+        self.right_to_left_direction = not self.right_to_left_direction
+
+    def keyPressEvent(self, event):  
+        if event.key() == Qt.Key_Escape:
+            self.close()
+
+
+app = QApplication(sys.argv)
+w = Marquee()
+
+w.adjustSize()  
+w.move(QApplication.instance().desktop().screen().rect().center()
+       - w.rect().center())
+w.show()
+sys.exit(app.exec())"
+rj8gq,python,Anonymous recursion,Programming Concepts,Recursion,">>> Y = lambda f: (lambda x: x(x))(lambda y: f(lambda *args: y(y)(*args)))
+>>> fib = lambda f: lambda n: None if n < 0 else (0 if n == 0 else (1 if n == 1 else f(n-1) + f(n-2)))
+>>> [ Y(fib)(i) for i in range(-2, 10) ]
+[None, None, 0, 1, 1, 2, 3, 5, 8, 13, 21, 34]"
+1eypc,python,Anti-primes,Mathematics,Number Theory,"from itertools import chain, count, cycle, islice, accumulate
+
+def factors(n):
+    def prime_powers(n):
+        for c in accumulate(chain([2, 1, 2], cycle([2,4]))):
+            if c*c > n: break
+            if n%c: continue
+            d,p = (), c
+            while not n%c:
+                n,p,d = n
+            yield d
+        if n > 1: yield n,
+
+    r = [1]
+    for e in prime_powers(n):
+        r += [a*b for a in r for b in e]
+    return r
+
+def antiprimes():
+    mx = 0
+    yield 1
+    for c in count(2,2):
+        if c >= 58: break
+        ln = len(factors(c))
+        if ln > mx:
+            yield c
+            mx = ln
+    for c in count(60,30):
+        ln = len(factors(c))
+        if ln > mx:
+            yield c
+            mx = ln  
+
+if __name__ == '__main__':
+    print(*islice(antiprimes(), 40)))"
+kpyhf,python,Append a record to the end of a text file,Utilities & Scripts,File Operations,"passwd_list=[
+  dict(account='jsmith', password='x', UID=1001, GID=1000, 
+       GECOS=dict(fullname='Joe Smith', office='Room 1007', extension='(234)555-8917',
+                  homephone='(234)555-0077', email='jsmith@rosettacode.org'),
+                  directory='/home/jsmith', shell='/bin/bash'),
+  dict(account='jdoe', password='x', UID=1002, GID=1000,
+       GECOS=dict(fullname='Jane Doe', office='Room 1004', extension='(234)555-8914',
+                  homephone='(234)555-0044', email='jdoe@rosettacode.org'),
+       directory='/home/jdoe', shell='/bin/bash')
+]
+
+passwd_fields=.split()
+GECOS_fields=.split()
+
+def passwd_text_repr(passwd_rec):
+
+  passwd_rec[]=.join([ passwd_rec[][field] for field in GECOS_fields])
+  for field in passwd_rec: 
+    if not isinstance(passwd_rec[field], str):
+      passwd_rec[field]=`passwd_rec[field]`
+  return .join([ passwd_rec[field] for field in passwd_fields ])
+
+passwd_text=open(,)
+for passwd_rec in passwd_list:
+  print >> passwd_text,passwd_text_repr(passwd_rec)
+passwd_text.close()
+
+
+
+
+passwd_text=open(,)
+new_rec=dict(account='xyz', password='x', UID=1003, GID=1000,
+             GECOS=dict(fullname='X Yz', office='Room 1003', extension='(234)555-8913',
+                        homephone='(234)555-0033', email='xyz@rosettacode.org'),
+             directory='/home/xyz', shell='/bin/bash')
+print >> passwd_text,  passwd_text_repr(new_rec)
+passwd_text.close()
+
+
+
+
+passwd_list=list(open(,))
+if  in passwd_list[-1]:
+  print ,passwd_list[-1][:-1]"
+s82q9,python,Apply a callback to an array,Programming Concepts,Functions,"def square(n):
+    return n * n
+
+numbers = [1, 3, 5, 7]
+
+squares1 = [square(n) for n in numbers]     
+
+squares2a = map(square, numbers)            
+
+squares2b = map(lambda x: x*x, numbers)     
+
+squares3 = [n * n for n in numbers]         
+                                            
+
+isquares1 = (n * n for n in numbers)        
+
+import itertools
+isquares2 = itertools.imap(square, numbers)"
+7h3rm,python,Apply a digital filter (direct form II transposed),Mathematics,Signal Processing,"from __future__ import print_function
+from scipy import signal
+import matplotlib.pyplot as plt
+
+if __name__==:
+	sig = [-0.917843918645,0.141984778794,1.20536903482,0.190286794412,-0.662370894973,-1.00700480494,
+		-0.404707073677,0.800482325044,0.743500089861,1.01090520172,0.741527555207,
+		0.277841675195,0.400833448236,-0.2085993586,-0.172842103641,-0.134316096293,
+		0.0259303398477,0.490105989562,0.549391221511,0.9047198589]
+
+	
+	
+	a = [1.00000000, -2.77555756e-16, 3.33333333e-01, -1.85037171e-17]
+	b = [0.16666667, 0.5, 0.5, 0.16666667]
+
+	
+	filt = signal.lfilter(b, a, sig)
+	print (filt)
+
+	plt.plot(sig, 'b')
+	plt.plot(filt, 'r--')
+	plt.show()"
+onb81,python,Approximate equality,Mathematics,Numerical Methods,"math.isclose -> bool
+    a: double
+    b: double
+    *
+    rel_tol: double = 1e-09
+        maximum difference for being considered , relative to the
+        magnitude of the input values
+    abs_tol: double = 0.0
+        maximum difference for being considered , regardless of the
+        magnitude of the input values
+Determine whether two floating point numbers are close in value.
+Return True if a is close in value to b, and False otherwise.
+For the values to be considered close, the difference between them
+must be smaller than at least one of the tolerances.
+-inf, inf and NaN behave similarly to the IEEE 754 Standard.  That
+is, NaN is not close to anything, even itself.  inf and -inf are
+only close to themselves."
+3jzc,python,Arbitrary-precision integers (included),Mathematics,Arithmetic,">>> y = str( 5**4**3**2 )
+>>> print (% (y[:20], y[-20:], len(y)))
+5**4**3**2 = 62060698786608744707...92256259918212890625 and has 183231 digits"
+o781,python,Archimedean spiral,Mathematics,Geometry,"from turtle import *
+from math import *
+color()
+down()
+for i in range(200):
+    t = i / 20 * pi
+    x = (1 + 5 * t) * cos(t)
+    y = (1 + 5 * t) * sin(t)
+    goto(x, y)
+up()
+done()"

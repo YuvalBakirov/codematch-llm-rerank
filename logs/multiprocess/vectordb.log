@@ -1,0 +1,2 @@
+{"level": "INFO", "message": "Collection 'originals_embeddings' (with embedding size - 768) already exists in the vector database.", "timestamp": "2024-12-22T19:03:05.403598+00:00", "logger": "benchmark.vectordb", "module": "database", "function": "handle_vectordb_creation", "line": 84}
+{"level": "INFO", "message": "Collection 'originals_embeddings' remains unchanged.", "timestamp": "2024-12-22T19:03:08.883518+00:00", "logger": "benchmark.vectordb", "module": "database", "function": "handle_vectordb_creation", "line": 96}

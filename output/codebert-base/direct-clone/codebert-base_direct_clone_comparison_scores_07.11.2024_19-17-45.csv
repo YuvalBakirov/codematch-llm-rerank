@@ -1,0 +1,800 @@
+clone_code_id,base_code_id,task,clone_language,similarity_score,clone_type,clone_sub_type
+z4tt_1_1,z4tt,100 doors,python,0.9999999,T1,Identical Clone
+z4tt_1_2,z4tt,100 doors,python,0.99421495,T1,Different Whitespaces
+z4tt_1_3,z4tt,100 doors,python,0.9989105,T1,Different Comments
+z4tt_1_4,z4tt,100 doors,python,0.9992467,T1,Different Formatting
+z4tt_2_1,z4tt,100 doors,python,0.9967172,T2,Different Variable Names
+z4tt_2_2,z4tt,100 doors,python,0.99561214,T2,Different Data Types
+z4tt_2_3,z4tt,100 doors,python,0.9999999,T2,Different Function Names
+z4tt_3_1,z4tt,100 doors,python,0.99774337,T3,Added Statements
+z4tt_3_2,z4tt,100 doors,python,0.99937063,T3,Removed Statements
+z4tt_3_3,z4tt,100 doors,python,0.9989429,T3,Reordered Statements
+z4tt_3_4,z4tt,100 doors,python,0.99624956,T3,Control Flow Modifications
+z4tt_4_1,z4tt,100 doors,python,0.99736947,T4,Same Language
+z4tt_4_2,z4tt,100 doors,go,0.94561076,T4,Different Language
+z4tt_4_2,z4tt,100 doors,java,0.94147605,T4,Different Language
+z4tt_4_2,z4tt,100 doors,javascript,0.9798317,T4,Different Language
+z4tt_4_2,z4tt,100 doors,php,0.97955364,T4,Different Language
+z4tt_4_2,z4tt,100 doors,ruby,0.9837183,T4,Different Language
+vu129_1_1,vu129,100 prisoners,python,1.0,T1,Identical Clone
+vu129_1_2,vu129,100 prisoners,python,0.967666,T1,Different Whitespaces
+vu129_1_3,vu129,100 prisoners,python,1.0,T1,Different Comments
+vu129_1_4,vu129,100 prisoners,python,0.9997015,T1,Different Formatting
+vu129_2_1,vu129,100 prisoners,python,0.99939424,T2,Different Variable Names
+vu129_2_2,vu129,100 prisoners,python,0.9980772,T2,Different Data Types
+vu129_2_3,vu129,100 prisoners,python,0.99997985,T2,Different Function Names
+vu129_3_1,vu129,100 prisoners,python,1.0,T3,Added Statements
+vu129_3_2,vu129,100 prisoners,python,0.99912584,T3,Removed Statements
+vu129_3_3,vu129,100 prisoners,python,0.99952173,T3,Reordered Statements
+vu129_3_4,vu129,100 prisoners,python,0.9991868,T3,Control Flow Modifications
+vu129_4_1,vu129,100 prisoners,python,0.99393666,T4,Same Language
+vu129_4_2,vu129,100 prisoners,go,0.89827013,T4,Different Language
+vu129_4_2,vu129,100 prisoners,java,0.98181593,T4,Different Language
+vu129_4_2,vu129,100 prisoners,javascript,0.87611127,T4,Different Language
+vu129_4_2,vu129,100 prisoners,ruby,0.93932503,T4,Different Language
+clr9q_1_1,clr9q,15 puzzle game,python,1.0,T1,Identical Clone
+clr9q_1_2,clr9q,15 puzzle game,python,0.9861154,T1,Different Whitespaces
+clr9q_1_3,clr9q,15 puzzle game,python,0.9997115,T1,Different Comments
+clr9q_1_4,clr9q,15 puzzle game,python,0.9998832,T1,Different Formatting
+clr9q_2_1,clr9q,15 puzzle game,python,0.99919367,T2,Different Variable Names
+clr9q_2_2,clr9q,15 puzzle game,python,0.99971926,T2,Different Data Types
+clr9q_2_3,clr9q,15 puzzle game,python,0.99939156,T2,Different Function Names
+clr9q_3_1,clr9q,15 puzzle game,python,0.99970347,T3,Added Statements
+clr9q_3_2,clr9q,15 puzzle game,python,0.99545956,T3,Removed Statements
+clr9q_3_3,clr9q,15 puzzle game,python,0.99038434,T3,Reordered Statements
+clr9q_3_4,clr9q,15 puzzle game,python,0.99418676,T3,Control Flow Modifications
+clr9q_4_1,clr9q,15 puzzle game,python,0.993813,T4,Same Language
+clr9q_4_2,clr9q,15 puzzle game,go,0.93409806,T4,Different Language
+clr9q_4_2,clr9q,15 puzzle game,java,0.97947675,T4,Different Language
+clr9q_4_2,clr9q,15 puzzle game,javascript,0.98748034,T4,Different Language
+clr9q_4_2,clr9q,15 puzzle game,php,0.9804567,T4,Different Language
+clr9q_4_2,clr9q,15 puzzle game,ruby,0.97744185,T4,Different Language
+inmof_1_1,inmof,2048,python,1.0,T1,Identical Clone
+inmof_1_2,inmof,2048,python,0.99973714,T1,Different Whitespaces
+inmof_1_3,inmof,2048,python,1.0,T1,Different Comments
+inmof_1_4,inmof,2048,python,0.9828172,T1,Different Formatting
+inmof_2_1,inmof,2048,python,0.9998095,T2,Different Variable Names
+inmof_2_2,inmof,2048,python,0.9998995,T2,Different Data Types
+inmof_2_3,inmof,2048,python,0.9999564,T2,Different Function Names
+inmof_3_1,inmof,2048,python,0.99951524,T3,Added Statements
+inmof_3_2,inmof,2048,python,0.9991116,T3,Removed Statements
+inmof_3_3,inmof,2048,python,0.99992514,T3,Reordered Statements
+inmof_3_4,inmof,2048,python,0.9997749,T3,Control Flow Modifications
+inmof_4_1,inmof,2048,python,0.98418707,T4,Same Language
+inmof_4_2,inmof,2048,go,0.96517235,T4,Different Language
+inmof_4_2,inmof,2048,java,0.97538686,T4,Different Language
+inmof_4_2,inmof,2048,javascript,0.9869075,T4,Different Language
+inmof_4_2,inmof,2048,php,0.98858404,T4,Different Language
+inmof_4_2,inmof,2048,ruby,0.9801808,T4,Different Language
+s0lq9_1_1,s0lq9,21 game,python,0.99999994,T1,Identical Clone
+s0lq9_1_2,s0lq9,21 game,python,0.9664376,T1,Different Whitespaces
+s0lq9_1_3,s0lq9,21 game,python,0.9991335,T1,Different Comments
+s0lq9_1_4,s0lq9,21 game,python,0.97197855,T1,Different Formatting
+s0lq9_2_1,s0lq9,21 game,python,0.9984971,T2,Different Variable Names
+s0lq9_2_2,s0lq9,21 game,python,0.99906254,T2,Different Data Types
+s0lq9_2_3,s0lq9,21 game,python,0.9990598,T2,Different Function Names
+s0lq9_3_1,s0lq9,21 game,python,0.9987271,T3,Added Statements
+s0lq9_3_2,s0lq9,21 game,python,0.99256754,T3,Removed Statements
+s0lq9_3_3,s0lq9,21 game,python,0.9990148,T3,Reordered Statements
+s0lq9_3_4,s0lq9,21 game,python,0.99927044,T3,Control Flow Modifications
+s0lq9_4_1,s0lq9,21 game,python,0.9665606,T4,Same Language
+s0lq9_4_2,s0lq9,21 game,go,0.9581008,T4,Different Language
+s0lq9_4_2,s0lq9,21 game,java,0.9605645,T4,Different Language
+s0lq9_4_2,s0lq9,21 game,javascript,0.96996427,T4,Different Language
+s0lq9_4_2,s0lq9,21 game,php,0.97247493,T4,Different Language
+s0lq9_4_2,s0lq9,21 game,ruby,0.9826535,T4,Different Language
+u5evd_1_1,u5evd,24 game,python,1.0,T1,Identical Clone
+u5evd_1_2,u5evd,24 game,python,0.9900036,T1,Different Whitespaces
+u5evd_1_3,u5evd,24 game,python,0.9905653,T1,Different Comments
+u5evd_1_4,u5evd,24 game,python,0.9912795,T1,Different Formatting
+u5evd_2_1,u5evd,24 game,python,0.9909433,T2,Different Variable Names
+u5evd_2_2,u5evd,24 game,python,0.9909897,T2,Different Data Types
+u5evd_2_3,u5evd,24 game,python,0.99088115,T2,Different Function Names
+u5evd_3_1,u5evd,24 game,python,0.99156034,T3,Added Statements
+u5evd_3_2,u5evd,24 game,python,0.99137783,T3,Removed Statements
+u5evd_3_3,u5evd,24 game,python,0.991694,T3,Reordered Statements
+u5evd_3_4,u5evd,24 game,python,0.98908395,T3,Control Flow Modifications
+u5evd_4_1,u5evd,24 game,python,0.9894231,T4,Same Language
+u5evd_4_2,u5evd,24 game,go,0.9809364,T4,Different Language
+u5evd_4_2,u5evd,24 game,java,0.97199917,T4,Different Language
+u5evd_4_2,u5evd,24 game,javascript,0.92949337,T4,Different Language
+u5evd_4_2,u5evd,24 game,php,0.9879724,T4,Different Language
+u5evd_4_2,u5evd,24 game,ruby,0.9873389,T4,Different Language
+r70gq_1_1,r70gq,24 game/Solve,python,1.0000001,T1,Identical Clone
+r70gq_1_2,r70gq,24 game/Solve,python,0.99441004,T1,Different Whitespaces
+r70gq_1_3,r70gq,24 game/Solve,python,0.99243516,T1,Different Comments
+r70gq_1_4,r70gq,24 game/Solve,python,0.9907819,T1,Different Formatting
+r70gq_2_1,r70gq,24 game/Solve,python,0.9999237,T2,Different Variable Names
+r70gq_2_2,r70gq,24 game/Solve,python,0.9901319,T2,Different Data Types
+r70gq_2_3,r70gq,24 game/Solve,python,0.99265194,T2,Different Function Names
+r70gq_3_1,r70gq,24 game/Solve,python,0.99005157,T3,Added Statements
+r70gq_3_2,r70gq,24 game/Solve,python,0.98742616,T3,Removed Statements
+r70gq_3_3,r70gq,24 game/Solve,python,0.99284893,T3,Reordered Statements
+r70gq_3_4,r70gq,24 game/Solve,python,0.9897475,T3,Control Flow Modifications
+r70gq_4_1,r70gq,24 game/Solve,python,0.9890642,T4,Same Language
+r70gq_4_2,r70gq,24 game/Solve,go,0.93694264,T4,Different Language
+r70gq_4_2,r70gq,24 game/Solve,java,0.9554306,T4,Different Language
+r70gq_4_2,r70gq,24 game/Solve,javascript,0.9821471,T4,Different Language
+r70gq_4_2,r70gq,24 game/Solve,ruby,0.9842416,T4,Different Language
+1a6pc_1_1,1a6pc,4-rings or 4-squares puzzle,python,1.0,T1,Identical Clone
+1a6pc_1_2,1a6pc,4-rings or 4-squares puzzle,python,0.9713721,T1,Different Whitespaces
+1a6pc_1_3,1a6pc,4-rings or 4-squares puzzle,python,0.9987578,T1,Different Comments
+1a6pc_1_4,1a6pc,4-rings or 4-squares puzzle,python,0.9985424,T1,Different Formatting
+1a6pc_2_1,1a6pc,4-rings or 4-squares puzzle,python,0.9975833,T2,Different Variable Names
+1a6pc_2_2,1a6pc,4-rings or 4-squares puzzle,python,0.9942861,T2,Different Data Types
+1a6pc_2_3,1a6pc,4-rings or 4-squares puzzle,python,0.9994718,T2,Different Function Names
+1a6pc_3_1,1a6pc,4-rings or 4-squares puzzle,python,0.9956758,T3,Added Statements
+1a6pc_3_2,1a6pc,4-rings or 4-squares puzzle,python,0.9941936,T3,Removed Statements
+1a6pc_3_3,1a6pc,4-rings or 4-squares puzzle,python,0.99919355,T3,Reordered Statements
+1a6pc_3_4,1a6pc,4-rings or 4-squares puzzle,python,0.9975959,T3,Control Flow Modifications
+1a6pc_4_1,1a6pc,4-rings or 4-squares puzzle,python,0.9944097,T4,Same Language
+1a6pc_4_2,1a6pc,4-rings or 4-squares puzzle,go,0.9170016,T4,Different Language
+1a6pc_4_2,1a6pc,4-rings or 4-squares puzzle,java,0.98185813,T4,Different Language
+1a6pc_4_2,1a6pc,4-rings or 4-squares puzzle,javascript,0.7753124,T4,Different Language
+1a6pc_4_2,1a6pc,4-rings or 4-squares puzzle,ruby,0.9676674,T4,Different Language
+36bzc_1_1,36bzc,9 billion names of God the integer,python,0.9999999,T1,Identical Clone
+36bzc_1_2,36bzc,9 billion names of God the integer,python,0.99343294,T1,Different Whitespaces
+36bzc_1_3,36bzc,9 billion names of God the integer,python,0.9999701,T1,Different Comments
+36bzc_1_4,36bzc,9 billion names of God the integer,python,0.9970044,T1,Different Formatting
+36bzc_2_1,36bzc,9 billion names of God the integer,python,0.9994504,T2,Different Variable Names
+36bzc_2_2,36bzc,9 billion names of God the integer,python,0.99619925,T2,Different Data Types
+36bzc_2_3,36bzc,9 billion names of God the integer,python,0.9998325,T2,Different Function Names
+36bzc_3_1,36bzc,9 billion names of God the integer,python,0.9996916,T3,Added Statements
+36bzc_3_2,36bzc,9 billion names of God the integer,python,0.9996495,T3,Removed Statements
+36bzc_3_3,36bzc,9 billion names of God the integer,python,0.9995847,T3,Reordered Statements
+36bzc_3_4,36bzc,9 billion names of God the integer,python,0.9994261,T3,Control Flow Modifications
+36bzc_4_1,36bzc,9 billion names of God the integer,python,0.99839413,T4,Same Language
+36bzc_4_2,36bzc,9 billion names of God the integer,go,0.9549581,T4,Different Language
+36bzc_4_2,36bzc,9 billion names of God the integer,java,0.9691613,T4,Different Language
+36bzc_4_2,36bzc,9 billion names of God the integer,javascript,0.9392995,T4,Different Language
+36bzc_4_2,36bzc,9 billion names of God the integer,ruby,0.9684509,T4,Different Language
+jhq7p_1_1,jhq7p,A+B,python,0.99999994,T1,Identical Clone
+jhq7p_1_2,jhq7p,A+B,python,0.9985199,T1,Different Whitespaces
+jhq7p_1_3,jhq7p,A+B,python,0.9951852,T1,Different Comments
+jhq7p_1_4,jhq7p,A+B,python,0.99016356,T1,Different Formatting
+jhq7p_2_1,jhq7p,A+B,python,0.9959133,T2,Different Variable Names
+jhq7p_2_2,jhq7p,A+B,python,0.99515754,T2,Different Data Types
+jhq7p_2_3,jhq7p,A+B,python,0.99864966,T2,Different Function Names
+jhq7p_3_1,jhq7p,A+B,python,0.9938504,T3,Added Statements
+jhq7p_3_2,jhq7p,A+B,python,0.99526715,T3,Removed Statements
+jhq7p_3_3,jhq7p,A+B,python,0.9888539,T3,Reordered Statements
+jhq7p_3_4,jhq7p,A+B,python,0.98889554,T3,Control Flow Modifications
+jhq7p_4_1,jhq7p,A+B,python,0.98629224,T4,Same Language
+jhq7p_4_2,jhq7p,A+B,go,0.9564821,T4,Different Language
+jhq7p_4_2,jhq7p,A+B,java,0.9716488,T4,Different Language
+jhq7p_4_2,jhq7p,A+B,javascript,0.9538597,T4,Different Language
+jhq7p_4_2,jhq7p,A+B,php,0.97765774,T4,Different Language
+jhq7p_4_2,jhq7p,A+B,ruby,0.9737655,T4,Different Language
+z37tt_1_1,z37tt,ABC problem,python,1.0000001,T1,Identical Clone
+z37tt_1_2,z37tt,ABC problem,python,0.99568987,T1,Different Whitespaces
+z37tt_1_3,z37tt,ABC problem,python,0.99860966,T1,Different Comments
+z37tt_1_4,z37tt,ABC problem,python,0.9889039,T1,Different Formatting
+z37tt_2_1,z37tt,ABC problem,python,0.99882495,T2,Different Variable Names
+z37tt_2_2,z37tt,ABC problem,python,0.99144053,T2,Different Data Types
+z37tt_2_3,z37tt,ABC problem,python,0.99871886,T2,Different Function Names
+z37tt_3_1,z37tt,ABC problem,python,0.9882967,T3,Added Statements
+z37tt_3_2,z37tt,ABC problem,python,0.9685534,T3,Removed Statements
+z37tt_3_3,z37tt,ABC problem,python,0.99886364,T3,Reordered Statements
+z37tt_3_4,z37tt,ABC problem,python,0.9980175,T3,Control Flow Modifications
+z37tt_4_1,z37tt,ABC problem,python,0.9917034,T4,Same Language
+z37tt_4_2,z37tt,ABC problem,go,0.90928495,T4,Different Language
+z37tt_4_2,z37tt,ABC problem,java,0.97421,T4,Different Language
+z37tt_4_2,z37tt,ABC problem,javascript,0.86591566,T4,Different Language
+z37tt_4_2,z37tt,ABC problem,php,0.9749963,T4,Different Language
+z37tt_4_2,z37tt,ABC problem,ruby,0.8609434,T4,Different Language
+8i80o_1_1,8i80o,AKS test for primes,python,1.0,T1,Identical Clone
+8i80o_1_2,8i80o,AKS test for primes,python,0.9818496,T1,Different Whitespaces
+8i80o_1_3,8i80o,AKS test for primes,python,0.9996415,T1,Different Comments
+8i80o_1_4,8i80o,AKS test for primes,python,0.9987548,T1,Different Formatting
+8i80o_2_1,8i80o,AKS test for primes,python,0.99922323,T2,Different Variable Names
+8i80o_2_2,8i80o,AKS test for primes,python,0.9989888,T2,Different Data Types
+8i80o_2_3,8i80o,AKS test for primes,python,0.99972665,T2,Different Function Names
+8i80o_3_1,8i80o,AKS test for primes,python,0.99822474,T3,Added Statements
+8i80o_3_2,8i80o,AKS test for primes,python,0.9908265,T3,Removed Statements
+8i80o_3_3,8i80o,AKS test for primes,python,0.99817777,T3,Reordered Statements
+8i80o_3_4,8i80o,AKS test for primes,python,0.99583924,T3,Control Flow Modifications
+8i80o_4_1,8i80o,AKS test for primes,python,0.9960984,T4,Same Language
+8i80o_4_2,8i80o,AKS test for primes,go,0.9174349,T4,Different Language
+8i80o_4_2,8i80o,AKS test for primes,java,0.9457565,T4,Different Language
+8i80o_4_2,8i80o,AKS test for primes,javascript,0.9505986,T4,Different Language
+8i80o_4_2,8i80o,AKS test for primes,ruby,0.9682727,T4,Different Language
+5cux_1_1,5cux,ASCII art diagram converter,python,0.9999999,T1,Identical Clone
+5cux_1_2,5cux,ASCII art diagram converter,python,0.97397196,T1,Different Whitespaces
+5cux_1_3,5cux,ASCII art diagram converter,python,0.99928284,T1,Different Comments
+5cux_1_4,5cux,ASCII art diagram converter,python,0.99886507,T1,Different Formatting
+5cux_2_1,5cux,ASCII art diagram converter,python,0.997834,T2,Different Variable Names
+5cux_2_2,5cux,ASCII art diagram converter,python,0.99928284,T2,Different Data Types
+5cux_2_3,5cux,ASCII art diagram converter,python,0.99937516,T2,Different Function Names
+5cux_3_1,5cux,ASCII art diagram converter,python,0.9982317,T3,Added Statements
+5cux_3_2,5cux,ASCII art diagram converter,python,0.9975289,T3,Removed Statements
+5cux_3_3,5cux,ASCII art diagram converter,python,0.9990274,T3,Reordered Statements
+5cux_3_4,5cux,ASCII art diagram converter,python,0.99796754,T3,Control Flow Modifications
+5cux_4_1,5cux,ASCII art diagram converter,python,0.99732137,T4,Same Language
+5cux_4_2,5cux,ASCII art diagram converter,go,0.96242315,T4,Different Language
+5cux_4_2,5cux,ASCII art diagram converter,java,0.97790885,T4,Different Language
+5cux_4_2,5cux,ASCII art diagram converter,ruby,0.97202015,T4,Different Language
+kb6hf_1_1,kb6hf,"Abbreviations, automatic",python,0.9999999,T1,Identical Clone
+kb6hf_1_2,kb6hf,"Abbreviations, automatic",python,0.9764776,T1,Different Whitespaces
+kb6hf_1_3,kb6hf,"Abbreviations, automatic",python,0.9999999,T1,Different Comments
+kb6hf_1_4,kb6hf,"Abbreviations, automatic",python,0.9997447,T1,Different Formatting
+kb6hf_2_1,kb6hf,"Abbreviations, automatic",python,0.99960345,T2,Different Variable Names
+kb6hf_2_2,kb6hf,"Abbreviations, automatic",python,0.99857414,T2,Different Data Types
+kb6hf_2_3,kb6hf,"Abbreviations, automatic",python,0.99839664,T2,Different Function Names
+kb6hf_3_1,kb6hf,"Abbreviations, automatic",python,0.9995568,T3,Added Statements
+kb6hf_3_2,kb6hf,"Abbreviations, automatic",python,0.9986846,T3,Removed Statements
+kb6hf_3_3,kb6hf,"Abbreviations, automatic",python,0.99906904,T3,Reordered Statements
+kb6hf_3_4,kb6hf,"Abbreviations, automatic",python,0.9991949,T3,Control Flow Modifications
+kb6hf_4_1,kb6hf,"Abbreviations, automatic",python,0.99455214,T4,Same Language
+kb6hf_4_2,kb6hf,"Abbreviations, automatic",go,0.9188791,T4,Different Language
+kb6hf_4_2,kb6hf,"Abbreviations, automatic",java,0.9811239,T4,Different Language
+kb6hf_4_2,kb6hf,"Abbreviations, automatic",javascript,0.95000666,T4,Different Language
+kb6hf_4_2,kb6hf,"Abbreviations, automatic",ruby,0.88123006,T4,Different Language
+2vilz_1_1,2vilz,"Abbreviations, easy",python,1.0,T1,Identical Clone
+2vilz_1_2,2vilz,"Abbreviations, easy",python,0.9914551,T1,Different Whitespaces
+2vilz_1_3,2vilz,"Abbreviations, easy",python,0.9996049,T1,Different Comments
+2vilz_1_4,2vilz,"Abbreviations, easy",python,0.99142563,T1,Different Formatting
+2vilz_2_1,2vilz,"Abbreviations, easy",python,0.9990939,T2,Different Variable Names
+2vilz_2_2,2vilz,"Abbreviations, easy",python,0.9980941,T2,Different Data Types
+2vilz_2_3,2vilz,"Abbreviations, easy",python,0.9992963,T2,Different Function Names
+2vilz_3_1,2vilz,"Abbreviations, easy",python,0.9998753,T3,Added Statements
+2vilz_3_2,2vilz,"Abbreviations, easy",python,0.99654144,T3,Removed Statements
+2vilz_3_3,2vilz,"Abbreviations, easy",python,0.9086884,T3,Reordered Statements
+2vilz_3_4,2vilz,"Abbreviations, easy",python,0.99918854,T3,Control Flow Modifications
+2vilz_4_1,2vilz,"Abbreviations, easy",python,0.98358184,T4,Same Language
+2vilz_4_2,2vilz,"Abbreviations, easy",go,0.94159925,T4,Different Language
+2vilz_4_2,2vilz,"Abbreviations, easy",java,0.9620752,T4,Different Language
+2vilz_4_2,2vilz,"Abbreviations, easy",javascript,0.95448804,T4,Different Language
+2vilz_4_2,2vilz,"Abbreviations, easy",php,0.9487426,T4,Different Language
+2vilz_4_2,2vilz,"Abbreviations, easy",ruby,0.91166794,T4,Different Language
+oik81_1_1,oik81,"Abbreviations, simple",python,0.99999994,T1,Identical Clone
+oik81_1_2,oik81,"Abbreviations, simple",python,0.97781205,T1,Different Whitespaces
+oik81_1_3,oik81,"Abbreviations, simple",python,0.9999896,T1,Different Comments
+oik81_1_4,oik81,"Abbreviations, simple",python,0.9287704,T1,Different Formatting
+oik81_2_1,oik81,"Abbreviations, simple",python,0.9993819,T2,Different Variable Names
+oik81_2_2,oik81,"Abbreviations, simple",python,0.9976593,T2,Different Data Types
+oik81_2_3,oik81,"Abbreviations, simple",python,0.9999391,T2,Different Function Names
+oik81_3_1,oik81,"Abbreviations, simple",python,0.9991952,T3,Added Statements
+oik81_3_2,oik81,"Abbreviations, simple",python,0.90154725,T3,Removed Statements
+oik81_3_3,oik81,"Abbreviations, simple",python,0.9154943,T3,Reordered Statements
+oik81_3_4,oik81,"Abbreviations, simple",python,0.997944,T3,Control Flow Modifications
+oik81_4_1,oik81,"Abbreviations, simple",python,0.9954254,T4,Same Language
+oik81_4_2,oik81,"Abbreviations, simple",go,0.9060591,T4,Different Language
+oik81_4_2,oik81,"Abbreviations, simple",java,0.9851891,T4,Different Language
+oik81_4_2,oik81,"Abbreviations, simple",javascript,0.8586397,T4,Different Language
+oik81_4_2,oik81,"Abbreviations, simple",ruby,0.9216121,T4,Different Language
+08hsq_1_1,08hsq,Abelian sandpile model,python,1.0000001,T1,Identical Clone
+08hsq_1_2,08hsq,Abelian sandpile model,python,0.9678681,T1,Different Whitespaces
+08hsq_1_3,08hsq,Abelian sandpile model,python,0.99997425,T1,Different Comments
+08hsq_1_4,08hsq,Abelian sandpile model,python,0.99976146,T1,Different Formatting
+08hsq_2_1,08hsq,Abelian sandpile model,python,0.9989402,T2,Different Variable Names
+08hsq_2_2,08hsq,Abelian sandpile model,python,0.9981635,T2,Different Data Types
+08hsq_2_3,08hsq,Abelian sandpile model,python,0.9998479,T2,Different Function Names
+08hsq_3_1,08hsq,Abelian sandpile model,python,0.998705,T3,Added Statements
+08hsq_3_2,08hsq,Abelian sandpile model,python,0.9958103,T3,Removed Statements
+08hsq_3_3,08hsq,Abelian sandpile model,python,0.9999523,T3,Reordered Statements
+08hsq_3_4,08hsq,Abelian sandpile model,python,0.9971484,T3,Control Flow Modifications
+08hsq_4_1,08hsq,Abelian sandpile model,python,0.9929085,T4,Same Language
+08hsq_4_2,08hsq,Abelian sandpile model,go,0.8998258,T4,Different Language
+08hsq_4_2,08hsq,Abelian sandpile model,java,0.98293424,T4,Different Language
+7jzrm_1_1,7jzrm,Abelian sandpile model/Identity,python,1.0,T1,Identical Clone
+7jzrm_1_2,7jzrm,Abelian sandpile model/Identity,python,0.9731685,T1,Different Whitespaces
+7jzrm_1_3,7jzrm,Abelian sandpile model/Identity,python,1.0,T1,Different Comments
+7jzrm_1_4,7jzrm,Abelian sandpile model/Identity,python,0.9965788,T1,Different Formatting
+7jzrm_2_1,7jzrm,Abelian sandpile model/Identity,python,0.99932456,T2,Different Variable Names
+7jzrm_2_2,7jzrm,Abelian sandpile model/Identity,python,0.9986601,T2,Different Data Types
+7jzrm_2_3,7jzrm,Abelian sandpile model/Identity,python,0.9999579,T2,Different Function Names
+7jzrm_3_1,7jzrm,Abelian sandpile model/Identity,python,0.99991584,T3,Added Statements
+7jzrm_3_2,7jzrm,Abelian sandpile model/Identity,python,0.9953227,T3,Removed Statements
+7jzrm_3_3,7jzrm,Abelian sandpile model/Identity,python,0.9992536,T3,Reordered Statements
+7jzrm_3_4,7jzrm,Abelian sandpile model/Identity,python,0.9971982,T3,Control Flow Modifications
+7jzrm_4_1,7jzrm,Abelian sandpile model/Identity,python,0.9942336,T4,Same Language
+7jzrm_4_2,7jzrm,Abelian sandpile model/Identity,go,0.9173646,T4,Different Language
+7jzrm_4_2,7jzrm,Abelian sandpile model/Identity,ruby,0.9742902,T4,Different Language
+r7zgq_1_1,r7zgq,Abstract type,python,1.0000001,T1,Identical Clone
+r7zgq_1_2,r7zgq,Abstract type,python,0.9750842,T1,Different Whitespaces
+r7zgq_1_3,r7zgq,Abstract type,python,0.9991387,T1,Different Comments
+r7zgq_1_4,r7zgq,Abstract type,python,0.99821997,T1,Different Formatting
+r7zgq_2_1,r7zgq,Abstract type,python,0.9994984,T2,Different Variable Names
+r7zgq_2_2,r7zgq,Abstract type,python,0.9944776,T2,Different Data Types
+r7zgq_2_3,r7zgq,Abstract type,python,0.9998332,T2,Different Function Names
+r7zgq_3_1,r7zgq,Abstract type,python,0.99929523,T3,Added Statements
+r7zgq_3_2,r7zgq,Abstract type,python,0.9999489,T3,Removed Statements
+r7zgq_3_3,r7zgq,Abstract type,python,0.99542654,T3,Reordered Statements
+r7zgq_3_4,r7zgq,Abstract type,python,0.9899799,T3,Control Flow Modifications
+r7zgq_4_1,r7zgq,Abstract type,python,0.99835443,T4,Same Language
+r7zgq_4_2,r7zgq,Abstract type,go,0.9054421,T4,Different Language
+r7zgq_4_2,r7zgq,Abstract type,java,0.96400213,T4,Different Language
+r7zgq_4_2,r7zgq,Abstract type,php,0.9297261,T4,Different Language
+r7zgq_4_2,r7zgq,Abstract type,ruby,0.9532155,T4,Different Language
+grn4h_1_1,grn4h,Abundant odd numbers,python,1.0,T1,Identical Clone
+grn4h_1_2,grn4h,Abundant odd numbers,python,0.97492087,T1,Different Whitespaces
+grn4h_1_3,grn4h,Abundant odd numbers,python,0.9857348,T1,Different Comments
+grn4h_1_4,grn4h,Abundant odd numbers,python,0.98530805,T1,Different Formatting
+grn4h_2_1,grn4h,Abundant odd numbers,python,0.99944556,T2,Different Variable Names
+grn4h_2_2,grn4h,Abundant odd numbers,python,0.9839517,T2,Different Data Types
+grn4h_2_3,grn4h,Abundant odd numbers,python,0.9984119,T2,Different Function Names
+grn4h_3_1,grn4h,Abundant odd numbers,python,0.98389894,T3,Added Statements
+grn4h_3_2,grn4h,Abundant odd numbers,python,0.97678137,T3,Removed Statements
+grn4h_3_3,grn4h,Abundant odd numbers,python,0.9850998,T3,Reordered Statements
+grn4h_3_4,grn4h,Abundant odd numbers,python,0.9822439,T3,Control Flow Modifications
+grn4h_4_1,grn4h,Abundant odd numbers,python,0.9856198,T4,Same Language
+grn4h_4_2,grn4h,Abundant odd numbers,go,0.98788196,T4,Different Language
+grn4h_4_2,grn4h,Abundant odd numbers,java,0.94195867,T4,Different Language
+grn4h_4_2,grn4h,Abundant odd numbers,javascript,0.89711833,T4,Different Language
+grn4h_4_2,grn4h,Abundant odd numbers,ruby,0.9556413,T4,Different Language
+dfwn1_1_1,dfwn1,"Abundant, deficient and perfect number classifications",python,0.99999994,T1,Identical Clone
+dfwn1_1_2,dfwn1,"Abundant, deficient and perfect number classifications",python,0.9974966,T1,Different Whitespaces
+dfwn1_1_3,dfwn1,"Abundant, deficient and perfect number classifications",python,0.9962101,T1,Different Comments
+dfwn1_1_4,dfwn1,"Abundant, deficient and perfect number classifications",python,0.9962101,T1,Different Formatting
+dfwn1_2_1,dfwn1,"Abundant, deficient and perfect number classifications",python,0.9956156,T2,Different Variable Names
+dfwn1_2_2,dfwn1,"Abundant, deficient and perfect number classifications",python,0.9909396,T2,Different Data Types
+dfwn1_2_3,dfwn1,"Abundant, deficient and perfect number classifications",python,0.99804837,T2,Different Function Names
+dfwn1_3_1,dfwn1,"Abundant, deficient and perfect number classifications",python,0.9902415,T3,Added Statements
+dfwn1_3_2,dfwn1,"Abundant, deficient and perfect number classifications",python,0.99442613,T3,Removed Statements
+dfwn1_3_3,dfwn1,"Abundant, deficient and perfect number classifications",python,0.9961882,T3,Reordered Statements
+dfwn1_3_4,dfwn1,"Abundant, deficient and perfect number classifications",python,0.9930918,T3,Control Flow Modifications
+dfwn1_4_1,dfwn1,"Abundant, deficient and perfect number classifications",python,0.99682087,T4,Same Language
+dfwn1_4_2,dfwn1,"Abundant, deficient and perfect number classifications",go,0.9399232,T4,Different Language
+dfwn1_4_2,dfwn1,"Abundant, deficient and perfect number classifications",java,0.9294342,T4,Different Language
+dfwn1_4_2,dfwn1,"Abundant, deficient and perfect number classifications",javascript,0.98104036,T4,Different Language
+dfwn1_4_2,dfwn1,"Abundant, deficient and perfect number classifications",ruby,0.9638965,T4,Different Language
+p1gbm_1_1,p1gbm,Accumulator factory,python,1.0,T1,Identical Clone
+p1gbm_1_2,p1gbm,Accumulator factory,python,0.9908256,T1,Different Whitespaces
+p1gbm_1_3,p1gbm,Accumulator factory,python,0.99171114,T1,Different Comments
+p1gbm_1_4,p1gbm,Accumulator factory,python,0.99038416,T1,Different Formatting
+p1gbm_2_1,p1gbm,Accumulator factory,python,0.99059457,T2,Different Variable Names
+p1gbm_2_2,p1gbm,Accumulator factory,python,0.985362,T2,Different Data Types
+p1gbm_2_3,p1gbm,Accumulator factory,python,0.99765027,T2,Different Function Names
+p1gbm_3_1,p1gbm,Accumulator factory,python,0.9885294,T3,Added Statements
+p1gbm_3_2,p1gbm,Accumulator factory,python,0.99171114,T3,Removed Statements
+p1gbm_3_3,p1gbm,Accumulator factory,python,0.9919463,T3,Reordered Statements
+p1gbm_3_4,p1gbm,Accumulator factory,python,0.9889771,T3,Control Flow Modifications
+p1gbm_4_1,p1gbm,Accumulator factory,python,0.97504824,T4,Same Language
+p1gbm_4_2,p1gbm,Accumulator factory,go,0.924688,T4,Different Language
+p1gbm_4_2,p1gbm,Accumulator factory,java,0.88374925,T4,Different Language
+p1gbm_4_2,p1gbm,Accumulator factory,javascript,0.97462374,T4,Different Language
+p1gbm_4_2,p1gbm,Accumulator factory,php,0.96935505,T4,Different Language
+p1gbm_4_2,p1gbm,Accumulator factory,ruby,0.9718051,T4,Different Language
+6y03w_1_1,6y03w,Ackermann function,python,1.0,T1,Identical Clone
+6y03w_1_2,6y03w,Ackermann function,python,0.9874457,T1,Different Whitespaces
+6y03w_1_3,6y03w,Ackermann function,python,1.0,T1,Different Comments
+6y03w_1_4,6y03w,Ackermann function,python,0.99740005,T1,Different Formatting
+6y03w_2_1,6y03w,Ackermann function,python,0.99486387,T2,Different Variable Names
+6y03w_2_2,6y03w,Ackermann function,python,0.99280274,T2,Different Data Types
+6y03w_2_3,6y03w,Ackermann function,python,0.99711615,T2,Different Function Names
+6y03w_3_1,6y03w,Ackermann function,python,0.98653597,T3,Added Statements
+6y03w_3_2,6y03w,Ackermann function,python,0.99227786,T3,Removed Statements
+6y03w_3_3,6y03w,Ackermann function,python,0.99373615,T3,Reordered Statements
+6y03w_3_4,6y03w,Ackermann function,python,0.9902957,T3,Control Flow Modifications
+6y03w_4_1,6y03w,Ackermann function,python,0.9791093,T4,Same Language
+6y03w_4_2,6y03w,Ackermann function,go,0.9522873,T4,Different Language
+6y03w_4_2,6y03w,Ackermann function,java,0.9582474,T4,Different Language
+6y03w_4_2,6y03w,Ackermann function,javascript,0.9780171,T4,Different Language
+6y03w_4_2,6y03w,Ackermann function,php,0.97668934,T4,Different Language
+6y03w_4_2,6y03w,Ackermann function,ruby,0.97946465,T4,Different Language
+mclyh_1_1,mclyh,Active Directory/Connect,python,1.0,T1,Identical Clone
+mclyh_1_2,mclyh,Active Directory/Connect,python,0.994128,T1,Different Whitespaces
+mclyh_1_3,mclyh,Active Directory/Connect,python,1.0,T1,Different Comments
+mclyh_1_4,mclyh,Active Directory/Connect,python,0.9988524,T1,Different Formatting
+mclyh_2_1,mclyh,Active Directory/Connect,python,0.99957067,T2,Different Variable Names
+mclyh_2_2,mclyh,Active Directory/Connect,python,0.9981967,T2,Different Data Types
+mclyh_2_3,mclyh,Active Directory/Connect,python,0.9994235,T2,Different Function Names
+mclyh_3_1,mclyh,Active Directory/Connect,python,0.99697137,T3,Added Statements
+mclyh_3_2,mclyh,Active Directory/Connect,python,0.9995483,T3,Removed Statements
+mclyh_3_3,mclyh,Active Directory/Connect,python,0.9997494,T3,Reordered Statements
+mclyh_3_4,mclyh,Active Directory/Connect,python,0.9953815,T3,Control Flow Modifications
+mclyh_4_1,mclyh,Active Directory/Connect,python,0.987765,T4,Same Language
+mclyh_4_2,mclyh,Active Directory/Connect,go,0.936653,T4,Different Language
+mclyh_4_2,mclyh,Active Directory/Connect,java,0.9646201,T4,Different Language
+mclyh_4_2,mclyh,Active Directory/Connect,php,0.97330135,T4,Different Language
+mclyh_4_2,mclyh,Active Directory/Connect,ruby,0.98206544,T4,Different Language
+q0oxi_1_1,q0oxi,Active Directory/Search for a user,python,0.99999994,T1,Identical Clone
+q0oxi_1_2,q0oxi,Active Directory/Search for a user,python,0.9912685,T1,Different Whitespaces
+q0oxi_1_3,q0oxi,Active Directory/Search for a user,python,0.99904364,T1,Different Comments
+q0oxi_1_4,q0oxi,Active Directory/Search for a user,python,0.9993575,T1,Different Formatting
+q0oxi_2_1,q0oxi,Active Directory/Search for a user,python,0.9987066,T2,Different Variable Names
+q0oxi_2_2,q0oxi,Active Directory/Search for a user,python,0.99717027,T2,Different Data Types
+q0oxi_2_3,q0oxi,Active Directory/Search for a user,python,0.99645424,T2,Different Function Names
+q0oxi_3_1,q0oxi,Active Directory/Search for a user,python,0.9947305,T3,Added Statements
+q0oxi_3_2,q0oxi,Active Directory/Search for a user,python,0.99778384,T3,Removed Statements
+q0oxi_3_3,q0oxi,Active Directory/Search for a user,python,0.99919695,T3,Reordered Statements
+q0oxi_3_4,q0oxi,Active Directory/Search for a user,python,0.9784539,T3,Control Flow Modifications
+q0oxi_4_1,q0oxi,Active Directory/Search for a user,python,0.9826659,T4,Same Language
+q0oxi_4_2,q0oxi,Active Directory/Search for a user,go,0.95931447,T4,Different Language
+q0oxi_4_2,q0oxi,Active Directory/Search for a user,java,0.9521582,T4,Different Language
+q0oxi_4_2,q0oxi,Active Directory/Search for a user,php,0.98188615,T4,Different Language
+q0oxi_4_2,q0oxi,Active Directory/Search for a user,ruby,0.98649085,T4,Different Language
+l26cv_1_1,l26cv,Active object,python,0.99999994,T1,Identical Clone
+l26cv_1_2,l26cv,Active object,python,0.9757502,T1,Different Whitespaces
+l26cv_1_3,l26cv,Active object,python,0.9997285,T1,Different Comments
+l26cv_1_4,l26cv,Active object,python,0.99823534,T1,Different Formatting
+l26cv_2_1,l26cv,Active object,python,0.9990777,T2,Different Variable Names
+l26cv_2_2,l26cv,Active object,python,0.9991497,T2,Different Data Types
+l26cv_2_3,l26cv,Active object,python,0.99991757,T2,Different Function Names
+l26cv_3_1,l26cv,Active object,python,0.99665475,T3,Added Statements
+l26cv_3_2,l26cv,Active object,python,0.99811953,T3,Removed Statements
+l26cv_3_3,l26cv,Active object,python,0.9988384,T3,Reordered Statements
+l26cv_3_4,l26cv,Active object,python,0.999193,T3,Control Flow Modifications
+l26cv_4_1,l26cv,Active object,python,0.9983153,T4,Same Language
+l26cv_4_2,l26cv,Active object,go,0.91033816,T4,Different Language
+l26cv_4_2,l26cv,Active object,java,0.9876124,T4,Different Language
+l26cv_4_2,l26cv,Active object,javascript,0.97227836,T4,Different Language
+4gv5k_1_1,4gv5k,Add a variable to a class instance at runtime,python,1.0,T1,Identical Clone
+4gv5k_1_2,4gv5k,Add a variable to a class instance at runtime,python,0.9998152,T1,Different Whitespaces
+4gv5k_1_3,4gv5k,Add a variable to a class instance at runtime,python,1.0,T1,Different Comments
+4gv5k_1_4,4gv5k,Add a variable to a class instance at runtime,python,1.0,T1,Different Formatting
+4gv5k_2_1,4gv5k,Add a variable to a class instance at runtime,python,0.99753416,T2,Different Variable Names
+4gv5k_2_2,4gv5k,Add a variable to a class instance at runtime,python,0.9943203,T2,Different Data Types
+4gv5k_2_3,4gv5k,Add a variable to a class instance at runtime,python,0.99753416,T2,Different Function Names
+4gv5k_3_1,4gv5k,Add a variable to a class instance at runtime,python,0.9900606,T3,Added Statements
+4gv5k_3_2,4gv5k,Add a variable to a class instance at runtime,python,0.992159,T3,Removed Statements
+4gv5k_3_3,4gv5k,Add a variable to a class instance at runtime,python,1.0,T3,Reordered Statements
+4gv5k_3_4,4gv5k,Add a variable to a class instance at runtime,python,0.9956372,T3,Control Flow Modifications
+4gv5k_4_1,4gv5k,Add a variable to a class instance at runtime,python,0.9943203,T4,Same Language
+4gv5k_4_2,4gv5k,Add a variable to a class instance at runtime,go,0.8827426,T4,Different Language
+4gv5k_4_2,4gv5k,Add a variable to a class instance at runtime,javascript,0.9465,T4,Different Language
+4gv5k_4_2,4gv5k,Add a variable to a class instance at runtime,php,0.9685326,T4,Different Language
+4gv5k_4_2,4gv5k,Add a variable to a class instance at runtime,ruby,0.96707016,T4,Different Language
+54vux_1_1,54vux,Additive primes,python,1.0,T1,Identical Clone
+54vux_1_2,54vux,Additive primes,python,0.97712696,T1,Different Whitespaces
+54vux_1_3,54vux,Additive primes,python,0.9979523,T1,Different Comments
+54vux_1_4,54vux,Additive primes,python,0.99977034,T1,Different Formatting
+54vux_2_1,54vux,Additive primes,python,0.9990955,T2,Different Variable Names
+54vux_2_2,54vux,Additive primes,python,0.99573696,T2,Different Data Types
+54vux_2_3,54vux,Additive primes,python,0.99809134,T2,Different Function Names
+54vux_3_1,54vux,Additive primes,python,0.9996766,T3,Added Statements
+54vux_3_2,54vux,Additive primes,python,0.99977034,T3,Removed Statements
+54vux_3_3,54vux,Additive primes,python,0.99914175,T3,Reordered Statements
+54vux_3_4,54vux,Additive primes,python,0.9988947,T3,Control Flow Modifications
+54vux_4_1,54vux,Additive primes,python,0.9709691,T4,Same Language
+54vux_4_2,54vux,Additive primes,go,0.95450085,T4,Different Language
+54vux_4_2,54vux,Additive primes,java,0.9790106,T4,Different Language
+54vux_4_2,54vux,Additive primes,ruby,0.9180907,T4,Different Language
+9c3mf_1_1,9c3mf,Address of a variable,python,0.99999994,T1,Identical Clone
+9c3mf_1_2,9c3mf,Address of a variable,python,0.9994971,T1,Different Whitespaces
+9c3mf_1_3,9c3mf,Address of a variable,python,0.99999994,T1,Different Comments
+9c3mf_1_4,9c3mf,Address of a variable,python,0.99617374,T1,Different Formatting
+9c3mf_2_1,9c3mf,Address of a variable,python,0.99677795,T2,Different Variable Names
+9c3mf_2_2,9c3mf,Address of a variable,python,0.99574935,T2,Different Data Types
+9c3mf_2_3,9c3mf,Address of a variable,python,0.99797475,T2,Different Function Names
+9c3mf_3_1,9c3mf,Address of a variable,python,0.99299383,T3,Added Statements
+9c3mf_3_2,9c3mf,Address of a variable,python,0.99999994,T3,Removed Statements
+9c3mf_3_3,9c3mf,Address of a variable,python,0.99583834,T3,Reordered Statements
+9c3mf_3_4,9c3mf,Address of a variable,python,0.99689156,T3,Control Flow Modifications
+9c3mf_4_1,9c3mf,Address of a variable,python,0.9764184,T4,Same Language
+9c3mf_4_2,9c3mf,Address of a variable,go,0.9332012,T4,Different Language
+9c3mf_4_2,9c3mf,Address of a variable,java,0.966491,T4,Different Language
+9c3mf_4_2,9c3mf,Address of a variable,ruby,0.98727214,T4,Different Language
+fz9de_1_1,fz9de,Algebraic data types,python,0.9999999,T1,Identical Clone
+fz9de_1_2,fz9de,Algebraic data types,python,0.95585656,T1,Different Whitespaces
+fz9de_1_3,fz9de,Algebraic data types,python,0.9999999,T1,Different Comments
+fz9de_1_4,fz9de,Algebraic data types,python,0.9961791,T1,Different Formatting
+fz9de_2_1,fz9de,Algebraic data types,python,0.9988841,T2,Different Variable Names
+fz9de_2_2,fz9de,Algebraic data types,python,0.99985516,T2,Different Data Types
+fz9de_2_3,fz9de,Algebraic data types,python,0.99988025,T2,Different Function Names
+fz9de_3_1,fz9de,Algebraic data types,python,0.9976838,T3,Added Statements
+fz9de_3_2,fz9de,Algebraic data types,python,0.99227035,T3,Removed Statements
+fz9de_3_3,fz9de,Algebraic data types,python,0.9999999,T3,Reordered Statements
+fz9de_3_4,fz9de,Algebraic data types,python,0.99449706,T3,Control Flow Modifications
+fz9de_4_1,fz9de,Algebraic data types,python,0.986239,T4,Same Language
+fz9de_4_2,fz9de,Algebraic data types,go,0.8921702,T4,Different Language
+ymi6q_1_1,ymi6q,Align columns,python,0.9999999,T1,Identical Clone
+ymi6q_1_2,ymi6q,Align columns,python,0.9939626,T1,Different Whitespaces
+ymi6q_1_3,ymi6q,Align columns,python,0.9999999,T1,Different Comments
+ymi6q_1_4,ymi6q,Align columns,python,0.99763197,T1,Different Formatting
+ymi6q_2_1,ymi6q,Align columns,python,0.99826163,T2,Different Variable Names
+ymi6q_2_2,ymi6q,Align columns,python,0.9994559,T2,Different Data Types
+ymi6q_2_3,ymi6q,Align columns,python,0.9999894,T2,Different Function Names
+ymi6q_3_1,ymi6q,Align columns,python,0.9964803,T3,Added Statements
+ymi6q_3_2,ymi6q,Align columns,python,0.99417937,T3,Removed Statements
+ymi6q_3_3,ymi6q,Align columns,python,0.99913037,T3,Reordered Statements
+ymi6q_3_4,ymi6q,Align columns,python,0.99858963,T3,Control Flow Modifications
+ymi6q_4_1,ymi6q,Align columns,python,0.9785595,T4,Same Language
+ymi6q_4_2,ymi6q,Align columns,go,0.9452295,T4,Different Language
+ymi6q_4_2,ymi6q,Align columns,java,0.942466,T4,Different Language
+ymi6q_4_2,ymi6q,Align columns,javascript,0.9520124,T4,Different Language
+ymi6q_4_2,ymi6q,Align columns,php,0.9546521,T4,Different Language
+ymi6q_4_2,ymi6q,Align columns,ruby,0.9641644,T4,Different Language
+g774h_1_1,g774h,Aliquot sequence classifications,python,1.0000001,T1,Identical Clone
+g774h_1_2,g774h,Aliquot sequence classifications,python,0.96988475,T1,Different Whitespaces
+g774h_1_3,g774h,Aliquot sequence classifications,python,1.0000001,T1,Different Comments
+g774h_1_4,g774h,Aliquot sequence classifications,python,0.9978558,T1,Different Formatting
+g774h_2_1,g774h,Aliquot sequence classifications,python,0.9980862,T2,Different Variable Names
+g774h_2_2,g774h,Aliquot sequence classifications,python,0.9985688,T2,Different Data Types
+g774h_2_3,g774h,Aliquot sequence classifications,python,0.9989493,T2,Different Function Names
+g774h_3_1,g774h,Aliquot sequence classifications,python,0.99994075,T3,Added Statements
+g774h_3_2,g774h,Aliquot sequence classifications,python,0.98827314,T3,Removed Statements
+g774h_3_3,g774h,Aliquot sequence classifications,python,0.9999882,T3,Reordered Statements
+g774h_3_4,g774h,Aliquot sequence classifications,python,0.9906099,T3,Control Flow Modifications
+g774h_4_1,g774h,Aliquot sequence classifications,python,0.99886537,T4,Same Language
+g774h_4_2,g774h,Aliquot sequence classifications,go,0.9194233,T4,Different Language
+g774h_4_2,g774h,Aliquot sequence classifications,java,0.98512655,T4,Different Language
+g774h_4_2,g774h,Aliquot sequence classifications,ruby,0.97598183,T4,Different Language
+b1skr_1_1,b1skr,Almkvist-Giullera formula for pi,python,1.0000001,T1,Identical Clone
+b1skr_1_2,b1skr,Almkvist-Giullera formula for pi,python,0.9874203,T1,Different Whitespaces
+b1skr_1_3,b1skr,Almkvist-Giullera formula for pi,python,0.9991893,T1,Different Comments
+b1skr_1_4,b1skr,Almkvist-Giullera formula for pi,python,0.9995998,T1,Different Formatting
+b1skr_2_1,b1skr,Almkvist-Giullera formula for pi,python,0.99949455,T2,Different Variable Names
+b1skr_2_2,b1skr,Almkvist-Giullera formula for pi,python,0.99682957,T2,Different Data Types
+b1skr_2_3,b1skr,Almkvist-Giullera formula for pi,python,0.9989691,T2,Different Function Names
+b1skr_3_1,b1skr,Almkvist-Giullera formula for pi,python,0.99907005,T3,Added Statements
+b1skr_3_2,b1skr,Almkvist-Giullera formula for pi,python,0.99773896,T3,Removed Statements
+b1skr_3_3,b1skr,Almkvist-Giullera formula for pi,python,0.99887264,T3,Reordered Statements
+b1skr_3_4,b1skr,Almkvist-Giullera formula for pi,python,0.9994949,T3,Control Flow Modifications
+b1skr_4_1,b1skr,Almkvist-Giullera formula for pi,python,0.99807775,T4,Same Language
+b1skr_4_2,b1skr,Almkvist-Giullera formula for pi,go,0.95915157,T4,Different Language
+b1skr_4_2,b1skr,Almkvist-Giullera formula for pi,javascript,0.97692156,T4,Different Language
+nf6iz_1_1,nf6iz,Almost prime,python,1.0000001,T1,Identical Clone
+nf6iz_1_2,nf6iz,Almost prime,python,0.9915857,T1,Different Whitespaces
+nf6iz_1_3,nf6iz,Almost prime,python,1.0000001,T1,Different Comments
+nf6iz_1_4,nf6iz,Almost prime,python,0.99983364,T1,Different Formatting
+nf6iz_2_1,nf6iz,Almost prime,python,0.9985524,T2,Different Variable Names
+nf6iz_2_2,nf6iz,Almost prime,python,0.9989967,T2,Different Data Types
+nf6iz_2_3,nf6iz,Almost prime,python,0.9999436,T2,Different Function Names
+nf6iz_3_1,nf6iz,Almost prime,python,0.9961411,T3,Added Statements
+nf6iz_3_2,nf6iz,Almost prime,python,0.9947108,T3,Removed Statements
+nf6iz_3_3,nf6iz,Almost prime,python,0.9997164,T3,Reordered Statements
+nf6iz_3_4,nf6iz,Almost prime,python,0.99672675,T3,Control Flow Modifications
+nf6iz_4_1,nf6iz,Almost prime,python,0.9977877,T4,Same Language
+nf6iz_4_2,nf6iz,Almost prime,go,0.9443406,T4,Different Language
+nf6iz_4_2,nf6iz,Almost prime,java,0.9542411,T4,Different Language
+nf6iz_4_2,nf6iz,Almost prime,javascript,0.9825099,T4,Different Language
+nf6iz_4_2,nf6iz,Almost prime,ruby,0.9597336,T4,Different Language
+t3mfw_1_1,t3mfw,Amb,python,1.0,T1,Identical Clone
+t3mfw_1_2,t3mfw,Amb,python,0.964154,T1,Different Whitespaces
+t3mfw_1_3,t3mfw,Amb,python,0.9990231,T1,Different Comments
+t3mfw_1_4,t3mfw,Amb,python,0.99388933,T1,Different Formatting
+t3mfw_2_1,t3mfw,Amb,python,0.9984507,T2,Different Variable Names
+t3mfw_2_2,t3mfw,Amb,python,0.99890184,T2,Different Data Types
+t3mfw_2_3,t3mfw,Amb,python,0.9990231,T2,Different Function Names
+t3mfw_3_1,t3mfw,Amb,python,0.99863905,T3,Added Statements
+t3mfw_3_2,t3mfw,Amb,python,0.99812603,T3,Removed Statements
+t3mfw_3_3,t3mfw,Amb,python,0.9954762,T3,Reordered Statements
+t3mfw_3_4,t3mfw,Amb,python,0.99751955,T3,Control Flow Modifications
+t3mfw_4_1,t3mfw,Amb,python,0.9943948,T4,Same Language
+t3mfw_4_2,t3mfw,Amb,go,0.9392101,T4,Different Language
+t3mfw_4_2,t3mfw,Amb,javascript,0.98123693,T4,Different Language
+t3mfw_4_2,t3mfw,Amb,ruby,0.9453555,T4,Different Language
+c279q_1_1,c279q,Amicable pairs,python,1.0,T1,Identical Clone
+c279q_1_2,c279q,Amicable pairs,python,0.99355936,T1,Different Whitespaces
+c279q_1_3,c279q,Amicable pairs,python,0.9999979,T1,Different Comments
+c279q_1_4,c279q,Amicable pairs,python,0.9997108,T1,Different Formatting
+c279q_2_1,c279q,Amicable pairs,python,0.9932251,T2,Different Variable Names
+c279q_2_2,c279q,Amicable pairs,python,0.99976146,T2,Different Data Types
+c279q_2_3,c279q,Amicable pairs,python,0.9991605,T2,Different Function Names
+c279q_3_1,c279q,Amicable pairs,python,0.99868286,T3,Added Statements
+c279q_3_2,c279q,Amicable pairs,python,0.99932253,T3,Removed Statements
+c279q_3_3,c279q,Amicable pairs,python,0.99899036,T3,Reordered Statements
+c279q_3_4,c279q,Amicable pairs,python,0.98852265,T3,Control Flow Modifications
+c279q_4_1,c279q,Amicable pairs,python,0.99044347,T4,Same Language
+c279q_4_2,c279q,Amicable pairs,go,0.96280646,T4,Different Language
+c279q_4_2,c279q,Amicable pairs,java,0.9631374,T4,Different Language
+c279q_4_2,c279q,Amicable pairs,javascript,0.8589215,T4,Different Language
+c279q_4_2,c279q,Amicable pairs,php,0.9824319,T4,Different Language
+c279q_4_2,c279q,Amicable pairs,ruby,0.95457685,T4,Different Language
+xsqwr_1_1,xsqwr,Anagrams,python,1.0,T1,Identical Clone
+xsqwr_1_2,xsqwr,Anagrams,python,0.9982136,T1,Different Whitespaces
+xsqwr_1_3,xsqwr,Anagrams,python,0.9984746,T1,Different Comments
+xsqwr_1_4,xsqwr,Anagrams,python,0.9966363,T1,Different Formatting
+xsqwr_2_1,xsqwr,Anagrams,python,0.9961184,T2,Different Variable Names
+xsqwr_2_2,xsqwr,Anagrams,python,0.99621934,T2,Different Data Types
+xsqwr_2_3,xsqwr,Anagrams,python,0.99700254,T2,Different Function Names
+xsqwr_3_1,xsqwr,Anagrams,python,0.9952406,T3,Added Statements
+xsqwr_3_2,xsqwr,Anagrams,python,0.9983468,T3,Removed Statements
+xsqwr_3_3,xsqwr,Anagrams,python,0.9997686,T3,Reordered Statements
+xsqwr_3_4,xsqwr,Anagrams,python,0.99506944,T3,Control Flow Modifications
+xsqwr_4_1,xsqwr,Anagrams,python,0.99648017,T4,Same Language
+xsqwr_4_2,xsqwr,Anagrams,go,0.93982315,T4,Different Language
+xsqwr_4_2,xsqwr,Anagrams,java,0.9719727,T4,Different Language
+xsqwr_4_2,xsqwr,Anagrams,javascript,0.9853945,T4,Different Language
+xsqwr_4_2,xsqwr,Anagrams,php,0.9860191,T4,Different Language
+xsqwr_4_2,xsqwr,Anagrams,ruby,0.97999305,T4,Different Language
+u4wvd_1_1,u4wvd,Anagrams/Deranged anagrams,python,1.0000001,T1,Identical Clone
+u4wvd_1_2,u4wvd,Anagrams/Deranged anagrams,python,0.9973789,T1,Different Whitespaces
+u4wvd_1_3,u4wvd,Anagrams/Deranged anagrams,python,0.99388486,T1,Different Comments
+u4wvd_1_4,u4wvd,Anagrams/Deranged anagrams,python,0.9943925,T1,Different Formatting
+u4wvd_2_1,u4wvd,Anagrams/Deranged anagrams,python,0.9978547,T2,Different Variable Names
+u4wvd_2_2,u4wvd,Anagrams/Deranged anagrams,python,0.9994954,T2,Different Data Types
+u4wvd_2_3,u4wvd,Anagrams/Deranged anagrams,python,0.9992387,T2,Different Function Names
+u4wvd_3_1,u4wvd,Anagrams/Deranged anagrams,python,0.9931577,T3,Added Statements
+u4wvd_3_2,u4wvd,Anagrams/Deranged anagrams,python,0.99311304,T3,Removed Statements
+u4wvd_3_3,u4wvd,Anagrams/Deranged anagrams,python,0.99512804,T3,Reordered Statements
+u4wvd_3_4,u4wvd,Anagrams/Deranged anagrams,python,0.99357116,T3,Control Flow Modifications
+u4wvd_4_1,u4wvd,Anagrams/Deranged anagrams,python,0.9898776,T4,Same Language
+u4wvd_4_2,u4wvd,Anagrams/Deranged anagrams,go,0.9459772,T4,Different Language
+u4wvd_4_2,u4wvd,Anagrams/Deranged anagrams,java,0.9836464,T4,Different Language
+u4wvd_4_2,u4wvd,Anagrams/Deranged anagrams,javascript,0.9833558,T4,Different Language
+u4wvd_4_2,u4wvd,Anagrams/Deranged anagrams,php,0.9832498,T4,Different Language
+u4wvd_4_2,u4wvd,Anagrams/Deranged anagrams,ruby,0.9551816,T4,Different Language
+jks7p_1_1,jks7p,Angle difference between two bearings,python,1.0000001,T1,Identical Clone
+jks7p_1_2,jks7p,Angle difference between two bearings,python,0.9985055,T1,Different Whitespaces
+jks7p_1_3,jks7p,Angle difference between two bearings,python,0.99947155,T1,Different Comments
+jks7p_1_4,jks7p,Angle difference between two bearings,python,0.994259,T1,Different Formatting
+jks7p_2_1,jks7p,Angle difference between two bearings,python,0.9981687,T2,Different Variable Names
+jks7p_2_2,jks7p,Angle difference between two bearings,python,0.992115,T2,Different Data Types
+jks7p_2_3,jks7p,Angle difference between two bearings,python,0.9982151,T2,Different Function Names
+jks7p_3_1,jks7p,Angle difference between two bearings,python,0.9998093,T3,Added Statements
+jks7p_3_2,jks7p,Angle difference between two bearings,python,0.9982295,T3,Removed Statements
+jks7p_3_3,jks7p,Angle difference between two bearings,python,0.99421406,T3,Reordered Statements
+jks7p_3_4,jks7p,Angle difference between two bearings,python,0.97836906,T3,Control Flow Modifications
+jks7p_4_1,jks7p,Angle difference between two bearings,python,0.98072386,T4,Same Language
+jks7p_4_2,jks7p,Angle difference between two bearings,go,0.9434119,T4,Different Language
+jks7p_4_2,jks7p,Angle difference between two bearings,java,0.9618871,T4,Different Language
+jks7p_4_2,jks7p,Angle difference between two bearings,javascript,0.98330486,T4,Different Language
+jks7p_4_2,jks7p,Angle difference between two bearings,ruby,0.99389946,T4,Different Language
+hb8jw_1_1,hb8jw,"Angles (geometric), normalization and conversion",python,0.99999994,T1,Identical Clone
+hb8jw_1_2,hb8jw,"Angles (geometric), normalization and conversion",python,0.99869865,T1,Different Whitespaces
+hb8jw_1_3,hb8jw,"Angles (geometric), normalization and conversion",python,0.99911964,T1,Different Comments
+hb8jw_1_4,hb8jw,"Angles (geometric), normalization and conversion",python,0.9912907,T1,Different Formatting
+hb8jw_2_1,hb8jw,"Angles (geometric), normalization and conversion",python,0.9880428,T2,Different Variable Names
+hb8jw_2_2,hb8jw,"Angles (geometric), normalization and conversion",python,0.9847038,T2,Different Data Types
+hb8jw_2_3,hb8jw,"Angles (geometric), normalization and conversion",python,0.9945817,T2,Different Function Names
+hb8jw_3_1,hb8jw,"Angles (geometric), normalization and conversion",python,0.9860836,T3,Added Statements
+hb8jw_3_2,hb8jw,"Angles (geometric), normalization and conversion",python,0.9843192,T3,Removed Statements
+hb8jw_3_3,hb8jw,"Angles (geometric), normalization and conversion",python,0.9994935,T3,Reordered Statements
+hb8jw_3_4,hb8jw,"Angles (geometric), normalization and conversion",python,0.9986785,T3,Control Flow Modifications
+hb8jw_4_1,hb8jw,"Angles (geometric), normalization and conversion",python,0.9968771,T4,Same Language
+hb8jw_4_2,hb8jw,"Angles (geometric), normalization and conversion",go,0.9752011,T4,Different Language
+hb8jw_4_2,hb8jw,"Angles (geometric), normalization and conversion",java,0.83738655,T4,Different Language
+hb8jw_4_2,hb8jw,"Angles (geometric), normalization and conversion",javascript,0.91175205,T4,Different Language
+hb8jw_4_2,hb8jw,"Angles (geometric), normalization and conversion",ruby,0.9703422,T4,Different Language
+id9of_1_1,id9of,Animate a pendulum,python,1.0000001,T1,Identical Clone
+id9of_1_2,id9of,Animate a pendulum,python,0.98756325,T1,Different Whitespaces
+id9of_1_3,id9of,Animate a pendulum,python,1.0000001,T1,Different Comments
+id9of_1_4,id9of,Animate a pendulum,python,0.9996463,T1,Different Formatting
+id9of_2_1,id9of,Animate a pendulum,python,0.9991127,T2,Different Variable Names
+id9of_2_2,id9of,Animate a pendulum,python,0.9992738,T2,Different Data Types
+id9of_2_3,id9of,Animate a pendulum,python,0.9999678,T2,Different Function Names
+id9of_3_1,id9of,Animate a pendulum,python,0.99934924,T3,Added Statements
+id9of_3_2,id9of,Animate a pendulum,python,0.9993233,T3,Removed Statements
+id9of_3_3,id9of,Animate a pendulum,python,0.99995804,T3,Reordered Statements
+id9of_3_4,id9of,Animate a pendulum,python,0.99954176,T3,Control Flow Modifications
+id9of_4_1,id9of,Animate a pendulum,python,0.99862826,T4,Same Language
+id9of_4_2,id9of,Animate a pendulum,go,0.91086817,T4,Different Language
+id9of_4_2,id9of,Animate a pendulum,java,0.98080844,T4,Different Language
+id9of_4_2,id9of,Animate a pendulum,javascript,0.9728568,T4,Different Language
+id9of_4_2,id9of,Animate a pendulum,ruby,0.97667104,T4,Different Language
+v5a29_1_1,v5a29,Animation,python,1.0,T1,Identical Clone
+v5a29_1_2,v5a29,Animation,python,0.9868599,T1,Different Whitespaces
+v5a29_1_3,v5a29,Animation,python,0.9999672,T1,Different Comments
+v5a29_1_4,v5a29,Animation,python,0.9994028,T1,Different Formatting
+v5a29_2_1,v5a29,Animation,python,0.99981046,T2,Different Variable Names
+v5a29_2_2,v5a29,Animation,python,0.9998851,T2,Different Data Types
+v5a29_2_3,v5a29,Animation,python,0.9999516,T2,Different Function Names
+v5a29_3_1,v5a29,Animation,python,0.9996743,T3,Added Statements
+v5a29_3_2,v5a29,Animation,python,0.9984072,T3,Removed Statements
+v5a29_3_3,v5a29,Animation,python,0.9998274,T3,Reordered Statements
+v5a29_3_4,v5a29,Animation,python,0.9993559,T3,Control Flow Modifications
+v5a29_4_1,v5a29,Animation,python,0.9988772,T4,Same Language
+v5a29_4_2,v5a29,Animation,go,0.9411171,T4,Different Language
+v5a29_4_2,v5a29,Animation,java,0.9879282,T4,Different Language
+v5a29_4_2,v5a29,Animation,ruby,0.9297407,T4,Different Language
+rj8gq_1_1,rj8gq,Anonymous recursion,python,1.0000001,T1,Identical Clone
+rj8gq_1_2,rj8gq,Anonymous recursion,python,0.99824333,T1,Different Whitespaces
+rj8gq_1_3,rj8gq,Anonymous recursion,python,0.99455583,T1,Different Comments
+rj8gq_1_4,rj8gq,Anonymous recursion,python,0.9997883,T1,Different Formatting
+rj8gq_2_1,rj8gq,Anonymous recursion,python,0.9975358,T2,Different Variable Names
+rj8gq_2_2,rj8gq,Anonymous recursion,python,0.99398893,T2,Different Data Types
+rj8gq_2_3,rj8gq,Anonymous recursion,python,0.99886477,T2,Different Function Names
+rj8gq_3_1,rj8gq,Anonymous recursion,python,0.995407,T3,Added Statements
+rj8gq_3_2,rj8gq,Anonymous recursion,python,0.9932889,T3,Removed Statements
+rj8gq_3_3,rj8gq,Anonymous recursion,python,0.9942506,T3,Reordered Statements
+rj8gq_3_4,rj8gq,Anonymous recursion,python,0.99224055,T3,Control Flow Modifications
+rj8gq_4_1,rj8gq,Anonymous recursion,python,0.97878015,T4,Same Language
+rj8gq_4_2,rj8gq,Anonymous recursion,go,0.89389384,T4,Different Language
+rj8gq_4_2,rj8gq,Anonymous recursion,java,0.9723887,T4,Different Language
+rj8gq_4_2,rj8gq,Anonymous recursion,javascript,0.9699651,T4,Different Language
+rj8gq_4_2,rj8gq,Anonymous recursion,php,0.960809,T4,Different Language
+rj8gq_4_2,rj8gq,Anonymous recursion,ruby,0.97340465,T4,Different Language
+1eypc_1_1,1eypc,Anti-primes,python,1.0,T1,Identical Clone
+1eypc_1_2,1eypc,Anti-primes,python,0.9776428,T1,Different Whitespaces
+1eypc_1_3,1eypc,Anti-primes,python,0.999986,T1,Different Comments
+1eypc_1_4,1eypc,Anti-primes,python,0.9984066,T1,Different Formatting
+1eypc_2_1,1eypc,Anti-primes,python,0.9993371,T2,Different Variable Names
+1eypc_2_2,1eypc,Anti-primes,python,0.9981679,T2,Different Data Types
+1eypc_2_3,1eypc,Anti-primes,python,0.99957895,T2,Different Function Names
+1eypc_3_1,1eypc,Anti-primes,python,0.9997078,T3,Added Statements
+1eypc_3_2,1eypc,Anti-primes,python,0.9998956,T3,Removed Statements
+1eypc_3_3,1eypc,Anti-primes,python,0.99903095,T3,Reordered Statements
+1eypc_3_4,1eypc,Anti-primes,python,0.99831486,T3,Control Flow Modifications
+1eypc_4_1,1eypc,Anti-primes,python,0.99918807,T4,Same Language
+1eypc_4_2,1eypc,Anti-primes,go,0.90761256,T4,Different Language
+1eypc_4_2,1eypc,Anti-primes,java,0.9227772,T4,Different Language
+1eypc_4_2,1eypc,Anti-primes,javascript,0.9673116,T4,Different Language
+1eypc_4_2,1eypc,Anti-primes,ruby,0.9606633,T4,Different Language
+kpyhf_1_1,kpyhf,Append a record to the end of a text file,python,1.0000001,T1,Identical Clone
+kpyhf_1_2,kpyhf,Append a record to the end of a text file,python,0.9908283,T1,Different Whitespaces
+kpyhf_1_3,kpyhf,Append a record to the end of a text file,python,1.0000001,T1,Different Comments
+kpyhf_1_4,kpyhf,Append a record to the end of a text file,python,0.97549516,T1,Different Formatting
+kpyhf_2_1,kpyhf,Append a record to the end of a text file,python,0.9978732,T2,Different Variable Names
+kpyhf_2_2,kpyhf,Append a record to the end of a text file,python,0.9960007,T2,Different Data Types
+kpyhf_2_3,kpyhf,Append a record to the end of a text file,python,0.99881756,T2,Different Function Names
+kpyhf_3_1,kpyhf,Append a record to the end of a text file,python,0.9993583,T3,Added Statements
+kpyhf_3_2,kpyhf,Append a record to the end of a text file,python,0.99788916,T3,Removed Statements
+kpyhf_3_3,kpyhf,Append a record to the end of a text file,python,0.99984634,T3,Reordered Statements
+kpyhf_3_4,kpyhf,Append a record to the end of a text file,python,0.99733937,T3,Control Flow Modifications
+kpyhf_4_1,kpyhf,Append a record to the end of a text file,python,0.9702619,T4,Same Language
+kpyhf_4_2,kpyhf,Append a record to the end of a text file,go,0.9587758,T4,Different Language
+kpyhf_4_2,kpyhf,Append a record to the end of a text file,java,0.9516792,T4,Different Language
+kpyhf_4_2,kpyhf,Append a record to the end of a text file,php,0.98293465,T4,Different Language
+kpyhf_4_2,kpyhf,Append a record to the end of a text file,ruby,0.9875933,T4,Different Language
+s82q9_1_1,s82q9,Apply a callback to an array,python,1.0000001,T1,Identical Clone
+s82q9_1_2,s82q9,Apply a callback to an array,python,0.9609171,T1,Different Whitespaces
+s82q9_1_3,s82q9,Apply a callback to an array,python,1.0000001,T1,Different Comments
+s82q9_1_4,s82q9,Apply a callback to an array,python,0.97460604,T1,Different Formatting
+s82q9_2_1,s82q9,Apply a callback to an array,python,0.99288094,T2,Different Variable Names
+s82q9_2_2,s82q9,Apply a callback to an array,python,0.99907804,T2,Different Data Types
+s82q9_2_3,s82q9,Apply a callback to an array,python,0.9993417,T2,Different Function Names
+s82q9_3_1,s82q9,Apply a callback to an array,python,0.99913317,T3,Added Statements
+s82q9_3_2,s82q9,Apply a callback to an array,python,0.98544425,T3,Removed Statements
+s82q9_3_3,s82q9,Apply a callback to an array,python,0.99033666,T3,Reordered Statements
+s82q9_3_4,s82q9,Apply a callback to an array,python,0.9781202,T3,Control Flow Modifications
+s82q9_4_1,s82q9,Apply a callback to an array,python,0.96858525,T4,Same Language
+s82q9_4_2,s82q9,Apply a callback to an array,go,0.9476164,T4,Different Language
+s82q9_4_2,s82q9,Apply a callback to an array,java,0.9633367,T4,Different Language
+s82q9_4_2,s82q9,Apply a callback to an array,javascript,0.94593567,T4,Different Language
+s82q9_4_2,s82q9,Apply a callback to an array,php,0.9437961,T4,Different Language
+s82q9_4_2,s82q9,Apply a callback to an array,ruby,0.9226694,T4,Different Language
+7h3rm_1_1,7h3rm,Apply a digital filter (direct form II transposed),python,1.0,T1,Identical Clone
+7h3rm_1_2,7h3rm,Apply a digital filter (direct form II transposed),python,0.99759567,T1,Different Whitespaces
+7h3rm_1_3,7h3rm,Apply a digital filter (direct form II transposed),python,0.99706584,T1,Different Comments
+7h3rm_1_4,7h3rm,Apply a digital filter (direct form II transposed),python,0.9887028,T1,Different Formatting
+7h3rm_2_1,7h3rm,Apply a digital filter (direct form II transposed),python,0.9989269,T2,Different Variable Names
+7h3rm_2_2,7h3rm,Apply a digital filter (direct form II transposed),python,0.9988551,T2,Different Data Types
+7h3rm_2_3,7h3rm,Apply a digital filter (direct form II transposed),python,0.9987495,T2,Different Function Names
+7h3rm_3_1,7h3rm,Apply a digital filter (direct form II transposed),python,0.98887336,T3,Added Statements
+7h3rm_3_2,7h3rm,Apply a digital filter (direct form II transposed),python,0.998615,T3,Removed Statements
+7h3rm_3_3,7h3rm,Apply a digital filter (direct form II transposed),python,0.9949,T3,Reordered Statements
+7h3rm_3_4,7h3rm,Apply a digital filter (direct form II transposed),python,0.99971294,T3,Control Flow Modifications
+7h3rm_4_1,7h3rm,Apply a digital filter (direct form II transposed),python,0.993281,T4,Same Language
+7h3rm_4_2,7h3rm,Apply a digital filter (direct form II transposed),go,0.9096663,T4,Different Language
+7h3rm_4_2,7h3rm,Apply a digital filter (direct form II transposed),java,0.95522726,T4,Different Language
+7h3rm_4_2,7h3rm,Apply a digital filter (direct form II transposed),ruby,0.972588,T4,Different Language
+onb81_1_1,onb81,Approximate equality,python,1.0000002,T1,Identical Clone
+onb81_1_2,onb81,Approximate equality,python,0.93337154,T1,Different Whitespaces
+onb81_1_3,onb81,Approximate equality,python,0.9502193,T1,Different Comments
+onb81_1_4,onb81,Approximate equality,python,0.9319555,T1,Different Formatting
+onb81_2_1,onb81,Approximate equality,python,0.9336861,T2,Different Variable Names
+onb81_2_2,onb81,Approximate equality,python,0.9266831,T2,Different Data Types
+onb81_2_3,onb81,Approximate equality,python,0.99229574,T2,Different Function Names
+onb81_3_1,onb81,Approximate equality,python,0.942135,T3,Added Statements
+onb81_3_2,onb81,Approximate equality,python,0.94442934,T3,Removed Statements
+onb81_3_3,onb81,Approximate equality,python,0.9395597,T3,Reordered Statements
+onb81_3_4,onb81,Approximate equality,python,0.96643245,T3,Control Flow Modifications
+onb81_4_1,onb81,Approximate equality,python,0.964668,T4,Same Language
+onb81_4_2,onb81,Approximate equality,go,0.95268947,T4,Different Language
+onb81_4_2,onb81,Approximate equality,java,0.9359342,T4,Different Language
+onb81_4_2,onb81,Approximate equality,ruby,0.95249796,T4,Different Language
+3jzc_1_1,3jzc,Arbitrary-precision integers (included),python,0.9999998,T1,Identical Clone
+3jzc_1_2,3jzc,Arbitrary-precision integers (included),python,0.9851316,T1,Different Whitespaces
+3jzc_1_3,3jzc,Arbitrary-precision integers (included),python,0.98789954,T1,Different Comments
+3jzc_1_4,3jzc,Arbitrary-precision integers (included),python,0.9982356,T1,Different Formatting
+3jzc_2_1,3jzc,Arbitrary-precision integers (included),python,0.9892084,T2,Different Variable Names
+3jzc_2_2,3jzc,Arbitrary-precision integers (included),python,0.9885696,T2,Different Data Types
+3jzc_2_3,3jzc,Arbitrary-precision integers (included),python,0.9889514,T2,Different Function Names
+3jzc_3_1,3jzc,Arbitrary-precision integers (included),python,0.99143493,T3,Added Statements
+3jzc_3_2,3jzc,Arbitrary-precision integers (included),python,0.98469245,T3,Removed Statements
+3jzc_3_3,3jzc,Arbitrary-precision integers (included),python,0.98789954,T3,Reordered Statements
+3jzc_3_4,3jzc,Arbitrary-precision integers (included),python,0.9856714,T3,Control Flow Modifications
+3jzc_4_1,3jzc,Arbitrary-precision integers (included),python,0.9839112,T4,Same Language
+3jzc_4_2,3jzc,Arbitrary-precision integers (included),go,0.9677012,T4,Different Language
+3jzc_4_2,3jzc,Arbitrary-precision integers (included),java,0.94735146,T4,Different Language
+3jzc_4_2,3jzc,Arbitrary-precision integers (included),javascript,0.986842,T4,Different Language
+3jzc_4_2,3jzc,Arbitrary-precision integers (included),php,0.97263217,T4,Different Language
+3jzc_4_2,3jzc,Arbitrary-precision integers (included),ruby,0.9652307,T4,Different Language
+o781_1_1,o781,Archimedean spiral,python,1.0000001,T1,Identical Clone
+o781_1_2,o781,Archimedean spiral,python,0.9869706,T1,Different Whitespaces
+o781_1_3,o781,Archimedean spiral,python,1.0000001,T1,Different Comments
+o781_1_4,o781,Archimedean spiral,python,0.99630237,T1,Different Formatting
+o781_2_1,o781,Archimedean spiral,python,0.996307,T2,Different Variable Names
+o781_2_2,o781,Archimedean spiral,python,0.9996473,T2,Different Data Types
+o781_2_3,o781,Archimedean spiral,python,0.99625635,T2,Different Function Names
+o781_3_1,o781,Archimedean spiral,python,0.9920334,T3,Added Statements
+o781_3_2,o781,Archimedean spiral,python,0.9918139,T3,Removed Statements
+o781_3_3,o781,Archimedean spiral,python,0.99975884,T3,Reordered Statements
+o781_3_4,o781,Archimedean spiral,python,0.9975404,T3,Control Flow Modifications
+o781_4_1,o781,Archimedean spiral,python,0.9917536,T4,Same Language
+o781_4_2,o781,Archimedean spiral,go,0.94734937,T4,Different Language
+o781_4_2,o781,Archimedean spiral,java,0.92515796,T4,Different Language
+o781_4_2,o781,Archimedean spiral,javascript,0.969392,T4,Different Language
+o781_4_2,o781,Archimedean spiral,ruby,0.97446644,T4,Different Language

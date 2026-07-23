@@ -1,0 +1,14 @@
+# .dockerignore
+
+# Ignore Git and Python cache artifacts
+.git
+__pycache__/
+*.pyc
+
+# Large or unneeded local folders
+logs/
+misc/
+huggingface_models/
+
+# If you store secrets in .env, consider ignoring it so it won't get copied
+.env

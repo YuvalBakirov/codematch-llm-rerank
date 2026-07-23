@@ -1,0 +1,24 @@
+Group,Number of Tests,Number of Top 5 Hits,Top 5 Hit Rate,Number of 1st in Top 5,First Hit Rate
+Overall,650,560,0.8615384615384616,496,0.7630769230769231
+T1,200,173,0.865,162,0.81
+T2,150,144,0.96,141,0.94
+T3,200,176,0.88,164,0.82
+T4,100,67,0.67,29,0.29
+T1 - Identical Clone,50,50,1.0,50,1.0
+T1 - Different Whitespaces,50,32,0.64,26,0.52
+T1 - Different Comments,50,47,0.94,46,0.92
+T1 - Different Formatting,50,44,0.88,40,0.8
+T2 - Different Variable Names,50,48,0.96,48,0.96
+T2 - Different Data Types,50,47,0.94,45,0.9
+T2 - Different Function Names,50,49,0.98,48,0.96
+T3 - Added Statements,50,47,0.94,43,0.86
+T3 - Removed Statements,50,43,0.86,41,0.82
+T3 - Reordered Statements,50,45,0.9,43,0.86
+T3 - Control Flow Modifications,50,41,0.82,37,0.74
+T4 - Same Language,50,38,0.76,27,0.54
+T4 - Different Language,50,29,0.58,2,0.04
+Domain - Game Development,130,108,0.8307692307692308,85,0.6538461538461539
+Domain - Mathematics,273,233,0.8534798534798534,217,0.7948717948717948
+Domain - Programming Concepts,208,183,0.8798076923076923,163,0.7836538461538461
+Domain - Networking,26,25,0.9615384615384616,21,0.8076923076923077
+Domain - Utilities & Scripts,13,11,0.8461538461538461,10,0.7692307692307693
