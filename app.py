@@ -8,6 +8,7 @@ loading, judge client, reranking, metrics) - this is a viewer on top of
 the same tested logic, not a separate reimplementation.
 """
 
+import time
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -171,36 +172,77 @@ with st.expander("Show top embedding candidate's code"):
     st.code(code_lookup.get(original_order[0], "<not found>"), language="python")
 
 # --- Live call ---------------------------------------------------------------
-st.header("3. Run it live, right now")
+st.markdown(
+    """
+    <div style="background: linear-gradient(90deg, #4f46e5, #7c3aed); padding: 14px 20px;
+                border-radius: 10px; margin-top: 10px;">
+        <span style="color: white; font-size: 22px; font-weight: 700;">🔴 LIVE — Ask Claude Right Now</span>
+        <span style="color: #e0e7ff; font-size: 14px; margin-left: 10px;">
+            Real API call, not cached, not pre-recorded
+        </span>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 st.caption(
-    "Calls the real Claude API on the clone you selected above - not cached, not read from a saved "
-    "file. This is the exact same rerank_one() function used 160 times to produce the aggregate "
-    "result in section 1, just triggered once, on demand, for one example."
+    "This calls the exact same rerank_one() function used 160 times to produce the aggregate result "
+    "in section 1 - just triggered once, on demand, for the clone you picked above."
 )
 
 st.markdown(f"**Query:** {show_clone(selected)}")
-st.markdown("**Embedding search's original top-5 (before any LLM judgment):**")
-for i, bid in enumerate(original_order, 1):
-    marker = " ⬅ true match" if bid == row["desired_base_code_id"] else ""
-    st.text(f"{i}. {show_original(bid)}{marker}")
+st.markdown("**Embedding search's current top pick (before any LLM judgment):**")
+top_before = show_original(original_order[0])
+marker_before = " ⬅ true match" if original_order[0] == row["desired_base_code_id"] else ""
+st.markdown(f"> #1: **{top_before}**{marker_before}")
 
-if st.button("Judge this clone with Claude now"):
+if st.button("⚡ Judge this clone with Claude now", type="primary", use_container_width=True):
     group = scores_df[scores_df["clone_code_id"] == selected]
     candidates = candidates_for_clone(group, code_lookup)
-    with st.spinner("Calling Claude..."):
+    start_time = time.time()
+    with st.spinner("Calling the real Claude API..."):
         client = ClaudeJudgeClient()
         outcome = rerank_one(
             client, selected, row["desired_base_code_id"], clone_lookup[selected], candidates
         )
+    elapsed = time.time() - start_time
 
     if outcome.judge_error:
         st.error(f"Judge error: {outcome.judge_error}")
     else:
-        st.success("Judged live just now. Claude's verdict per candidate, in its new order:")
+        st.success(f"✅ Claude responded in {elapsed:.1f}s — real network round-trip, just now.")
+
+        top_after = show_original(outcome.reranked_order[0])
+        marker_after = " ⬅ true match" if outcome.reranked_order[0] == row["desired_base_code_id"] else ""
+        changed = outcome.reranked_order[0] != original_order[0]
+
+        arrow_color = "#16a34a" if changed else "#6b7280"
+        arrow_label = "changed the #1 pick" if changed else "kept the same #1 pick"
+        st.markdown(
+            f"""
+            <div style="display:flex; align-items:center; gap:14px; margin: 10px 0;
+                        padding: 14px; border-radius: 10px; background:#f8fafc; border:1px solid #e2e8f0;">
+                <div style="flex:1; text-align:center;">
+                    <div style="font-size:12px; color:#64748b;">EMBEDDING SAID</div>
+                    <div style="font-weight:700;">{top_before}{marker_before}</div>
+                </div>
+                <div style="font-size:24px; color:{arrow_color};">&#8594;</div>
+                <div style="flex:1; text-align:center;">
+                    <div style="font-size:12px; color:#64748b;">CLAUDE SAYS</div>
+                    <div style="font-weight:700; color:{arrow_color};">{top_after}{marker_after}</div>
+                </div>
+            </div>
+            <div style="text-align:center; font-size:13px; color:{arrow_color}; margin-bottom:10px;">
+                Claude {arrow_label}
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        st.markdown("**Claude's reasoning per candidate, in its new order:**")
         for bid in outcome.reranked_order:
             reasoning = outcome.reasonings.get(bid, "(kept from original order - no judgment returned)")
             is_true = bid == row["desired_base_code_id"]
-            st.markdown(f"**{show_original(bid)}**{' ✅ true match' if is_true else ''} — {reasoning}")
+            st.markdown(f"- **{show_original(bid)}**{' ✅ true match' if is_true else ''} — {reasoning}")
 
         st.info(
             "**What you're looking at:** each line above is Claude's live, independent judgment on "
