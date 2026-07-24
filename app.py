@@ -172,22 +172,7 @@ with st.expander("Show top embedding candidate's code"):
     st.code(code_lookup.get(original_order[0], "<not found>"), language="python")
 
 # --- Live call ---------------------------------------------------------------
-st.markdown(
-    """
-    <div style="background: linear-gradient(90deg, #4f46e5, #7c3aed); padding: 14px 20px;
-                border-radius: 10px; margin-top: 10px;">
-        <span style="color: white; font-size: 22px; font-weight: 700;">🔴 LIVE — Ask Claude Right Now</span>
-        <span style="color: #e0e7ff; font-size: 14px; margin-left: 10px;">
-            Real API call, not cached, not pre-recorded
-        </span>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
-st.caption(
-    "This calls the exact same rerank_one() function used 160 times to produce the aggregate result "
-    "in section 1 - just triggered once, on demand, for the clone you picked above."
-)
+st.header("Ask Claude now")
 
 st.markdown(f"**Query:** {show_clone(selected)}")
 st.markdown("**Embedding search's current top pick (before any LLM judgment):**")
@@ -195,11 +180,11 @@ top_before = show_original(original_order[0])
 marker_before = " ⬅ true match" if original_order[0] == row["desired_base_code_id"] else ""
 st.markdown(f"> #1: **{top_before}**{marker_before}")
 
-if st.button("⚡ Judge this clone with Claude now", type="primary", use_container_width=True):
+if st.button("Judge this clone with Claude now", type="primary", use_container_width=True):
     group = scores_df[scores_df["clone_code_id"] == selected]
     candidates = candidates_for_clone(group, code_lookup)
     start_time = time.time()
-    with st.spinner("Calling the real Claude API..."):
+    with st.spinner("Calling Claude..."):
         client = ClaudeJudgeClient()
         outcome = rerank_one(
             client, selected, row["desired_base_code_id"], clone_lookup[selected], candidates
@@ -209,7 +194,7 @@ if st.button("⚡ Judge this clone with Claude now", type="primary", use_contain
     if outcome.judge_error:
         st.error(f"Judge error: {outcome.judge_error}")
     else:
-        st.success(f"✅ Claude responded in {elapsed:.1f}s — real network round-trip, just now.")
+        st.success(f"Claude responded in {elapsed:.1f}s.")
 
         top_after = show_original(outcome.reranked_order[0])
         marker_after = " ⬅ true match" if outcome.reranked_order[0] == row["desired_base_code_id"] else ""
@@ -243,12 +228,3 @@ if st.button("⚡ Judge this clone with Claude now", type="primary", use_contain
             reasoning = outcome.reasonings.get(bid, "(kept from original order - no judgment returned)")
             is_true = bid == row["desired_base_code_id"]
             st.markdown(f"- **{show_original(bid)}**{' ✅ true match' if is_true else ''} — {reasoning}")
-
-        st.info(
-            "**What you're looking at:** each line above is Claude's live, independent judgment on "
-            "one of the 5 embedding-search candidates - not a re-run of the embedding search itself. "
-            "The list is now ordered by that judgment (real clones first, highest confidence first), "
-            "which may or may not match the 'Embedding search's original top-5' order shown just above. "
-            "If the true match moved up (especially into 1st place) compared to the original order, "
-            "that's the rerank fixing a case where cosine similarity alone picked the wrong candidate."
-        )
