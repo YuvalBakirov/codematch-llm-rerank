@@ -33,7 +33,7 @@ value; it is not a statistical-significance claim for the full dataset.
 ## Quick verification
 
 ```bash
-python -m pip install pytest pandas python-dotenv
+python -m pip install -r requirements-test.txt
 python -m pytest -q
 ```
 
