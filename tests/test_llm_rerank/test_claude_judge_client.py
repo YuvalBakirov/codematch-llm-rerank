@@ -3,8 +3,8 @@ Anthropic client (no network / no API key needed).
 
 Regression context: v1 asked Claude to write JSON as free text and parsed
 it with regex + json.loads. In a 160-clone live run, 8 calls (5%) failed
-because a "reasoning" sentence contained a quote/apostrophe that broke the
-surrounding JSON string. Moved to tool-use (forced structured output) to
+because malformed escaping around quotation characters in a "reasoning"
+sentence broke the surrounding JSON string. Moved to forced tool use to
 push escaping onto Anthropic's side; these tests pin the new behavior.
 """
 
@@ -47,9 +47,8 @@ def test_extracts_judgments_from_tool_use_block():
     assert len(result.judgments) == 2
     assert result.judgments[0].base_code_id == "aaa1"
     assert result.judgments[0].is_clone is True
-    # The exact case (apostrophe inside reasoning) that broke free-text JSON
-    # parsing in the live run - here it's just a Python string, no escaping
-    # burden on us at all, which is the whole point of the tool-use switch.
+    # Tool input is already structured, so punctuation in reasoning does not
+    # create a hand-written JSON escaping burden in the application.
     assert "it's the same logic" == result.judgments[0].reasoning
 
 
@@ -74,3 +73,21 @@ def test_raises_if_no_tool_use_block_returned():
         assert False, "expected JudgeClientError"
     except JudgeClientError:
         pass
+
+
+def test_wraps_provider_or_network_exception_as_judge_error():
+    client = ClaudeJudgeClient.__new__(ClaudeJudgeClient)
+    client._model = "stub-model"
+
+    class _FailingMessages:
+        def create(self, **kwargs):
+            raise TimeoutError("provider timed out")
+
+    client._client = SimpleNamespace(messages=_FailingMessages())
+
+    try:
+        client.judge_candidates("def q(): pass", CANDIDATES)
+        assert False, "expected JudgeClientError"
+    except JudgeClientError as error:
+        assert "TimeoutError" in str(error)
+        assert "provider timed out" in str(error)

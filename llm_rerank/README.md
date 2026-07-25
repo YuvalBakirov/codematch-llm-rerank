@@ -27,14 +27,20 @@ python -m llm_rerank.cli --scores-csv <path> --n-per-type 40
 - `judge_client.py` defines a `JudgeClient` protocol so the reranking logic
   is testable against `MockJudgeClient` and swappable to any provider;
   `ClaudeJudgeClient` is the only real implementation.
-- Judge responses are parsed defensively (`parse_judge_response`): prose
-  wrapped around the JSON is stripped, hallucinated candidate ids are
-  dropped, and malformed JSON raises `JudgeClientError` rather than being
-  silently coerced into a ranking.
-- On any judge error, `rerank_one` keeps the original embedding-search
-  order instead of guessing - a wrong ranking should never look like a
-  successful rerank.
+- Live Claude calls use forced tool use with a defined schema. The original
+  free-text parser remains only for the mock/provider-neutral path and tests.
+- Hallucinated candidate ids are dropped. Malformed tool input and provider,
+  network, or timeout exceptions are normalized to `JudgeClientError`.
+- On `JudgeClientError`, `rerank_one` keeps the original embedding-search
+  order instead of guessing - a failed rerank must not look successful.
 - Sampling is stratified by `clone_type` (see `sampling.py`) because
   running the full ~8k-clone set through an LLM judge wasn't worth the
   time/cost for this experiment; see the PDF write-up for what this
   tradeoff means for the results' reliability.
+
+## Result and limits
+
+The 160-clone experiment improved Hit@1 from 78.1% to 81.2% while Hit@5
+remained 85.6%. The sample was intended to screen for directional value, not
+to establish statistical significance. Production-scale latency, concurrency,
+cost, prompt-injection resistance, and code-data governance were not measured.

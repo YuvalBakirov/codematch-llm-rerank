@@ -42,9 +42,10 @@ def rerank_one(
 ) -> RerankOutcome:
     """Rerank one clone's top-5 candidates using the judge client.
 
-    On any judge failure (bad JSON, API error, etc.) the original
-    embedding-search order is kept unchanged and the error is recorded,
-    rather than silently producing a made-up ranking.
+    JudgeClientError is the provider boundary: malformed output, API errors,
+    timeouts, and other handled provider failures are normalized to it. On
+    that failure the original embedding-search order is kept unchanged and
+    the error is recorded rather than producing a made-up ranking.
     """
     original_order = [c["base_code_id"] for c in candidates]
 

@@ -71,15 +71,8 @@ For EACH candidate, decide if it is a genuine code clone of the query
 different language) or a false positive (superficially similar but
 different logic).
 
-Respond with ONLY a JSON object, no other text, in this exact shape:
-{{
-  "judgments": [
-    {{"base_code_id": "<id>", "is_clone": true|false, "confidence": 0.0-1.0, "reasoning": "<one sentence>"}}
-  ]
-}}
-
-Include exactly one judgment object per candidate, using the candidate ids
-given above."""
+Use the provided record_judgments tool exactly once. Include one judgment
+per candidate and use only the candidate ids given above."""
 
 
 def _judgments_from_raw_list(raw_judgments: list, known_candidate_ids: set[str]) -> list[CandidateJudgment]:
@@ -165,8 +158,8 @@ class ClaudeJudgeClient(JudgeClient):
 
     v1 of this client asked Claude to write JSON as free text and parsed it
     with `parse_judge_response`. In a 160-call live run, 8 calls (5%) failed
-    with JSONDecodeError - the model's "reasoning" sentences occasionally
-    contained a quote or apostrophe that broke the surrounding JSON string.
+    with JSONDecodeError because malformed escaping around quotation
+    characters broke the surrounding JSON string.
     Forcing a tool call with a JSON schema moves that escaping burden onto
     Anthropic's structured-output handling instead of a hand-rolled prompt
     instruction, which removed the failure mode entirely on re-run.
@@ -180,24 +173,44 @@ class ClaudeJudgeClient(JudgeClient):
 
     def judge_candidates(self, query_code: str, candidates: list[dict]) -> JudgeResult:
         prompt = build_judge_prompt(query_code, candidates)
-        response = self._client.messages.create(
-            model=self._model,
-            max_tokens=1024,
-            tools=[JUDGE_TOOL],
-            tool_choice={"type": "tool", "name": "record_judgments"},
-            messages=[{"role": "user", "content": prompt}],
-        )
+        try:
+            response = self._client.messages.create(
+                model=self._model,
+                max_tokens=1024,
+                tools=[JUDGE_TOOL],
+                tool_choice={"type": "tool", "name": "record_judgments"},
+                messages=[{"role": "user", "content": prompt}],
+            )
 
-        tool_use_block = next(
-            (b for b in response.content if getattr(b, "type", None) == "tool_use"), None
-        )
-        if tool_use_block is None:
-            raise JudgeClientError(f"No tool_use block in response: {response.content!r}")
+            tool_use_block = next(
+                (b for b in response.content if getattr(b, "type", None) == "tool_use"),
+                None,
+            )
+            if tool_use_block is None:
+                raise JudgeClientError(
+                    f"No tool_use block in response: {response.content!r}"
+                )
+            if not isinstance(tool_use_block.input, dict):
+                raise JudgeClientError(
+                    f"Tool input was not an object: {tool_use_block.input!r}"
+                )
 
-        known_ids = {c["base_code_id"] for c in candidates}
-        raw_judgments = tool_use_block.input.get("judgments", [])
-        judgments = _judgments_from_raw_list(raw_judgments, known_ids)
-        return JudgeResult(judgments=judgments, raw_response=json.dumps(tool_use_block.input))
+            raw_judgments = tool_use_block.input.get("judgments")
+            if not isinstance(raw_judgments, list):
+                raise JudgeClientError("Tool input missing a 'judgments' list")
+
+            known_ids = {c["base_code_id"] for c in candidates}
+            judgments = _judgments_from_raw_list(raw_judgments, known_ids)
+            return JudgeResult(
+                judgments=judgments,
+                raw_response=json.dumps(tool_use_block.input),
+            )
+        except JudgeClientError:
+            raise
+        except Exception as e:
+            raise JudgeClientError(
+                f"Claude judge request failed ({type(e).__name__}): {e}"
+            ) from e
 
 
 class MockJudgeClient(JudgeClient):

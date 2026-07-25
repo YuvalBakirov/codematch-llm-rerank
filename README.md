@@ -1,6 +1,50 @@
-# CodeMatch Benchmark - Can the System Detect Clones Accurately?
+# LLM-Judge Reranking for CodeMatch
 
-The Benchmark repository is where we start measuring success. It’s all about testing and evaluating Large Language Models (LLMs) to ensure they perform well in detecting code clones. This repository lays the groundwork for the CodeMatch project, helping us identify the best-performing model for the job.
+This repository contains the benchmark extension built for the AI-assisted
+engineering assignment. It keeps CodeMatch's embedding search as the fast first
+stage, then asks Claude to review only the existing top-five candidates and
+rerank them as genuine clones or false positives.
+
+## Measured result
+
+On a reproducible stratified sample of 160 clones (40 per clone type):
+
+| Metric | Embedding only | + Claude rerank |
+| --- | ---: | ---: |
+| Hit@1 | 78.1% | 81.2% |
+| Hit@5 | 85.6% | 85.6% |
+
+Hit@5 is unchanged by design because the second stage only reorders candidates
+that the embedding model already retrieved. The sample demonstrates directional
+value; it is not a statistical-significance claim for the full dataset.
+
+## What this extension demonstrates
+
+- A repository-aware, second-stage judge in `llm_rerank/`.
+- Forced Claude tool use with a defined JSON schema instead of free-text JSON.
+- Failure-safe fallback to the original embedding order on handled provider,
+  parsing, timeout, and network failures.
+- Reproducible stratified sampling, offline evaluation, and an interactive
+  Streamlit demo.
+- Regression tests for malformed output, hallucinated candidate ids, provider
+  failures, CLI configuration, reranking behavior, and the end-to-end fixture
+  pipeline.
+
+## Quick verification
+
+```bash
+python -m pip install pytest pandas python-dotenv
+python -m pytest -q
+```
+
+See [`llm_rerank/README.md`](llm_rerank/README.md) for the reranker design and
+CLI usage.
+
+## Original CodeMatch benchmark context
+
+The benchmark repository measures how accurately candidate embedding models
+detect code clones. It provides the existing evaluation infrastructure and
+measured baseline that the reranking extension builds on.
 
 
 ## ✨ Introduction
