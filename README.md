@@ -1,9 +1,19 @@
 # LLM-Judge Reranking for CodeMatch
 
-This repository contains the benchmark extension built for the AI-assisted
-engineering assignment. It keeps CodeMatch's embedding search as the fast first
-stage, then asks Claude to review only the existing top-five candidates and
-rerank them as genuine clones or false positives.
+This repository contains an independent side extension to the collaborative
+[CodeMatch benchmark](https://github.com/codematch-llm/benchmark). It keeps
+CodeMatch's embedding search as the fast first stage, then asks Claude to
+review only the existing top-five candidates and rerank them as genuine clones
+or false positives. The original shared CodeMatch repositories remain
+unchanged.
+
+## Project relationship
+
+| Repository | Role |
+| --- | --- |
+| [`codematch-llm/benchmark`](https://github.com/codematch-llm/benchmark) | Original collaborative benchmark and retrieval baseline |
+| **This repository** | Yuval Bakirov's independent reranking experiment, evaluation, and demo |
+| [`YuvalBakirov/codematch-system`](https://github.com/YuvalBakirov/codematch-system) | Supporting end-to-end integration into the existing CodeMatch application |
 
 ## Measured result
 
@@ -39,6 +49,17 @@ python -m pytest -q
 
 See [`llm_rerank/README.md`](llm_rerank/README.md) for the reranker design and
 CLI usage.
+
+## Demo and case study
+
+- [Recorded end-to-end demo](https://drive.google.com/file/d/1CPDyhbrUXTHNGGnUhLxFCY-KacYnn8AG/view?usp=drive_link)
+- [Portfolio case study (PDF)](docs/CodeMatch-LLM-Reranking-Case-Study.pdf)
+
+## Rights and permitted use
+
+The source is publicly visible for portfolio review and technical evaluation.
+No permission is granted to copy, modify, distribute, sublicense, or use the
+project. See [`LICENSE.md`](LICENSE.md) for the full notice.
 
 ## Original CodeMatch benchmark context
 
